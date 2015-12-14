@@ -1,0 +1,247 @@
+[
+    {
+        "outputFile": "C:\\DatingApp1\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 19,
+                    "endOffset": 203
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 410,
+                        "endLine": 15,
+                        "endColumn": 19,
+                        "endOffset": 558
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 208,
+                    "endLine": 24,
+                    "endColumn": 19,
+                    "endOffset": 678
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 683,
+                    "endColumn": 57,
+                    "endOffset": 736
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 741,
+                    "endColumn": 55,
+                    "endOffset": 792
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 797,
+                    "endColumn": 52,
+                    "endOffset": 845
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 850,
+                    "endColumn": 40,
+                    "endOffset": 886
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 891,
+                    "endColumn": 52,
+                    "endOffset": 939
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 944,
+                    "endColumn": 53,
+                    "endOffset": 993
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 998,
+                    "endColumn": 53,
+                    "endOffset": 1047
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1052,
+                    "endColumn": 59,
+                    "endOffset": 1107
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1112,
+                    "endColumn": 37,
+                    "endOffset": 1145
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1150,
+                    "endColumn": 60,
+                    "endOffset": 1206
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1211,
+                    "endColumn": 83,
+                    "endOffset": 1290
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1295,
+                    "endColumn": 71,
+                    "endOffset": 1362
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1367,
+                    "endColumn": 62,
+                    "endOffset": 1425
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1430,
+                    "endColumn": 61,
+                    "endOffset": 1487
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1492,
+                    "endColumn": 66,
+                    "endOffset": 1554
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 1559,
+                    "endLine": 46,
+                    "endColumn": 12,
+                    "endOffset": 1845
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 1850,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 2005
+                },
+                "from": {
+                    "file": "C:\\DatingApp1\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            }
+        ]
+    }
+]

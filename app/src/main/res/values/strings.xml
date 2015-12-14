@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">aAa</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="profile_me">My Profile Pic</string>
+    <string name="profile_other">Other profile pic</string>
+    <string name="message_hint">Say anything</string>
+    <string name="send">Send</string>
+
+    <string-array name="userNames">
+        <item>Moran Atias</item>
+        <item>Rotem Sela</item>
+        <item>Mila Kunis</item>
+    </string-array>
+
+
+
+    <string-array name="userNames1">
+
+        <item>Hadas.T</item>
+        <item>Sarah.L</item>
+        <item>Rebecca.S</item>
+        <item>Alin.B</item>
+        <item>Jenny.C</item>
+        <item>Karin.S</item>
+        <item>Adriana.L</item>
+        <item>Jennifer.D</item>
+        <item>Carmen.E</item>
+        <item>Irena.U</item>
+        <item>Angelina.G</item>
+        <item>Sandy.P</item>
+        <item>Sandy.P</item>
+        <item>Sandy.P</item>
+
+    </string-array>
+    <string name="title_activity_user_page">UserPage</string>
+    <string name="title_activity_detailed_profile">DetailedProfileActivity</string>
+    <string name="title_activity_favorites_page">FavoritesPage</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+</resources>
