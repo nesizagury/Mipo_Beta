@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffbe2c"
+                android:clickable="false"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/welocme_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="400.0"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:weightSum="40.0"
+            android:layout_weight="35"
+            android:background="#ffbe2c">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="10"
+                android:background="@drawable/m4"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="10"
+                android:background="@drawable/m3"
+                android:onClick="goToMessages"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="10"
+                android:background="@drawable/m2"
+                android:onClick="goToFavorites"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="10"
+                android:adjustViewBounds="false"
+                android:background="@drawable/m1"
+                android:onClick="goToFilter"
+                android:scaleType="fitXY"/>
+        </TableRow>
+        <View
+            android:id="@+id/devider11"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="#000000"/>
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="308"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/tableRow"
+            android:background="#000000"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:verticalSpacing="4dp">
+
+        </GridView>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="20"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/online2"/>
+
+            <TextView
+                android:id="@+id/online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000"
+                android:text="Online"
+                android:textColor="#ffffff"
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/gps_acuuraty"/>
+
+            <TextView
+                android:id="@+id/distanceAcuuraty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:text="15m"
+                android:textColor="#ffffff"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:background="#000000"
+            android:text="Mipo"
+            android:textColor="#ffbe2c"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:shadowColor="#FFFFFFFF"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="15"
+            android:paddingBottom="15dp">
+        </TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
