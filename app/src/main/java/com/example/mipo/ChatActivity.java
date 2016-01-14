@@ -8,14 +8,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.parse.FindCallback;
-import com.parse.GetCallback;
+import com.parse.ParseACL;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import com.parse.SaveCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,16 +22,13 @@ public class ChatActivity extends Activity {
     private EditText etMessage;
     private ListView lvChat;
     private ArrayList<Message> mMessages;
-    private ArrayList<Room> mRoom;
     private ChatListAdapter mAdapter;
     private boolean mFirstLoad;
     private Handler handler = new Handler ();
     static String otherUserId;
     String des;
     String des2;
-    boolean isSaved = false;
     static String other_user_name;
-    String body;
     int combinedConversationId;
     int conversationId;
     int otherConversationId;
@@ -62,7 +56,6 @@ public class ChatActivity extends Activity {
         lvChat = (ListView) findViewById (R.id.lvChat);
 
         mMessages = new ArrayList<Message> ();
-        mRoom = new ArrayList<Room> ();
         // Automatically scroll to the bottom when a data set change notification is received and only if the last item is already visible on screen. Don't scroll to the bottom otherwise.
         lvChat.setTranscriptMode (1);
         des = MainPageActivity.currentUser.getId () + " - " + otherUserId;
@@ -71,25 +64,24 @@ public class ChatActivity extends Activity {
         mFirstLoad = true;
         mAdapter = new ChatListAdapter (ChatActivity.this, MainPageActivity.currentUser.getId (), mMessages);
         lvChat.setAdapter (mAdapter);
-        handler.postDelayed (runnable, 0);
+        receiveNoBackGround ();
+        handler.postDelayed (runnable, 500);
     }
 
     public void sendMessage(View view) {
-        body = etMessage.getText ().toString ();
+        String body = etMessage.getText ().toString ();
         Message message = new Message ();
         message.setUserId (MainPageActivity.currentUser.getId ());
         message.setBody (body);
-        message.setDes (des);
         message.setCombinedID (Integer.toString (combinedConversationId));
         try {
             message.save ();
         } catch (ParseException e) {
-            Toast.makeText (getApplicationContext (), "error save your msg in parse", Toast.LENGTH_SHORT).show ();
             e.printStackTrace ();
         }
         etMessage.setText ("");
-        receiveNoBackGround();
-        deleteMessageRoomItem ();
+        receiveNoBackGround ();
+        deleteMessageRoomItem (body);
     }
 
 
@@ -142,43 +134,49 @@ public class ChatActivity extends Activity {
     private Runnable runnable = new Runnable () {
         @Override
         public void run() {
-            refreshMessages ();
-            handler.postDelayed (this, 300);
+            receiveMessage ();
+            handler.postDelayed (this, 500);
         }
     };
 
-    private void refreshMessages() {
-        receiveMessage ();
-    }
-
-    private void saveToMessagesRoom() {
-        Room room = new Room ();
-        room.setUserId (MainPageActivity.currentUser.getId ());
-        room.setConversationId (combinedConversationId);
-        room.setDes (body);
-        room.saveInBackground (new SaveCallback () {
-            @Override
-            public void done(ParseException e) {
-                isSaved = true;
-            }
-        });
-    }
-
-    public void deleteMessageRoomItem() {
-        ParseQuery<ParseObject> query = ParseQuery.getQuery ("Room");
+    public void deleteMessageRoomItem(final String body) {
+        ParseQuery<Room> query = ParseQuery.getQuery (Room.class);
         query.whereEqualTo ("ConversationId", combinedConversationId);
-        query.getFirstInBackground (new GetCallback<ParseObject> () {
-            public void done(ParseObject object, ParseException e) {
+        query.findInBackground (new FindCallback<Room> () {
+            public void done(List<Room> list, ParseException e) {
                 if (e == null) {
-                    try {
-                        object.delete ();
-                    } catch (ParseException e1) {
-                        e1.printStackTrace ();
+                    if (list.size () == 0) {
+                        Room room = new Room ();
+                        ParseACL parseACL = new ParseACL ();
+                        parseACL.setPublicWriteAccess (true);
+                        parseACL.setPublicReadAccess (true);
+                        room.setACL (parseACL);
+                        room.setUserId (MainPageActivity.currentUser.getId ());
+                        room.setConversationId (combinedConversationId);
+                        room.setDes (body);
+                        room.saveInBackground ();
+                    } else {
+                        Room obj = list.get (0);
+                        obj.setUserId (MainPageActivity.currentUser.getId ());
+                        obj.setDes (body);
+                        obj.saveInBackground ();
                     }
-                    object.saveInBackground ();
+                } else {
+                    e.printStackTrace ();
                 }
-                saveToMessagesRoom ();
             }
         });
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause ();
+        handler.removeCallbacks (runnable);
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart ();
+        handler.postDelayed (runnable, 500);
     }
 }

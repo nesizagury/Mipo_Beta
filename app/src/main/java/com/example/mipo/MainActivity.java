@@ -28,10 +28,10 @@ public class MainActivity extends Activity {
 	}
 
 	public void connectToParse() {
-		ParseObject.registerSubclass(com.example.mipo.Message.class);
-		ParseObject.registerSubclass(com.example.mipo.Room.class);
-		Parse.initialize(this, "VxNKZoBXZHTyFmx3cRhLFpGOQNMl9NMySrE6PiLP", "lZaGELhSL2Fon7Kd7TyouMBaA4zrBPg1Hm5GQYu2");
-		ParseUser.enableAutomaticUser();
+		ParseUser.enableAutomaticUser ();
+		ParseObject.registerSubclass (com.example.mipo.Message.class);
+		ParseObject.registerSubclass (com.example.mipo.Room.class);
+		Parse.initialize (this, "VxNKZoBXZHTyFmx3cRhLFpGOQNMl9NMySrE6PiLP", "lZaGELhSL2Fon7Kd7TyouMBaA4zrBPg1Hm5GQYu2");
 		ParseACL defaultAcl = new ParseACL();
 		defaultAcl.setPublicReadAccess (true);
 		ParseACL.setDefaultACL (defaultAcl, true);

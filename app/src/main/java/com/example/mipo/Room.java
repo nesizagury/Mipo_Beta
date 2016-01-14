@@ -25,13 +25,6 @@ public class Room extends ParseObject{
         return getString("des");
     }
 
-    public void setDes2(String des2) {
-        put("des2", des2);
-    }
-
-    public String getDes2(){
-        return getString("des2");
-    }
 
     public void setName(String name) {
         put("name", name);

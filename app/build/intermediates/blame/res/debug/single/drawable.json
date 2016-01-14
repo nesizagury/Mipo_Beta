@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_shape.xml",
+        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\drawable\\divider_shape.xml"
+    },
+    {
         "merged": "D:\\DatingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
         "source": "D:\\DatingApp\\app\\src\\main\\res\\drawable\\background.xml"
     },
@@ -28,7 +32,19 @@
         "source": "C:\\DatingApp1\\app\\src\\main\\res\\drawable\\divider_drawable.xml"
     },
     {
+        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\row_border.xml",
+        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\drawable\\row_border.xml"
+    },
+    {
+        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
+        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
         "merged": "D:\\DatingApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_drawable.xml",
         "source": "D:\\DatingApp\\app\\src\\main\\res\\drawable\\divider_drawable.xml"
+    },
+    {
+        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_drawable.xml",
+        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\drawable\\divider_drawable.xml"
     }
 ]

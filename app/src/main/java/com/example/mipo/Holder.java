@@ -10,8 +10,6 @@ public class Holder {
 	ImageView image2;
 	TextView name;
 	
-	
-	
 	public Holder (View v) {
 		
 		
@@ -20,12 +18,4 @@ public class Holder {
 		name = (TextView) v.findViewById(R.id.textView1);
 	}
 
-
-
-
-
-
-	
-	
-	
 }

@@ -22,14 +22,6 @@ public class Message extends ParseObject {
         put("body", body);
     }
 
-    public void setDes(String des) {
-        put("des", des);
-    }
-
-    public String getDes(){
-        return getString("des");
-    }
-
     public void setCombinedID(String combinedID) {
         put("combinedID", combinedID);
     }

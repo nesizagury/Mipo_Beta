@@ -1,8 +1,6 @@
 package com.example.mipo;
 
-import java.io.Serializable;
-
-public class MessageRoomBean implements Serializable {
+public class MessageRoomBean {
 
     int imageId;
     String name;
@@ -16,22 +14,17 @@ public class MessageRoomBean implements Serializable {
     }
 
     public MessageRoomBean(int imageId, String name, String body,int conversationId) {
-
         this.imageId = imageId;
         this.name = name;
         this.conversationId = conversationId;
         this.body = body;
-
-
     }
     public int getImageId(){
         return imageId;
     }
 
     public void setImageId(int imageId){
-
         this.imageId = imageId;
-        this.conversationId = conversationId;
     }
 
     public void setBody(String body)

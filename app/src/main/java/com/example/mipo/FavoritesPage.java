@@ -31,7 +31,7 @@ public class FavoritesPage extends Activity implements AdapterView.OnItemClickLi
             MainPageActivity.lov.addToFavorites_list(MainPageActivity.getUser(i));
         }
 
-        Adapts adapts = new Adapts(this,iv, MainPageActivity.lov.getFavorites_list());
+        Adapts adapts = new Adapts(this, MainPageActivity.lov.getFavorites_list());
         grid.setAdapter(adapts);
         grid.setOnItemClickListener(this);
 

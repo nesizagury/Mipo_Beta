@@ -23,4 +23,8 @@ public class User {
 	public String getId() {
 		return id;
 	}
+
+	public boolean isCurentUser() {
+		return curentUser;
+	}
 }
