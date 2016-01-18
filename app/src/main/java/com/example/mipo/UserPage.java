@@ -39,32 +39,44 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
 
         Intent intent = getIntent ();
         if (intent != null) {
-            int image_id = intent.getIntExtra ("userImage", R.drawable.pic0);
-            ImageView user_image = (ImageView) findViewById (R.id.usrPage_image);
-            user_image.setImageResource (image_id);
             Bundle b = getIntent ().getExtras ();
-            userID = b.getString ("userID");
             user_current = intent.getBooleanExtra ("userCurrent", false);
+            userID = b.getString ("userID");
             user_name = intent.getStringExtra ("userName");
             index = b.getInt ("index");
+            User user = MainPageActivity.getUser (index);
+            UserDetails userDetails = MainPageActivity.ud.get (user.getIndexInUD ());
+
+            int image_id = intent.getIntExtra ("userImage", R.drawable.pic0);
+            ImageView user_image = (ImageView) findViewById (R.id.usrPage_image);
+            if (user_current) {
+                user_image.setImageResource (R.drawable.pic0 + userDetails.getImage_source ());
+            } else{
+                user_image.setImageResource (image_id);
+            }
 
             TextView userNameTF = (TextView) findViewById (R.id.name_profile);
             TextView seenTF = (TextView) findViewById (R.id.seen_profile);
-
-            for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                if (MainPageActivity.ud.get (i).getName ().equals (user_name)) {
-                    userNameTF.setText (user_name + " , " + MainPageActivity.ud.get (i).getAge ());
-                    if (user_current) {
-                        seenTF.setText ("Online" + " | " + "0 meters away");
-                    } else {
-                        seenTF.setText (MainPageActivity.ud.get (i).getSeen () + " | " + MainPageActivity.ud.get (i).getDistance ());
-                    }
-                }
+            userNameTF.setText (user_name + " , " + userDetails.getAge ());
+            if (user_current) {
+                seenTF.setText ("Online" + " | " + "0 meters away");
+            } else if (userDetails.getDistanceType () == 0) {
+                seenTF.setText (userDetails.getSeen () +
+                                        " | " + userDetails.getDistance () + " meters away");
+            } else if(userDetails.getDistanceType () == 1){
+                seenTF.setText (userDetails.getSeen () +
+                                        " | " + userDetails.getDistance () + " km away");
             }
             if (user_current) {
                 favorite_button.setVisibility (View.INVISIBLE);
                 report_button.setVisibility (View.INVISIBLE);
                 message_button.setVisibility (View.INVISIBLE);
+            }
+            else if (!user_current && user.isFavorite ()) {
+                favorite_button.setBackgroundResource (R.drawable.favoritecolored);
+            }
+            else if (!user_current && !user.isFavorite ()) {
+                favorite_button.setBackgroundResource (R.drawable.favorite);
             }
         }
     }
@@ -81,8 +93,16 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
         }
 
         if (v == favorite_button) {
-            MainPageActivity.lov.addToFavorites_list (MainPageActivity.getUser (index));
-            Toast.makeText (getApplicationContext (), "Added To Favorites", Toast.LENGTH_SHORT).show ();
+            User user = MainPageActivity.getUser (index);
+            if (user.isFavorite ()) {
+                user.setFavorite (false);
+                favorite_button.setBackgroundResource (R.drawable.favorite);
+                Toast.makeText (getApplicationContext (), "Removed from Favorites", Toast.LENGTH_SHORT).show ();
+            } else {
+                user.setFavorite (true);
+                favorite_button.setBackgroundResource (R.drawable.favoritecolored);
+                Toast.makeText (getApplicationContext (), "Added To Favorites", Toast.LENGTH_SHORT).show ();
+            }
         }
 
         if (v == report_button) {

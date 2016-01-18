@@ -19,12 +19,13 @@ public class UserDetails {
     String about;
     int image_source;
     int message_roomId;
+    int distanceType;
 
     public UserDetails(String name, String id, String on_off, String distance, String seen, String age, String status,
                        String height, String weight, String nation, String body_type, String relationship_status,
-                       String looking_for, String about, int image_source, int message_roomId) {
-        this.id = id;
+                       String looking_for, String about, int image_source, int message_roomId, int distanceType) {
         this.name = name;
+        this.id = id;
         this.on_off = on_off;
         this.age = age;
         this.seen = seen;
@@ -39,7 +40,7 @@ public class UserDetails {
         this.about = about;
         this.image_source = image_source;
         this.message_roomId = message_roomId;
-
+        this.distanceType = distanceType;
     }
 
     public String getId() {
@@ -162,12 +163,19 @@ public class UserDetails {
         this.image_source = image_source;
     }
 
-
     public int getMessage_roomId() {
         return message_roomId;
     }
 
     public void setMessage_roomId(int message_roomId) {
         this.message_roomId = message_roomId;
+    }
+
+    public int getDistanceType() {
+        return distanceType;
+    }
+
+    public void setDistanceType(int distanceType) {
+        this.distanceType = distanceType;
     }
 }

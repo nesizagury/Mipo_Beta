@@ -32,12 +32,12 @@
         "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\layout\\activity_user_page.xml"
     },
     {
-        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detailed_profile.xml",
-        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\layout\\detailed_profile.xml"
-    },
-    {
         "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_item.xml",
         "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\layout\\chat_item.xml"
+    },
+    {
+        "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detailed_profile.xml",
+        "source": "D:\\Mipo_13_1_16\\app\\src\\main\\res\\layout\\detailed_profile.xml"
     },
     {
         "merged": "D:\\Mipo_13_1_16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_page.xml",

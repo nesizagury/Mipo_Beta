@@ -4,7 +4,7 @@ QFDX3Z7mrb
 
 Online
 
-869 meters away
+869
 
 Online
 
@@ -26,6 +26,8 @@ n/a
 
 Ask her to tell you more about herself
 
-9
+4
 
 11
+
+0

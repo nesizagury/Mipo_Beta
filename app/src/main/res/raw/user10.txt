@@ -4,7 +4,7 @@ M_Kunis
 
 Online
 
-159 meters away
+159
 
 Online
 
@@ -26,6 +26,8 @@ Right Now
 
 Hi...I'm an intelligent, articulate, professional lady with loads of energy and a great sense of fun!
 
-2
+10
 
 31
+
+0
