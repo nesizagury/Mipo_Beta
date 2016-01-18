@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="false"
-    android:duplicateParentState="false"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:clickable="false"
+                android:duplicateParentState="false"
                 android:longClickable="false"
     >
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="fill_parent"
+        android:layout_width="125dp"
         android:layout_height="125dp"
+        android:layout_alignParentEnd="false"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:clickable="false"
         android:scaleType="fitXY"
         android:src="@drawable/pic0"
-        android:clickable="false"
-        android:layout_alignParentEnd="false"
-        android:adjustViewBounds="false"
-        android:padding="3dp"
-        android:background="@drawable/background"/>
+        />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alexendra.W"
-        android:textColor="@color/light_font"
-        android:textSize="11dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="4dp"
+        android:gravity="top|left"
         android:shadowColor="#000000"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="6"
-        android:gravity="top|left"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentStart="false"
         android:singleLine="true"
-        android:layout_marginLeft="4dp"/>
+        android:text="Alexendra.W"
+        android:textColor="@color/light_font"
+        android:textSize="11dp"/>
 
 
     <ImageView

@@ -18,9 +18,9 @@
             android:id="@+id/tableRow"
             android:layout_width="fill_parent"
             android:layout_height="0dip"
-            android:weightSum="40.0"
             android:layout_weight="35"
-            android:background="#ffbe2c">
+            android:background="#ffbe2c"
+            android:weightSum="40.0">
 
             <ImageButton
                 android:id="@+id/imageButton2"
@@ -74,25 +74,30 @@
                 android:onClick="goToFilter"
                 android:scaleType="fitXY"/>
         </TableRow>
+
         <View
             android:id="@+id/devider11"
             android:layout_width="fill_parent"
             android:layout_height="0dip"
             android:layout_weight="2"
             android:background="#000000"/>
+
         <GridView
             android:id="@+id/gridView1"
             android:layout_width="fill_parent"
             android:layout_height="0dip"
-            android:layout_weight="308"
             android:layout_alignParentBottom="false"
             android:layout_alignParentEnd="false"
             android:layout_below="@+id/tableRow"
+            android:layout_weight="308"
             android:background="#000000"
             android:horizontalSpacing="4dp"
             android:numColumns="3"
-            android:verticalSpacing="4dp">
-
+            android:verticalSpacing="4dp"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:persistentDrawingCache="scrolling"
+            android:cacheColorHint="@android:color/transparent">
         </GridView>
 
         <TableRow
@@ -145,19 +150,19 @@
             android:id="@+id/editText"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_weight="35"
             android:background="#000000"
-            android:text="Mipo"
-            android:textColor="#ffbe2c"
-            android:layout_gravity="center"
             android:gravity="center_vertical|center_horizontal"
-            android:textSize="30dp"
-            android:textStyle="bold"
+            android:paddingBottom="15dp"
             android:shadowColor="#FFFFFFFF"
             android:shadowDx="2"
             android:shadowDy="2"
             android:shadowRadius="15"
-            android:paddingBottom="15dp">
+            android:text="Mipo"
+            android:textColor="#ffbe2c"
+            android:textSize="30dp"
+            android:textStyle="bold">
         </TextView>
 
 

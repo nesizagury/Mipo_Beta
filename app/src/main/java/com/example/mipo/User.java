@@ -5,26 +5,22 @@ public class User {
 	int imageId;
 	String name;
 	int on_off;
-	boolean curentUser;
+	boolean currentUser;
 	String id;
 
-	public User(int imageId, String name, int on_off, boolean curentUser, String id) {
+	public User(int imageId, String name, int on_off, boolean currentUser, String id) {
 		this.imageId = imageId;
 		this.name = name;
 		this.on_off = on_off;
-		this.curentUser = curentUser;
+		this.currentUser = currentUser;
 		this.id = id;
-	}
-
-	public int getImageId(){
-		return imageId;
 	}
 
 	public String getId() {
 		return id;
 	}
 
-	public boolean isCurentUser() {
-		return curentUser;
+	public boolean isCurrentUser() {
+		return currentUser;
 	}
 }
