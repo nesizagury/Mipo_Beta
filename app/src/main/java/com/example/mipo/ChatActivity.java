@@ -153,12 +153,18 @@ public class ChatActivity extends Activity {
                         room.setACL (parseACL);
                         room.setUserId (MainPageActivity.currentUser.getId ());
                         room.setConversationId (combinedConversationId);
-                        room.setDes (body);
+                        room.setDes (MainPageActivity.currentUser.getName () + ": " + body);
                         room.saveInBackground ();
                     } else {
+                        if (list.size () > 0) {
+                            for (int i = 1; i < list.size (); i++) {
+                                list.get (i).deleteInBackground ();
+                            }
+                        }
                         Room obj = list.get (0);
                         obj.setUserId (MainPageActivity.currentUser.getId ());
-                        obj.setDes (body);
+                        obj.setConversationId (combinedConversationId);
+                        obj.setDes (MainPageActivity.currentUser.getName () + ": " + body);
                         obj.saveInBackground ();
                     }
                 } else {

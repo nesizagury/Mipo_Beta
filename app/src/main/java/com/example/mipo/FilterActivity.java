@@ -9,17 +9,20 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FilterActivity extends Activity {
 
-    private String array_spinner[];
-    private String array_spinner2[];
-    private String array_spinner3[];
-    private String array_spinner4[];
+    private String array_spinner_Looking_for[];
+    private String array_spinner_Body_type[];
+    private String array_spinner_Origine[];
+    private String array_spinner_Status[];
+    static private String optionSelectedLookingFor = "";
+    static private String optionSelectedBodyType = "";
+    static private String optionSelectedOrigine = "";
+    static private String optionSelectedStatus = "";
 
     EditText age_minET;
     EditText age_maxET;
@@ -42,10 +45,10 @@ public class FilterActivity extends Activity {
     static String minWeight = "-1";
     static String maxWeight = "9999";
 
-    Spinner s;
-    Spinner s2;
-    Spinner s3;
-    Spinner s4;
+    Spinner spinner_Looking_for;
+    Spinner spinner_Body_type;
+    Spinner spinner_Origine;
+    Spinner spinner_Status;
 
     boolean age_flag = false;
     boolean looking_flag = false;
@@ -120,49 +123,92 @@ public class FilterActivity extends Activity {
             }
         }
 
+        if (!optionSelectedLookingFor.equals ("")) {
+            looking_flag = true;
+            for (int i = 0; i < array_spinner_Looking_for.length; i++) {
+                if (optionSelectedLookingFor.equals (array_spinner_Looking_for[i])) {
+                    spinner_Looking_for.setSelection (i);
+                    spinner_Looking_for.setVisibility (View.VISIBLE);
+                    break;
+                }
+            }
+        }
+
+        if (!optionSelectedBodyType.equals ("")) {
+            body_flag = true;
+            for (int i = 0; i < array_spinner_Body_type.length; i++) {
+                if (optionSelectedBodyType.equals (array_spinner_Body_type[i])) {
+                    spinner_Body_type.setSelection (i);
+                    spinner_Body_type.setVisibility (View.VISIBLE);
+                    break;
+                }
+            }
+        }
+
+        if (!optionSelectedOrigine.equals ("")) {
+            origin_flag = true;
+            for (int i = 0; i < array_spinner_Origine.length; i++) {
+                if (optionSelectedOrigine.equals (array_spinner_Origine[i])) {
+                    spinner_Origine.setSelection (i);
+                    spinner_Origine.setVisibility (View.VISIBLE);
+                    break;
+                }
+            }
+        }
+
+        if (!optionSelectedStatus.equals ("")) {
+            relationship_flag = true;
+            for (int i = 0; i < array_spinner_Status.length; i++) {
+                if (optionSelectedStatus.equals (array_spinner_Status[i])) {
+                    spinner_Status.setSelection (i);
+                    spinner_Status.setVisibility (View.VISIBLE);
+                    break;
+                }
+            }
+        }
     }
 
     private void setSpinners() {
 
-        array_spinner = new String[4];
-        array_spinner[0] = "All";
-        array_spinner[1] = "Dates";
-        array_spinner[2] = "Friends";
-        array_spinner[3] = "Chat";
-        s = (Spinner) findViewById (R.id.spinner);
+        array_spinner_Looking_for = new String[4];
+        array_spinner_Looking_for[0] = "All";
+        array_spinner_Looking_for[1] = "Dates";
+        array_spinner_Looking_for[2] = "Friends";
+        array_spinner_Looking_for[3] = "Chat";
+        spinner_Looking_for = (Spinner) findViewById (R.id.spinner);
         ArrayAdapter adapter = new ArrayAdapter (this,
-                                                        android.R.layout.simple_spinner_item, array_spinner);
-        s.setAdapter (adapter);
+                                                        android.R.layout.simple_spinner_item, array_spinner_Looking_for);
+        spinner_Looking_for.setAdapter (adapter);
 
-        array_spinner2 = new String[4];
-        array_spinner2[0] = "All";
-        array_spinner2[1] = "Slim";
-        array_spinner2[2] = "Toned";
-        array_spinner2[3] = "Stocky";
-        s2 = (Spinner) findViewById (R.id.spinner2);
+        array_spinner_Body_type = new String[4];
+        array_spinner_Body_type[0] = "All";
+        array_spinner_Body_type[1] = "Slim";
+        array_spinner_Body_type[2] = "Toned";
+        array_spinner_Body_type[3] = "Stocky";
+        spinner_Body_type = (Spinner) findViewById (R.id.spinner2);
         ArrayAdapter adapter2 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner2);
-        s2.setAdapter (adapter2);
+                                                         android.R.layout.simple_spinner_item, array_spinner_Body_type);
+        spinner_Body_type.setAdapter (adapter2);
 
-        array_spinner3 = new String[4];
-        array_spinner3[0] = "All";
-        array_spinner3[1] = "Middle Eastern";
-        array_spinner3[2] = "Native American";
-        array_spinner3[3] = "South Asian";
-        s3 = (Spinner) findViewById (R.id.spinner3);
+        array_spinner_Origine = new String[4];
+        array_spinner_Origine[0] = "All";
+        array_spinner_Origine[1] = "Middle Eastern";
+        array_spinner_Origine[2] = "Native American";
+        array_spinner_Origine[3] = "South Asian";
+        spinner_Origine = (Spinner) findViewById (R.id.spinner3);
         ArrayAdapter adapter3 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner3);
-        s3.setAdapter (adapter3);
+                                                         android.R.layout.simple_spinner_item, array_spinner_Origine);
+        spinner_Origine.setAdapter (adapter3);
 
-        array_spinner4 = new String[4];
-        array_spinner4[0] = "All";
-        array_spinner4[1] = "Single";
-        array_spinner4[2] = "Divorced";
-        array_spinner4[3] = "Open Relationship";
-        s4 = (Spinner) findViewById (R.id.spinner4);
+        array_spinner_Status = new String[4];
+        array_spinner_Status[0] = "All";
+        array_spinner_Status[1] = "Single";
+        array_spinner_Status[2] = "Divorced";
+        array_spinner_Status[3] = "Open Relationship";
+        spinner_Status = (Spinner) findViewById (R.id.spinner4);
         ArrayAdapter adapter4 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner4);
-        s4.setAdapter (adapter4);
+                                                         android.R.layout.simple_spinner_item, array_spinner_Status);
+        spinner_Status.setAdapter (adapter4);
 
     }
 
@@ -181,19 +227,6 @@ public class FilterActivity extends Activity {
             age_flag = false;
             minAge = "-1";
             maxAge = "9999";
-        }
-
-    }
-
-
-    public void showLookingForEditors(View v) {
-
-        if (!looking_flag) {
-            s.setVisibility (View.VISIBLE);
-            looking_flag = true;
-        } else {
-            s.setVisibility (View.INVISIBLE);
-            looking_flag = false;
         }
 
     }
@@ -238,37 +271,47 @@ public class FilterActivity extends Activity {
 
     }
 
+    public void showLookingForEditors(View v) {
+        if (!looking_flag) {
+            spinner_Looking_for.setVisibility (View.VISIBLE);
+            looking_flag = true;
+        } else {
+            spinner_Looking_for.setVisibility (View.INVISIBLE);
+            optionSelectedLookingFor = "";
+            looking_flag = false;
+        }
+    }
 
     public void showBodyTypeEditors(View v) {
-
-
         if (!body_flag) {
-            s2.setVisibility (View.VISIBLE);
+            spinner_Body_type.setVisibility (View.VISIBLE);
             body_flag = true;
         } else {
-            s2.setVisibility (View.INVISIBLE);
+            spinner_Body_type.setVisibility (View.INVISIBLE);
+            optionSelectedBodyType = "";
             body_flag = false;
         }
-
     }
 
 
     public void showOriginEditors(View v) {
         if (!origin_flag) {
-            s3.setVisibility (View.VISIBLE);
+            spinner_Origine.setVisibility (View.VISIBLE);
             origin_flag = true;
         } else {
-            s3.setVisibility (View.INVISIBLE);
+            optionSelectedOrigine = "";
+            spinner_Origine.setVisibility (View.INVISIBLE);
             origin_flag = false;
         }
     }
 
     public void showRelationshipStatusEditors(View v) {
         if (!relationship_flag) {
-            s4.setVisibility (View.VISIBLE);
+            spinner_Status.setVisibility (View.VISIBLE);
             relationship_flag = true;
         } else {
-            s4.setVisibility (View.INVISIBLE);
+            optionSelectedStatus = "";
+            spinner_Status.setVisibility (View.INVISIBLE);
             relationship_flag = false;
         }
     }
@@ -288,14 +331,6 @@ public class FilterActivity extends Activity {
         } else
             return 9999;
     }
-
-    public String getLookingFor() {
-        if (s.getVisibility () == View.INVISIBLE)
-            return "";
-        else
-            return s.getSelectedItem ().toString ();
-    }
-
 
     public double getMinHeight() {
         if (!(height_minET.getText ().toString ().equals (""))) {
@@ -329,26 +364,41 @@ public class FilterActivity extends Activity {
             return 0;
     }
 
-    public String getBodyType() {
-        if (s2.getVisibility () == View.INVISIBLE)
+    public String getLookingFor() {
+        if (spinner_Looking_for.getVisibility () == View.INVISIBLE)
             return "";
-        else
-            return s2.getSelectedItem ().toString ();
+        else {
+            optionSelectedLookingFor = spinner_Looking_for.getSelectedItem ().toString ();
+            return optionSelectedLookingFor;
+        }
+    }
+
+    public String getBodyType() {
+        if (spinner_Body_type.getVisibility () == View.INVISIBLE)
+            return "";
+        else {
+            optionSelectedBodyType = spinner_Body_type.getSelectedItem ().toString ();
+            return optionSelectedBodyType;
+        }
     }
 
     public String getOrigin() {
-        if (s3.getVisibility () == View.INVISIBLE)
+        if (spinner_Origine.getVisibility () == View.INVISIBLE)
             return "";
-        else
-            return s3.getSelectedItem ().toString ();
+        else {
+            optionSelectedOrigine = spinner_Origine.getSelectedItem ().toString ();
+            return optionSelectedOrigine;
+        }
     }
 
 
     public String getRelationshipStatus() {
-        if (s4.getVisibility () == View.INVISIBLE)
+        if (spinner_Status.getVisibility () == View.INVISIBLE)
             return "";
-        else
-            return s4.getSelectedItem ().toString ();
+        else {
+            optionSelectedStatus = spinner_Status.getSelectedItem ().toString ();
+            return optionSelectedStatus;
+        }
     }
 
     public void Filter(View view) {
@@ -372,23 +422,6 @@ public class FilterActivity extends Activity {
                 for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
                     User user = MainPageActivity.filteredUsersList.get (i);
                     user.getUserDetails ().setIsFilteredOK (false);
-                }
-            }
-        }
-
-
-        // check for lookingFor filter request
-        if (s.getVisibility () == View.VISIBLE) {
-            if (!(getLookingFor ().equals ("All"))) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
-                    String looking_for = MainPageActivity.userDataList.get (i).getLooking_for ();
-                    if (!(looking_for.equals (getLookingFor ()))) {
-                        MainPageActivity.filteredUsersList.remove (i - j);
-                        Toast.makeText (getApplicationContext (), looking_for + "", Toast.LENGTH_SHORT).show ();
-                        j++;
-                    }
-
                 }
             }
         }
@@ -434,50 +467,59 @@ public class FilterActivity extends Activity {
             }
         }
 
-        // check for body type filter request
-        if (s2.getVisibility () == View.VISIBLE) {
-            if (!(getBodyType ().equals ("All"))) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
-                    String body_type = MainPageActivity.userDataList.get (i).getBody_type ();
-                    if (!(body_type.equals (getBodyType ()))) {
-                        MainPageActivity.filteredUsersList.remove (i - j);
-                        Toast.makeText (getApplicationContext (), body_type + "", Toast.LENGTH_SHORT).show ();
-                        j++;
+        // check for lookingFor filter request
+        if (spinner_Looking_for.getVisibility () == View.VISIBLE) {
+            String lookingFor = getLookingFor ();
+            if (!(lookingFor.equals ("All"))) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    String looking_for_user = user.getUserDetails ().getLooking_for ();
+                    if (!(looking_for_user.equals (lookingFor))) {
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
 
+                }
+            }
+        }
+
+        // check for body type filter request
+        if (spinner_Body_type.getVisibility () == View.VISIBLE) {
+            String bodyType = getBodyType ();
+            if (!(bodyType.equals ("All"))) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    String body_type_user = user.getUserDetails ().getBody_type ();
+                    if (!(body_type_user.equals (bodyType))) {
+                        user.getUserDetails ().setIsFilteredOK (false);
+                    }
                 }
             }
         }
 
         // check for origin filter request
-        if (s3.getVisibility () == View.VISIBLE) {
-            if (!(getOrigin ().equals ("All"))) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
-                    String origin = MainPageActivity.userDataList.get (i).getNation ();
-                    if (!(origin.equals (getOrigin ()))) {
-                        MainPageActivity.filteredUsersList.remove (i - j);
-                        Toast.makeText (getApplicationContext (), origin + "", Toast.LENGTH_SHORT).show ();
-                        j++;
+        if (spinner_Origine.getVisibility () == View.VISIBLE) {
+            String origine = getOrigin ();
+            if (!(origine.equals ("All"))) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    String origine_user = user.getUserDetails ().getNation ();
+                    if (!(origine_user.equals (origine))) {
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
-
                 }
             }
         }
 
         // check for relationship status filter request
-        if (s4.getVisibility () == View.VISIBLE) {
-            if (!(getRelationshipStatus ().equals ("All"))) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
-                    String relationship_status = MainPageActivity.userDataList.get (i).getRelationship_status ();
-                    if (!(relationship_status.equals (getRelationshipStatus ()))) {
-                        MainPageActivity.filteredUsersList.remove (i - j);
-                        Toast.makeText (getApplicationContext (), relationship_status + "", Toast.LENGTH_SHORT).show ();
-                        j++;
+        if (spinner_Status.getVisibility () == View.VISIBLE) {
+            String status = getRelationshipStatus ();
+            if (!(status.equals ("All"))) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    String relationship_status_user = user.getUserDetails ().getRelationship_status ();
+                    if (!(relationship_status_user.equals (status))) {
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
-
                 }
             }
         }

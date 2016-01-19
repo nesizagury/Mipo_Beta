@@ -54,17 +54,20 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
 
     public void loadMessages() {
         final ParseQuery<Room> query = ParseQuery.getQuery (Room.class);
+        query.orderByDescending ("updatedAt");
         List<Room> rooms = null;
         ArrayList<MessageRoomBean> mrbListNew = new ArrayList<MessageRoomBean> ();
         try {
             rooms = query.find ();
+            List<String> IdsFound = new ArrayList<String> ();
             for (int i = 0; i < rooms.size (); i++) {
                 int combinedConversationId = rooms.get (i).getConversationId ();
                 if (combinedConversationId % myConversationId == 0) {
                     int otherConvId = combinedConversationId / myConversationId;
                     for (int j = 0; j < MainPageActivity.userDataList.size (); j++) {
                         UserDetails user = MainPageActivity.userDataList.get (j);
-                        if (user.getMessage_roomId () == otherConvId) {
+                        if (!IdsFound.contains (user.getId ()) && user.getMessage_roomId () == otherConvId) {
+                            IdsFound.add (user.getId ());
                             mrbListNew.add (new MessageRoomBean (R.drawable.pic0 + user.getImage_source (),
                                                                         user.getName (),
                                                                         rooms.get (i).getDes (),
@@ -78,7 +81,6 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
             mrbList.clear ();
             mrbList.addAll (mrbListNew);
             mra.notifyDataSetChanged ();
-            list_view.setSelection (mra.getCount () - 1);
         } catch (ParseException e) {
             e.printStackTrace ();
         }
@@ -86,9 +88,11 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
 
     public void loadMessagesInBackground() {
         final ParseQuery<Room> query = ParseQuery.getQuery (Room.class);
+        query.orderByDescending ("updatedAt");
         query.findInBackground (new FindCallback<Room> () {
             public void done(List<Room> rooms, ParseException e) {
                 if (e == null) {
+                    List<String> IdsFound = new ArrayList<String> ();
                     ArrayList<MessageRoomBean> mrbListNew = new ArrayList<MessageRoomBean> ();
                     for (int i = 0; i < rooms.size (); i++) {
                         int combinedConversationId = rooms.get (i).getConversationId ();
@@ -96,7 +100,8 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
                             int otherConvId = combinedConversationId / myConversationId;
                             for (int j = 0; j < MainPageActivity.userDataList.size (); j++) {
                                 UserDetails user = MainPageActivity.userDataList.get (j);
-                                if (user.getMessage_roomId () == otherConvId) {
+                                if (!IdsFound.contains (user.getId ()) && user.getMessage_roomId () == otherConvId) {
+                                    IdsFound.add (user.getId ());
                                     mrbListNew.add (new MessageRoomBean (R.drawable.pic0 + user.getImage_source (),
                                                                                 user.getName (),
                                                                                 rooms.get (i).getDes (),
