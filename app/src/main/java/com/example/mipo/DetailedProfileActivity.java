@@ -35,15 +35,15 @@ public class DetailedProfileActivity extends Activity {
         TextView relationSeekingTF = (TextView) findViewById (R.id.detailed_relatioStatus_seeking);
         TextView aboutTF = (TextView) findViewById (R.id.detailed_about);
 
-        for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-            if (MainPageActivity.ud.get (i).getName ().equals (user_name)) {
-                user_image.setImageResource (R.drawable.pic0 + MainPageActivity.ud.get (i).image_source);
-                userNameAgeTF.setText (MainPageActivity.ud.get (i).getName () + " , " + MainPageActivity.ud.get (i).getAge ());
-                currentStatusTF.setText (MainPageActivity.ud.get (i).getStatus ());
-                heightWeightTF.setText (MainPageActivity.ud.get (i).getHeight () + " | " + MainPageActivity.ud.get (i).getWeight ());
-                bodyNationTF.setText (MainPageActivity.ud.get (i).getBody_type () + " | " + MainPageActivity.ud.get (i).getNation ());
-                relationSeekingTF.setText (MainPageActivity.ud.get (i).getRelationship_status () + " | " + MainPageActivity.ud.get (i).getLooking_for ());
-                aboutTF.setText (MainPageActivity.ud.get (i).getAbout ());
+        for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+            if (MainPageActivity.userDataList.get (i).getName ().equals (user_name)) {
+                user_image.setImageResource (R.drawable.pic0 + MainPageActivity.userDataList.get (i).image_source);
+                userNameAgeTF.setText (MainPageActivity.userDataList.get (i).getName () + " , " + MainPageActivity.userDataList.get (i).getAge ());
+                currentStatusTF.setText (MainPageActivity.userDataList.get (i).getStatus ());
+                heightWeightTF.setText (MainPageActivity.userDataList.get (i).getHeight () + " | " + MainPageActivity.userDataList.get (i).getWeight ());
+                bodyNationTF.setText (MainPageActivity.userDataList.get (i).getBody_type () + " | " + MainPageActivity.userDataList.get (i).getNation ());
+                relationSeekingTF.setText (MainPageActivity.userDataList.get (i).getRelationship_status () + " | " + MainPageActivity.userDataList.get (i).getLooking_for ());
+                aboutTF.setText (MainPageActivity.userDataList.get (i).getAbout ());
             }
         }
     }

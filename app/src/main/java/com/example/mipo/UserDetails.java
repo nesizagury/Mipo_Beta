@@ -20,6 +20,9 @@ public class UserDetails {
     int image_source;
     int message_roomId;
     int distanceType;
+    private boolean favorite = false;
+    boolean isFilteredOK = true;
+
 
     public UserDetails(String name, String id, String on_off, String distance, String seen, String age, String status,
                        String height, String weight, String nation, String body_type, String relationship_status,
@@ -177,5 +180,21 @@ public class UserDetails {
 
     public void setDistanceType(int distanceType) {
         this.distanceType = distanceType;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public boolean isFilteredOK() {
+        return isFilteredOK;
+    }
+
+    public void setIsFilteredOK(boolean isFilteredOk) {
+        this.isFilteredOK = isFilteredOk;
     }
 }

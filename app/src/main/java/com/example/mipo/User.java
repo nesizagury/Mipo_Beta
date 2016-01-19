@@ -6,25 +6,24 @@ public class User {
     String name;
     int on_off;
     boolean currentUser;
-    private boolean favorite = false;
     String id;
     int indexInUD;
+    UserDetails userDetails;
 
-    public User(int imageId, String name, int on_off, boolean currentUser, String id, int indexInUD) {
+    public User(int imageId,
+                String name,
+                int on_off,
+                boolean currentUser,
+                String id,
+                int indexInUD,
+                UserDetails userDetails) {
         this.imageId = imageId;
         this.name = name;
         this.on_off = on_off;
         this.currentUser = currentUser;
         this.id = id;
         this.indexInUD = indexInUD;
-    }
-
-    public boolean isFavorite() {
-        return favorite;
-    }
-
-    public void setFavorite(boolean favorite) {
-        this.favorite = favorite;
+        this.userDetails = userDetails;
     }
 
     public String getId() {
@@ -39,4 +38,11 @@ public class User {
         this.indexInUD = indexInUD;
     }
 
+    public UserDetails getUserDetails() {
+        return userDetails;
+    }
+
+    public void setUserDetails(UserDetails userDetails) {
+        this.userDetails = userDetails;
+    }
 }

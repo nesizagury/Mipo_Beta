@@ -26,10 +26,11 @@ public class FavoritesPage extends Activity implements AdapterView.OnItemClickLi
         grid = (GridView) findViewById (R.id.gridView11);
 
         ListOfFavorites.clear ();
-        List<User> listAll = MainPageActivity.list;
-        for (int i = 0; i <= 26; i++) {
-            if (listAll.get (i).isFavorite ()) {
-                ListOfFavorites.add (listAll.get (i));
+        for (int i = 1; i <= 26; i++) {
+            User user = MainPageActivity.firstUsersList.get (i);
+            UserDetails userDetails = user.getUserDetails ();
+            if (userDetails.isFavorite ()) {
+                ListOfFavorites.add (user);
             }
         }
 
@@ -59,9 +60,11 @@ public class FavoritesPage extends Activity implements AdapterView.OnItemClickLi
         grid = (GridView) findViewById (R.id.gridView11);
 
         ListOfFavorites.clear ();
-        List<User> listAll = MainPageActivity.list;
-        for (int i = 0; i <= 26; i++) {
-            if (listAll.get (i).isFavorite ()) {
+        List<User> listAll = MainPageActivity.firstUsersList;
+        for (int i = 1; i <= 26; i++) {
+            User user = listAll.get (i);
+            UserDetails userDetails = user.getUserDetails ();
+            if (userDetails.isFavorite ()) {
                 ListOfFavorites.add (listAll.get (i));
             }
         }

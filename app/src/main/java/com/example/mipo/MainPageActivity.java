@@ -23,8 +23,9 @@ import java.util.Random;
 public class MainPageActivity extends Activity implements AdapterView.OnItemClickListener {
 
     GridView grid;
-    public final static List<User> list = new ArrayList<User> ();
-    public static List<UserDetails> ud = new ArrayList<UserDetails> ();
+    public final static List<User> firstUsersList = new ArrayList<User> ();
+    public final static List<User> filteredUsersList = new ArrayList<User> ();
+    public static List<UserDetails> userDataList = new ArrayList<UserDetails> ();
     static int conversationId;
     static int otherConversationId;
     static UserDetails currentUser;
@@ -41,8 +42,9 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             uploadUserData ();
             addToList ();
             didInit = true;
+            firstUsersList.addAll (filteredUsersList);
         }
-        grid.setAdapter (new GridAdaptor (this, list));
+        grid.setAdapter (new GridAdaptor (this, filteredUsersList));
         grid.setOnItemClickListener (this);
     }
 
@@ -67,21 +69,21 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                 e.printStackTrace ();
             }
             if (ParseUser.getCurrentUser ().getObjectId ().equals (list.get (1))) {
-                ud.add (new UserDetails (list.get (0), list.get (1), list.get (2), "0", list.get (4), list.get (5), list.get (6),
-                                                list.get (7), list.get (8), list.get (9), list.get (10), list.get (11),
-                                                list.get (12), list.get (13), Integer.parseInt (list.get (14)),
-                                                Integer.parseInt (list.get (15)), Integer.parseInt (list.get (16))));
+                userDataList.add (new UserDetails (list.get (0), list.get (1), list.get (2), "0", list.get (4), list.get (5), list.get (6),
+                                                          list.get (7), list.get (8), list.get (9), list.get (10), list.get (11),
+                                                          list.get (12), list.get (13), Integer.parseInt (list.get (14)),
+                                                          Integer.parseInt (list.get (15)), Integer.parseInt (list.get (16))));
             } else {
-                ud.add (new UserDetails (list.get (0), list.get (1), list.get (2), list.get (3), list.get (4), list.get (5), list.get (6),
-                                                list.get (7), list.get (8), list.get (9), list.get (10), list.get (11),
-                                                list.get (12), list.get (13), Integer.parseInt (list.get (14)),
-                                                Integer.parseInt (list.get (15)), Integer.parseInt (list.get (16))));
+                userDataList.add (new UserDetails (list.get (0), list.get (1), list.get (2), list.get (3), list.get (4), list.get (5), list.get (6),
+                                                          list.get (7), list.get (8), list.get (9), list.get (10), list.get (11),
+                                                          list.get (12), list.get (13), Integer.parseInt (list.get (14)),
+                                                          Integer.parseInt (list.get (15)), Integer.parseInt (list.get (16))));
             }
 
         }
 
         //Sorting
-        Collections.sort (ud, new Comparator<UserDetails> () {
+        Collections.sort (userDataList, new Comparator<UserDetails> () {
             @Override
             public int compare(UserDetails user1, UserDetails user2) {
                 Double dist1, dist2;
@@ -105,11 +107,11 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
         });
 
         for (int i = 0; i <= 26; i++) {
-            if (ParseUser.getCurrentUser ().getObjectId ().equals (ud.get (i).getId ())) {
+            if (ParseUser.getCurrentUser ().getObjectId ().equals (userDataList.get (i).getId ())) {
                 currUserIndex = i;
-                conversationId = ud.get (i).getMessage_roomId ();
+                conversationId = userDataList.get (i).getMessage_roomId ();
                 newUser = false;
-                currentUser = ud.get (i);
+                currentUser = userDataList.get (i);
                 break;
             }
         }
@@ -119,46 +121,57 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             int Low = 0;
             int High = 27;
             currUserIndex = r.nextInt (High - Low) + Low;
-            currentUser = ud.get (currUserIndex);
-            conversationId = ud.get (currUserIndex).getMessage_roomId ();
-        }
-    }
-
-    public List addToList() {
-        list.add (new User (R.drawable.me0 + currentUser.getImage_source (), ud.get (currUserIndex).getName (), 0,
-                                   true, ud.get (currUserIndex).id, currUserIndex));
-
-        for (int i = 0; i <= 26; i++) {
-            if (ud.get (i).getMessage_roomId () != conversationId) {
-                if (ud.get (i).getOn_off ().equals ("Online"))
-                    list.add (new User (R.drawable.pic0 + ud.get (i).getImage_source (), ud.get (i).getName (),
-                                               R.drawable.online, false, ud.get (i).id, i));
-                else {
-                    list.add (new User (R.drawable.pic0 + ud.get (i).getImage_source (), ud.get (i).getName (),
-                                               0, false, ud.get (i).id, i));
-                }
-            }
+            UserDetails userDetails = userDataList.get (currUserIndex);
+            userDataList.remove (currUserIndex);
+            userDataList.add (0, userDetails);
+            currentUser = userDataList.get (0);
+            conversationId = userDataList.get (0).getMessage_roomId ();
+            currentUser.setDistance ("0");
+            currentUser.setDistanceType (0);
         }
 
         for (int i = 7; i < 12; i++) {
-            list.get (i).setFavorite (true);
+            if (i != currUserIndex) {
+                userDataList.get (i).setFavorite (true);
+            }
         }
-        return list;
+    }
+
+    public static void addToList() {
+        filteredUsersList.add (new User (R.drawable.me0 + currentUser.getImage_source (),
+                                                userDataList.get (currUserIndex).getName (), 0,
+                                                true, userDataList.get (currUserIndex).id, currUserIndex
+                                                , userDataList.get (0)));
+        filteredUsersList.get (0).getUserDetails ().setIsFilteredOK (true);
+        for (int i = 1; i <= 26; i++) {
+            if (userDataList.get (i).getOn_off ().equals ("Online"))
+                filteredUsersList.add (new User (R.drawable.pic0 + userDataList.get (i).getImage_source (),
+                                                        userDataList.get (i).getName (),
+                                                        R.drawable.online, false, userDataList.get (i).id, i,
+                                                        userDataList.get (i)));
+            else {
+                filteredUsersList.add (new User (R.drawable.pic0 + userDataList.get (i).getImage_source (),
+                                                        userDataList.get (i).getName (),
+                                                        0, false, userDataList.get (i).id, i
+                                                        , userDataList.get (i)));
+            }
+            filteredUsersList.get (i).getUserDetails ().setIsFilteredOK (true);
+        }
     }
 
     public static User getUser(int i) {
-        return list.get (i);
+        return filteredUsersList.get (i);
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
         Bundle b = new Bundle ();
         Intent intent = new Intent (this, UserPage.class);
-        User user = list.get (position);
+        User user = filteredUsersList.get (position);
         intent.putExtra ("userImage", user.imageId);
         intent.putExtra ("userName", user.name);
         intent.putExtra ("userCurrent", user.currentUser);
-        b.putString ("userID", list.get (position).id);
+        b.putString ("userID", filteredUsersList.get (position).id);
         b.putInt ("index", user.getIndexInUD ());
         b.putInt ("online", user.on_off);
         intent.putExtras (b);

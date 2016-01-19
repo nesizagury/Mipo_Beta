@@ -44,9 +44,9 @@ public class ChatActivity extends Activity {
         otherUserId = intent.getStringExtra ("userId");
         other_user_name = intent.getStringExtra ("userName");
 
-        for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-            if (other_user_name.equals (MainPageActivity.ud.get (i).getName ())) {
-                otherConversationId = MainPageActivity.ud.get (i).getMessage_roomId ();
+        for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+            if (other_user_name.equals (MainPageActivity.userDataList.get (i).getName ())) {
+                otherConversationId = MainPageActivity.userDataList.get (i).getMessage_roomId ();
             }
         }
         conversationId = MainPageActivity.currentUser.getMessage_roomId ();

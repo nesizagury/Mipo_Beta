@@ -62,8 +62,8 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
                 int combinedConversationId = rooms.get (i).getConversationId ();
                 if (combinedConversationId % myConversationId == 0) {
                     int otherConvId = combinedConversationId / myConversationId;
-                    for (int j = 0; j < MainPageActivity.ud.size (); j++) {
-                        UserDetails user = MainPageActivity.ud.get (j);
+                    for (int j = 0; j < MainPageActivity.userDataList.size (); j++) {
+                        UserDetails user = MainPageActivity.userDataList.get (j);
                         if (user.getMessage_roomId () == otherConvId) {
                             mrbListNew.add (new MessageRoomBean (R.drawable.pic0 + user.getImage_source (),
                                                                         user.getName (),
@@ -94,8 +94,8 @@ public class MessagesRoom extends Activity implements AdapterView.OnItemClickLis
                         int combinedConversationId = rooms.get (i).getConversationId ();
                         if (combinedConversationId % myConversationId == 0) {
                             int otherConvId = combinedConversationId / myConversationId;
-                            for (int j = 0; j < MainPageActivity.ud.size (); j++) {
-                                UserDetails user = MainPageActivity.ud.get (j);
+                            for (int j = 0; j < MainPageActivity.userDataList.size (); j++) {
+                                UserDetails user = MainPageActivity.userDataList.get (j);
                                 if (user.getMessage_roomId () == otherConvId) {
                                     mrbListNew.add (new MessageRoomBean (R.drawable.pic0 + user.getImage_source (),
                                                                                 user.getName (),

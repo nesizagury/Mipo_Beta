@@ -44,14 +44,14 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
             userID = b.getString ("userID");
             user_name = intent.getStringExtra ("userName");
             index = b.getInt ("index");
-            User user = MainPageActivity.getUser (index);
-            UserDetails userDetails = MainPageActivity.ud.get (user.getIndexInUD ());
+            User user = MainPageActivity.firstUsersList.get (index);
+            UserDetails userDetails = MainPageActivity.userDataList.get (user.getIndexInUD ());
 
             int image_id = intent.getIntExtra ("userImage", R.drawable.pic0);
             ImageView user_image = (ImageView) findViewById (R.id.usrPage_image);
             if (user_current) {
                 user_image.setImageResource (R.drawable.pic0 + userDetails.getImage_source ());
-            } else{
+            } else {
                 user_image.setImageResource (image_id);
             }
 
@@ -63,7 +63,7 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
             } else if (userDetails.getDistanceType () == 0) {
                 seenTF.setText (userDetails.getSeen () +
                                         " | " + userDetails.getDistance () + " meters away");
-            } else if(userDetails.getDistanceType () == 1){
+            } else if (userDetails.getDistanceType () == 1) {
                 seenTF.setText (userDetails.getSeen () +
                                         " | " + userDetails.getDistance () + " km away");
             }
@@ -71,11 +71,9 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
                 favorite_button.setVisibility (View.INVISIBLE);
                 report_button.setVisibility (View.INVISIBLE);
                 message_button.setVisibility (View.INVISIBLE);
-            }
-            else if (!user_current && user.isFavorite ()) {
+            } else if (!user_current && userDetails.isFavorite ()) {
                 favorite_button.setBackgroundResource (R.drawable.favoritecolored);
-            }
-            else if (!user_current && !user.isFavorite ()) {
+            } else if (!user_current && !userDetails.isFavorite ()) {
                 favorite_button.setBackgroundResource (R.drawable.favorite);
             }
         }
@@ -93,13 +91,14 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
         }
 
         if (v == favorite_button) {
-            User user = MainPageActivity.getUser (index);
-            if (user.isFavorite ()) {
-                user.setFavorite (false);
+            User user = MainPageActivity.firstUsersList.get (index);
+            UserDetails userDetails = MainPageActivity.userDataList.get (user.getIndexInUD ());
+            if (userDetails.isFavorite ()) {
+                userDetails.setFavorite (false);
                 favorite_button.setBackgroundResource (R.drawable.favorite);
                 Toast.makeText (getApplicationContext (), "Removed from Favorites", Toast.LENGTH_SHORT).show ();
             } else {
-                user.setFavorite (true);
+                userDetails.setFavorite (true);
                 favorite_button.setBackgroundResource (R.drawable.favoritecolored);
                 Toast.makeText (getApplicationContext (), "Added To Favorites", Toast.LENGTH_SHORT).show ();
             }

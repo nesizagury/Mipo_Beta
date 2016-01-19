@@ -1,8 +1,8 @@
 package com.example.mipo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FilterActivity extends Activity {
 
@@ -21,17 +24,23 @@ public class FilterActivity extends Activity {
     EditText age_minET;
     EditText age_maxET;
     TextView ageTo_TV;
+    static String minAge = "-1";
+    static String maxAge = "9999";
 
 
     TextView height_minTV;
     TextView height_maxTV;
     EditText height_minET;
     EditText height_maxET;
+    static String minHeight = "-1";
+    static String maxHeight = "9999";
 
     TextView weight_minTV;
     TextView weight_maxTV;
     EditText weight_minET;
     EditText weight_maxET;
+    static String minWeight = "-1";
+    static String maxWeight = "9999";
 
     Spinner s;
     Spinner s2;
@@ -69,6 +78,47 @@ public class FilterActivity extends Activity {
 
 
         setSpinners ();
+
+        if (!minAge.equals ("-1") || !maxAge.equals ("9999")) {
+            ageTo_TV.setVisibility (View.VISIBLE);
+            age_minET.setVisibility (View.VISIBLE);
+            age_maxET.setVisibility (View.VISIBLE);
+            age_flag = true;
+            if (!minAge.equals ("-1")) {
+                age_minET.setText (minAge);
+            }
+            if (!maxAge.equals ("9999")) {
+                age_maxET.setText (maxAge);
+            }
+        }
+
+        if (!minHeight.equals ("-1") || !maxHeight.equals ("9999")) {
+            height_minTV.setVisibility (View.VISIBLE);
+            height_maxTV.setVisibility (View.VISIBLE);
+            height_maxET.setVisibility (View.VISIBLE);
+            height_minET.setVisibility (View.VISIBLE);
+            height_flag = true;
+            if (!minHeight.equals ("-1")) {
+                height_minET.setText (minHeight);
+            }
+            if (!maxHeight.equals ("9999")) {
+                height_maxET.setText (maxHeight);
+            }
+        }
+
+        if (!minWeight.equals ("-1") || !maxWeight.equals ("9999")) {
+            weight_minTV.setVisibility (View.VISIBLE);
+            weight_maxTV.setVisibility (View.VISIBLE);
+            weight_maxET.setVisibility (View.VISIBLE);
+            weight_minET.setVisibility (View.VISIBLE);
+            weight_flag = true;
+            if (!minWeight.equals ("-1")) {
+                weight_minET.setText (minWeight);
+            }
+            if (!maxWeight.equals ("9999")) {
+                weight_maxET.setText (maxWeight);
+            }
+        }
 
     }
 
@@ -129,6 +179,8 @@ public class FilterActivity extends Activity {
             age_minET.setVisibility (View.INVISIBLE);
             age_maxET.setVisibility (View.INVISIBLE);
             age_flag = false;
+            minAge = "-1";
+            maxAge = "9999";
         }
 
     }
@@ -160,6 +212,8 @@ public class FilterActivity extends Activity {
             height_minET.setVisibility (View.INVISIBLE);
             height_maxET.setVisibility (View.INVISIBLE);
             height_flag = false;
+            minHeight = "-1";
+            maxHeight = "9999";
         }
 
     }
@@ -178,6 +232,8 @@ public class FilterActivity extends Activity {
             weight_minET.setVisibility (View.INVISIBLE);
             weight_maxET.setVisibility (View.INVISIBLE);
             weight_flag = false;
+            minWeight = "-1";
+            maxWeight = "9999";
         }
 
     }
@@ -198,7 +254,6 @@ public class FilterActivity extends Activity {
 
 
     public void showOriginEditors(View v) {
-
         if (!origin_flag) {
             s3.setVisibility (View.VISIBLE);
             origin_flag = true;
@@ -206,11 +261,9 @@ public class FilterActivity extends Activity {
             s3.setVisibility (View.INVISIBLE);
             origin_flag = false;
         }
-
     }
 
     public void showRelationshipStatusEditors(View v) {
-
         if (!relationship_flag) {
             s4.setVisibility (View.VISIBLE);
             relationship_flag = true;
@@ -218,115 +271,107 @@ public class FilterActivity extends Activity {
             s4.setVisibility (View.INVISIBLE);
             relationship_flag = false;
         }
-
     }
 
     public int getMinAge() {
-
-        if (!(age_minET.getText ().toString ().equals ("")))
+        if (!(age_minET.getText ().toString ().equals (""))) {
+            minAge = age_minET.getText ().toString ();
             return Integer.parseInt (age_minET.getText ().toString ());
-        else
+        } else
             return 0;
-
     }
 
     public int getMaxAge() {
-
-        if (!(age_maxET.getText ().toString ().equals ("")))
+        if (!(age_maxET.getText ().toString ().equals (""))) {
+            maxAge = age_maxET.getText ().toString ();
             return Integer.parseInt (age_maxET.getText ().toString ());
-        else
-            return 0;
-
+        } else
+            return 9999;
     }
 
-
     public String getLookingFor() {
-
         if (s.getVisibility () == View.INVISIBLE)
             return "";
         else
             return s.getSelectedItem ().toString ();
-
     }
 
 
     public double getMinHeight() {
-
-        if (!(height_minET.getText ().toString ().equals ("")))
+        if (!(height_minET.getText ().toString ().equals (""))) {
+            minHeight = height_minET.getText ().toString ();
             return Double.parseDouble (height_minET.getText ().toString ());
-        else
+        } else
             return 0;
-
     }
 
     public double getMaxHeight() {
-
-        if (!(height_maxET.getText ().toString ().equals ("")))
+        if (!(height_maxET.getText ().toString ().equals (""))) {
+            maxHeight = height_maxET.getText ().toString ();
             return Double.parseDouble (height_maxET.getText ().toString ());
-        else
+        } else
             return 0;
-
     }
 
     public int getMinWeight() {
-
-        if (!(weight_minET.getText ().toString ().equals ("")))
+        if (!(weight_minET.getText ().toString ().equals (""))) {
+            minWeight = weight_minET.getText ().toString ();
             return Integer.parseInt (weight_minET.getText ().toString ());
-        else
+        } else
             return 0;
-
     }
 
     public int getMaxWeight() {
-
-        if (!(weight_maxET.getText ().toString ().equals ("")))
+        if (!(weight_maxET.getText ().toString ().equals (""))) {
+            maxWeight = weight_maxET.getText ().toString ();
             return Integer.parseInt (weight_maxET.getText ().toString ());
-        else
+        } else
             return 0;
-
     }
 
-
     public String getBodyType() {
-
         if (s2.getVisibility () == View.INVISIBLE)
             return "";
         else
             return s2.getSelectedItem ().toString ();
-
     }
 
     public String getOrigin() {
-
         if (s3.getVisibility () == View.INVISIBLE)
             return "";
         else
             return s3.getSelectedItem ().toString ();
-
     }
 
 
     public String getRelationshipStatus() {
-
         if (s4.getVisibility () == View.INVISIBLE)
             return "";
         else
             return s4.getSelectedItem ().toString ();
-
     }
 
-
     public void Filter(View view) {
+        MainPageActivity.filteredUsersList.clear ();
+        MainPageActivity.addToList ();
+
         // check for age filter request
         if (age_minET.getVisibility () == View.VISIBLE) {
-            if (!(getMinAge () == 0) && !(getMaxAge () == 0) && getMaxAge () >= getMinAge ()) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    int age = Integer.parseInt (MainPageActivity.ud.get (i).getAge ());
-                    if (!(age >= getMinAge () && age <= getMaxAge ())) {
-                        MainPageActivity.list.remove (i - j);
-                        j++;
+            int minAge = getMinAge ();
+            int maxAge = getMaxAge ();
+            if (minAge >= 0 && maxAge >= 0 && maxAge >= minAge) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    int age = Integer.parseInt (MainPageActivity.filteredUsersList.get (i).getUserDetails ().getAge ());
+                    if (!(age >= minAge && age <= maxAge)) {
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
+                }
+            } else {
+                int j = 0;
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    user.getUserDetails ().setIsFilteredOK (false);
                 }
             }
         }
@@ -336,10 +381,10 @@ public class FilterActivity extends Activity {
         if (s.getVisibility () == View.VISIBLE) {
             if (!(getLookingFor ().equals ("All"))) {
                 int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    String looking_for = MainPageActivity.ud.get (i).getLooking_for ();
+                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+                    String looking_for = MainPageActivity.userDataList.get (i).getLooking_for ();
                     if (!(looking_for.equals (getLookingFor ()))) {
-                        MainPageActivity.list.remove (i - j);
+                        MainPageActivity.filteredUsersList.remove (i - j);
                         Toast.makeText (getApplicationContext (), looking_for + "", Toast.LENGTH_SHORT).show ();
                         j++;
                     }
@@ -350,41 +395,53 @@ public class FilterActivity extends Activity {
 
         // check for Height filter request
         if (height_minET.getVisibility () == View.VISIBLE) {
-            if (!(getMinHeight () == 0) && !(getMaxHeight () == 0) && getMaxHeight () >= getMinHeight ()) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    double height = Double.parseDouble (MainPageActivity.ud.get (i).getHeight ());
+            double minHight = getMinHeight ();
+            double maxHight = getMaxHeight ();
+            if (minHight >= 0 && maxHight >= 0 && maxHight >= minHight) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    double height = Double.parseDouble (user.getUserDetails ().getHeight ());
                     if (!(height >= getMinHeight () && height <= getMaxHeight ())) {
-                        MainPageActivity.list.remove (i - j);
-                        j++;
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
+                }
+            } else {
+                int j = 0;
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    user.getUserDetails ().setIsFilteredOK (false);
                 }
             }
         }
 
         // check for Weight filter request
         if (weight_minET.getVisibility () == View.VISIBLE) {
-            if (!(getMinWeight () == 0) && !(getMaxWeight () == 0) && getMaxWeight () >= getMinWeight ()) {
-                int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    int weight = Integer.parseInt (MainPageActivity.ud.get (i).getWeight ());
+            int minWeight = getMinWeight ();
+            int maxWeight = getMaxWeight ();
+            if (minWeight >= 0 && maxWeight >= 0 && maxWeight >= minWeight) {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    int weight = Integer.parseInt (user.getUserDetails ().getWeight ());
                     if (!(weight >= getMinWeight () && weight <= getMaxWeight ())) {
-                        MainPageActivity.list.remove (i - j);
-                        j++;
+                        user.getUserDetails ().setIsFilteredOK (false);
                     }
+                }
+            } else {
+                for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+                    User user = MainPageActivity.filteredUsersList.get (i);
+                    user.getUserDetails ().setIsFilteredOK (false);
                 }
             }
         }
-
 
         // check for body type filter request
         if (s2.getVisibility () == View.VISIBLE) {
             if (!(getBodyType ().equals ("All"))) {
                 int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    String body_type = MainPageActivity.ud.get (i).getBody_type ();
+                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+                    String body_type = MainPageActivity.userDataList.get (i).getBody_type ();
                     if (!(body_type.equals (getBodyType ()))) {
-                        MainPageActivity.list.remove (i - j);
+                        MainPageActivity.filteredUsersList.remove (i - j);
                         Toast.makeText (getApplicationContext (), body_type + "", Toast.LENGTH_SHORT).show ();
                         j++;
                     }
@@ -393,15 +450,14 @@ public class FilterActivity extends Activity {
             }
         }
 
-
         // check for origin filter request
         if (s3.getVisibility () == View.VISIBLE) {
             if (!(getOrigin ().equals ("All"))) {
                 int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    String origin = MainPageActivity.ud.get (i).getNation ();
+                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+                    String origin = MainPageActivity.userDataList.get (i).getNation ();
                     if (!(origin.equals (getOrigin ()))) {
-                        MainPageActivity.list.remove (i - j);
+                        MainPageActivity.filteredUsersList.remove (i - j);
                         Toast.makeText (getApplicationContext (), origin + "", Toast.LENGTH_SHORT).show ();
                         j++;
                     }
@@ -414,10 +470,10 @@ public class FilterActivity extends Activity {
         if (s4.getVisibility () == View.VISIBLE) {
             if (!(getRelationshipStatus ().equals ("All"))) {
                 int j = 0;
-                for (int i = 0; i < MainPageActivity.ud.size (); i++) {
-                    String relationship_status = MainPageActivity.ud.get (i).getRelationship_status ();
+                for (int i = 0; i < MainPageActivity.userDataList.size (); i++) {
+                    String relationship_status = MainPageActivity.userDataList.get (i).getRelationship_status ();
                     if (!(relationship_status.equals (getRelationshipStatus ()))) {
-                        MainPageActivity.list.remove (i - j);
+                        MainPageActivity.filteredUsersList.remove (i - j);
                         Toast.makeText (getApplicationContext (), relationship_status + "", Toast.LENGTH_SHORT).show ();
                         j++;
                     }
@@ -426,7 +482,18 @@ public class FilterActivity extends Activity {
             }
         }
 
-//        MainPageActivity.ref();
+        List<User> filteredUsersListNew = new ArrayList<User> ();
+        filteredUsersListNew.add (MainPageActivity.filteredUsersList.get (0));
+
+        for (int i = 1; i < MainPageActivity.filteredUsersList.size (); i++) {
+            User user = MainPageActivity.filteredUsersList.get (i);
+            if (user.getUserDetails ().isFilteredOK ()) {
+                filteredUsersListNew.add (user);
+            }
+        }
+        MainPageActivity.filteredUsersList.clear ();
+        MainPageActivity.filteredUsersList.addAll (filteredUsersListNew);
+
         Intent intent = new Intent (this, MainPageActivity.class);
         startActivity (intent);
     }
