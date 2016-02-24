@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mipo"
-    android:versionCode="1"
-    android:versionName="1.0">
+<manifest package="com.example.mipo"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="22"/>
 
-    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -24,35 +27,42 @@
             android:name="com.example.mipo.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.example.mipo.UserPage"
             />
         <activity
             android:name="com.example.mipo.DetailedProfileActivity"
-             />
+            />
+        <activity
+            android:name="com.example.mipo.MenuActivity"
+            />
         <activity
             android:name="com.example.mipo.FavoritesPage"
-             />
+            />
         <activity
             android:name="com.example.mipo.LoginActivity"
-             />
+            />
         <activity
             android:name="com.example.mipo.ChatActivity"
-             />
+            />
         <activity
             android:name="com.example.mipo.MainPageActivity"
-             />
+            />
         <activity
-            android:name="com.example.mipo.FileTestActivity"
-             />
+            android:name="com.example.mipo.SmsSignUpActivity"
+            />
         <activity
             android:name="com.example.mipo.MessagesRoom"
-             />
+            />
+        <activity
+            android:name=".EditProfileActivity"
+            />
         <activity
             android:name="com.example.mipo.FilterActivity"
             ></activity>
