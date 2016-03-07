@@ -15,10 +15,7 @@ import java.util.List;
 
 public class FilterActivity extends Activity {
 
-    private String array_spinner_Looking_for[];
-    private String array_spinner_Body_type[];
-    private String array_spinner_Origine[];
-    private String array_spinner_Status[];
+
     static private String optionSelectedLookingFor = "";
     static private String optionSelectedBodyType = "";
     static private String optionSelectedOrigine = "";
@@ -125,8 +122,8 @@ public class FilterActivity extends Activity {
 
         if (!optionSelectedLookingFor.equals ("")) {
             looking_flag = true;
-            for (int i = 0; i < array_spinner_Looking_for.length; i++) {
-                if (optionSelectedLookingFor.equals (array_spinner_Looking_for[i])) {
+            for (int i = 0; i < getResources().getStringArray(R.array.lookingForSpinner1).length; i++) {
+                if (optionSelectedLookingFor.equals (getResources().getStringArray(R.array.lookingForSpinner1)[i])) {
                     spinner_Looking_for.setSelection (i);
                     spinner_Looking_for.setVisibility (View.VISIBLE);
                     break;
@@ -136,8 +133,8 @@ public class FilterActivity extends Activity {
 
         if (!optionSelectedBodyType.equals ("")) {
             body_flag = true;
-            for (int i = 0; i < array_spinner_Body_type.length; i++) {
-                if (optionSelectedBodyType.equals (array_spinner_Body_type[i])) {
+            for (int i = 0; i < getResources().getStringArray(R.array.bodyTypeSpinner).length; i++) {
+                if (optionSelectedBodyType.equals (getResources().getStringArray(R.array.bodyTypeSpinner))) {
                     spinner_Body_type.setSelection (i);
                     spinner_Body_type.setVisibility (View.VISIBLE);
                     break;
@@ -147,8 +144,8 @@ public class FilterActivity extends Activity {
 
         if (!optionSelectedOrigine.equals ("")) {
             origin_flag = true;
-            for (int i = 0; i < array_spinner_Origine.length; i++) {
-                if (optionSelectedOrigine.equals (array_spinner_Origine[i])) {
+            for (int i = 0; i < getResources().getStringArray(R.array.originSpinner).length; i++) {
+                if (optionSelectedOrigine.equals (getResources().getStringArray(R.array.originSpinner)[i])) {
                     spinner_Origine.setSelection (i);
                     spinner_Origine.setVisibility (View.VISIBLE);
                     break;
@@ -158,8 +155,8 @@ public class FilterActivity extends Activity {
 
         if (!optionSelectedStatus.equals ("")) {
             relationship_flag = true;
-            for (int i = 0; i < array_spinner_Status.length; i++) {
-                if (optionSelectedStatus.equals (array_spinner_Status[i])) {
+            for (int i = 0; i < getResources().getStringArray(R.array.relationshipSpinner).length; i++) {
+                if (optionSelectedStatus.equals (getResources().getStringArray(R.array.relationshipSpinner)[i])) {
                     spinner_Status.setSelection (i);
                     spinner_Status.setVisibility (View.VISIBLE);
                     break;
@@ -170,44 +167,28 @@ public class FilterActivity extends Activity {
 
     private void setSpinners() {
 
-        array_spinner_Looking_for = new String[4];
-        array_spinner_Looking_for[0] = "All";
-        array_spinner_Looking_for[1] = "Dates";
-        array_spinner_Looking_for[2] = "Friends";
-        array_spinner_Looking_for[3] = "Chat";
+
         spinner_Looking_for = (Spinner) findViewById (R.id.spinner);
         ArrayAdapter adapter = new ArrayAdapter (this,
-                                                        android.R.layout.simple_spinner_item, array_spinner_Looking_for);
+                                                        android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.lookingForSpinner1));
         spinner_Looking_for.setAdapter (adapter);
 
-        array_spinner_Body_type = new String[4];
-        array_spinner_Body_type[0] = "All";
-        array_spinner_Body_type[1] = "Slim";
-        array_spinner_Body_type[2] = "Toned";
-        array_spinner_Body_type[3] = "Stocky";
+
         spinner_Body_type = (Spinner) findViewById (R.id.spinner2);
         ArrayAdapter adapter2 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner_Body_type);
+                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.bodyTypeSpinner));
         spinner_Body_type.setAdapter (adapter2);
 
-        array_spinner_Origine = new String[4];
-        array_spinner_Origine[0] = "All";
-        array_spinner_Origine[1] = "Middle Eastern";
-        array_spinner_Origine[2] = "Native American";
-        array_spinner_Origine[3] = "South Asian";
+
         spinner_Origine = (Spinner) findViewById (R.id.spinner3);
         ArrayAdapter adapter3 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner_Origine);
+                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.originSpinner));
         spinner_Origine.setAdapter (adapter3);
 
-        array_spinner_Status = new String[4];
-        array_spinner_Status[0] = "All";
-        array_spinner_Status[1] = "Single";
-        array_spinner_Status[2] = "Divorced";
-        array_spinner_Status[3] = "Open Relationship";
+
         spinner_Status = (Spinner) findViewById (R.id.spinner4);
         ArrayAdapter adapter4 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, array_spinner_Status);
+                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.relationshipSpinner));
         spinner_Status.setAdapter (adapter4);
 
     }
@@ -535,7 +516,7 @@ public class FilterActivity extends Activity {
         // check for relationship status filter request
         if (spinner_Status.getVisibility () == View.VISIBLE) {
             String status = getRelationshipStatus ();
-            if (!(status.equals ("All"))) {
+            if (!(status.equals(getResources().getString(R.string.LoginAs)))) {
                 for (int i = 0; i < GlobalVariables.userDataList.size (); i++) {
                     UserDetails user = GlobalVariables.userDataList.get (i);
                     String relationship_status_user = user.getRelationship_status ();

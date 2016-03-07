@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:id="@+id/trackImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/trackNameTV"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/trackImage"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Profile"
+        android:id="@+id/profileButton"
+        android:layout_below="@+id/trackNameTV"
+        android:layout_toEndOf="@+id/trackImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:id="@+id/messageButton"
+        android:layout_alignTop="@+id/profileButton"
+        android:layout_toEndOf="@+id/profileButton" />
+</RelativeLayout>

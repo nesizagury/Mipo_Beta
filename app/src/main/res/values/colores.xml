@@ -4,4 +4,7 @@
     <color name="grey_font">#ff9e9e9e</color>
     <color name="text_shadow">#FF000000</color>
     <color name="text_shadow_white">#FFFFFF</color>
+    <color name="colorPrimary">#71B7E6</color>
+    <color name="colorPrimaryDark">#FF2A80B3</color>
+    <color name="colorAccent">#FF2A80B3</color>
 </resources>

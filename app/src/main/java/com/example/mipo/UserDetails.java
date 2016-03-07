@@ -1,8 +1,11 @@
 package com.example.mipo;
 
+import android.util.Log;
+
 import com.parse.ParseGeoPoint;
 
 import java.util.Date;
+import java.util.List;
 
 public class UserDetails {
 
@@ -26,6 +29,8 @@ public class UserDetails {
     boolean isFilteredOK = true;
     boolean isOnline = false;
     double dist;
+    String userId;
+    List <String> blocked;
 
     public UserDetails(String userPhoneNum,
                        String name,
@@ -42,7 +47,7 @@ public class UserDetails {
                        String picUrl,
                        ParseGeoPoint userLocation,
                        int indexInAllDataList,
-                       boolean isOnline) {
+                       boolean isOnline,String userId,List blocked) {
         this.userPhoneNum = userPhoneNum;
         this.name = name;
         this.age = age;
@@ -59,6 +64,8 @@ public class UserDetails {
         this.userLocation = userLocation;
         this.indexInAllDataList = indexInAllDataList;
         this.isOnline = isOnline;
+        this.userId = userId;
+        this.blocked = blocked;
     }
 
     public String getUserPhoneNum() {
@@ -212,4 +219,24 @@ public class UserDetails {
     public void setIsOnline(boolean isOnline) {
         this.isOnline = isOnline;
     }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+
+    public List getBlocked() {
+
+        return blocked;
+    }
+
+    public void setBlocked(List blocked) {
+        this.blocked = blocked;
+    }
+
+
 }

@@ -10,4 +10,6 @@ public class GlobalVariables {
     public static Location MY_LOCATION = null;
     public static List<UserDetails> userDataList = new ArrayList<UserDetails> ();
     public static UserDetails currentUser;
+    public static boolean isHeb = false;
+    public static int indexFromFundigo = -1;
 }

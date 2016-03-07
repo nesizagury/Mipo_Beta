@@ -11,22 +11,7 @@
         android:layout_centerHorizontal="true"
         android:orientation="vertical"
         android:weightSum="400.0">
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="35"
-        android:background="#ffbe2c"
-        android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="6"
-        android:singleLine="false"
-        android:text=" Chat List"
-        android:textColor="@color/light_font"
-        android:textSize="25sp"
-        android:gravity="center_vertical"
-        android:textStyle="bold"/>
+
         <View
             android:id="@+id/devider11"
             android:layout_width="fill_parent"

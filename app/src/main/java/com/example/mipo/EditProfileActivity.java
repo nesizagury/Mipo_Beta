@@ -147,7 +147,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                             profile.setPic (file);
                         }
                         profile.saveInBackground ();
-                        Toast.makeText (getApplicationContext (), "Profile was created successfully!", Toast.LENGTH_SHORT).show ();
+                        Toast.makeText (getApplicationContext (), getResources().getString(R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
                     } else{
                         e.printStackTrace ();
                     }
@@ -162,7 +162,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
             login_second.setVisibility (View.GONE);
             login_third.setVisibility (View.VISIBLE);
         } else {
-            Toast.makeText (EditProfileActivity.this, "Please enter name and age", Toast.LENGTH_SHORT).show ();
+            Toast.makeText (EditProfileActivity.this, getResources().getString(R.string.enterNameAge), Toast.LENGTH_SHORT).show ();
         }
     }
 

@@ -67,16 +67,18 @@ public class GridAdaptor extends BaseAdapter {
         final UserDetails user = list.get (position);
         if (user != null) {
 
-            if (list.get (position).getPicUrl ().equals (list.get (0).getPicUrl ()) && !isFavorite) {
-                lp.setMargins (5, 5, 5, 5);
+            if (list.get (position).getUserId ().equals (list.get (0).getUserId ()) && !isFavorite) {
+                lp.setMargins (5, 5, 14, 5);
                 gridHolder.image.setLayoutParams (lp);
             }
 
             if (list.get (position).getPicUrl () != null) {
                 imageLoader.displayImage (list.get (position).getPicUrl (), gridHolder.image);
             } else {
-                gridHolder.image.setImageResource (R.drawable.favorite);
+                gridHolder.image.setImageResource (R.drawable.anonymous);
             }
+
+
             if (user.isOnline ()) {
                 gridHolder.image2.setImageResource (R.drawable.online);
             } else {

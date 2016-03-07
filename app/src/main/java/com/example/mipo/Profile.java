@@ -6,7 +6,9 @@ import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
+import java.lang.reflect.Array;
 import java.util.Date;
+import java.util.List;
 
 @ParseClassName("Profile")
 public class Profile extends ParseObject {
@@ -20,7 +22,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseUser getUser() {
-        return getParseUser ("user");
+        return getParseUser("user");
     }
 
     public void setUser(ParseUser user) {
@@ -28,7 +30,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseFile getPic() {
-        return getParseFile ("pic");
+        return getParseFile("pic");
     }
 
     public void setPic(ParseFile file) {
@@ -48,7 +50,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseGeoPoint getLocation() {
-        return getParseGeoPoint ("location");
+        return getParseGeoPoint("location");
     }
 
     public String getAbout() {
@@ -125,10 +127,34 @@ public class Profile extends ParseObject {
     }
 
     public Date getLastSeen() {
-        return getDate ("lastSeen");
+        return getDate("lastSeen");
     }
 
     public void setLastSeen(Date lastSeen) {
         put ("lastSeen", lastSeen);
+    }
+
+    public void setFbId(String fbId) {
+        put ("fbId", fbId);
+    }
+
+    public String getFbId() {
+        return getString ("fbId");
+    }
+
+    public void setFbUrl(String fbUrl) {
+        put ("fbUrl", fbUrl);
+    }
+
+    public String getFbUrl() {
+        return getString ("fbUrl");
+    }
+
+    public List getBlocked() {
+        return getList("blocked");
+    }
+
+    public void setBlocked(List blocked) {
+        put ("blocked", blocked);
     }
 }

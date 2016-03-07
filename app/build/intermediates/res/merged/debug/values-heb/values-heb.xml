@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bodyTypeSpinner">
+        <item>הכול</item>
+        <item>שרירי</item>
+        <item>רחב</item>
+        <item>רזה</item>
+    </string-array>
+    <string-array name="lookingForSpinner1">
+        <item>הכול</item>
+        <item>להתכתב</item>
+        <item>דייט</item>
+        <item>חברים</item>
+        <item>רשתות</item>
+        <item>מערכת יחסים</item>
+        <item>עכשיו</item>
+    </string-array>
+    <string-array name="originSpinner">
+        <item>הכול</item>
+        <item>אפריקאי</item>
+        <item>לטיני</item>
+        <item>מזרח תיכון</item>
+        <item>מעורב</item>
+        <item>אמריקאי</item>
+        <item>אחר</item>
+        <item>דרום אסיה</item>
+        <item>בהיר</item>
+    </string-array>
+    <string-array name="relationshipSpinner">
+        <item>הכול</item>
+        <item>קשר מחייב</item>
+        <item>דייטים</item>
+        <item>מאורס/ת</item>
+        <item>נשוי/ה</item>
+        <item>יחסים פתוחים</item>
+        <item>שותפות</item>
+        <item>רווק/ה</item>
+    </string-array>
+    <string-array name="userNames">
+        <item>Moran Atias</item>
+        <item>Rotem Sela</item>
+        <item>Mila Kunis</item>
+    </string-array>
+    <string-array name="userNames1">
+
+        <item>בר</item>
+        <item>רותם</item>
+        <item>מורן</item>
+        <item>יעל</item>
+        <item>אליסון</item>
+        <item>שירן</item>
+        <item>קטיה</item>
+        <item>אלונה</item>
+        <item>מילה</item>
+        <item>קרן</item>
+        <item>אורלי</item>
+        <item>נתי</item>
+        <item>נופר</item>
+        <item>הילה</item>
+        <item>נטלי</item>
+        <item>דיה</item>
+        <item>יסמין</item>
+        <item>מזי</item>
+        <item>מוריאל</item>
+        <item>דיאן</item>
+        <item>מיה</item>
+        <item>ישראלה</item>
+        <item>דונה</item>
+        <item>טלי</item>
+        <item>אנה</item>
+        <item>נועה</item>
+        <item>שני</item>
+        <item>דונה</item>
+
+
+    </string-array>
+    <string-array name="userStatus">
+
+        <item>מה קורה?!</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>אני ואתה (:</item>
+        <item>חג שמח (;</item>
+        <item>מה שלומך היום?</item>
+        <item>בבקשה תיהיה כנה</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>אני מוכנה לחוויה</item>
+        <item>חפורים שמח!</item>
+        <item>באו נדבר בכנות</item>
+        <item>רוצה לצאת לסרט?</item>
+        <item>שלום לך</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>מה קורה?!</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>אני ואתה (:</item>
+        <item>חג שמח (;</item>
+        <item>מה שלומך היום?</item>
+        <item>בבקשה תיהיה כנה</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>אני מוכנה לחוויה</item>
+        <item>חפורים שמח!</item>
+        <item>באו נדבר בכנות</item>
+        <item>רוצה לצאת לסרט?</item>
+        <item>שלום לך</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+        <item>שאל אותה מה התוכניות שלה</item>
+
+
+    </string-array>
+    <string name="LoginAs"> התחבר כ-</string>
+    <string name="LoginAsGuest">התחבר כאורח</string>
+    <string name="PlzCreateProfile">להמשך - צור פרופיל</string>
+    <string name="Profile">פרופיל</string>
+    <string name="SmsVerification">אימות sms</string>
+    <string name="about">על עצמי</string>
+    <string name="action_settings">Settings</string>
+    <string name="addedToFavor">התווסף למועדפים</string>
+    <string name="age">גיל</string>
+    <string name="all">הכול</string>
+    <string name="app_name">מיפו</string>
+    <string name="away">0 קילומטר ממך </string>
+    <string name="bannedProfile">ממשתמש זה נחסם!</string>
+    <string name="before">לפני</string>
+    <string name="bodyType">מבנה גוף</string>
+    <string name="createProfile">יצירת פרופיל</string>
+    <string name="editProfile">ערוך פרופיל</string>
+    <string name="enterNameAge">הכנס שם וגיל</string>
+    <string name="favorites">  מועדפים</string>
+    <string name="filter">פילטר</string>
+    <string name="from">ממך</string>
+    <string name="hangTrack">שלחת לה "בואי נצא"</string>
+    <string name="height">גובה</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="isSingle">האם הינך רווק/ה</string>
+    <string name="km">קילומטר</string>
+    <string name="letsHang">רוצה לצאת איתך!</string>
+    <string name="like">עשה/עשתה לך לייק!</string>
+    <string name="likeTrack">שלחת לה "לייק"</string>
+    <string name="lookingFor">מתעניין/ת</string>
+    <string name="love">אהב/ה את הפרופיל שלך!</string>
+    <string name="loveTrack">שלחת לה "אהבתי"</string>
+    <string name="m">15מ</string>
+    <string name="max">מקס</string>
+    <string name="menu">תפריט</string>
+    <string name="message">הודעה</string>
+    <string name="message_hint"/>
+    <string name="messages">הודעות</string>
+    <string name="meter">מטר</string>
+    <string name="min">מינ</string>
+    <string name="minutes">דקות</string>
+    <string name="name">שם</string>
+    <string name="next">הבא</string>
+    <string name="online">מחובר/ת</string>
+    <string name="onlyPic">רק תמונות</string>
+    <string name="optional">(אופציונלי)</string>
+    <string name="origin">מוצא</string>
+    <string name="phoneNumber">מספר הטלפון</string>
+    <string name="profile_me">My Profile Pic</string>
+    <string name="profile_other">Other profile pic</string>
+    <string name="relationshipStatus">מצב זוגי</string>
+    <string name="removedFromFavor">הוסר מהמועדפים</string>
+    <string name="seen">נראה לאחרונה</string>
+    <string name="send">שליחה</string>
+    <string name="sends">Send</string>
+    <string name="sexy">חושב/ת שאת/ה סקסי!</string>
+    <string name="sexyTrack">שלחת לה את "את סקסית"</string>
+    <string name="signUp">סיום</string>
+    <string name="smsExp">משתמש יקר, מכיוון שזה השימוש הראשון שלך באפליקציה - עליך לעבור תהליך הרשמה קצר ופשוט. \u200F</string>
+    <string name="successProfileCreated">הפרופיל נוצר בהצלחה!</string>
+    <string name="to">עד</string>
+    <string name="tracks">עקבות</string>
+    <string name="turnGps">הפעל gps כדי להציג משתמשים</string>
+    <string name="upload">עיון</string>
+    <string name="username">כינוי</string>
+    <string name="weight">משקל</string>
+</resources>

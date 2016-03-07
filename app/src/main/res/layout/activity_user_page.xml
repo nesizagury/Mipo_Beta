@@ -11,7 +11,7 @@
         android:layout_height="fill_parent"
         android:focusable="false"
         android:scaleType="fitXY"
-        android:src="@drawable/pic0"/>
+        android:src="@drawable/pic2"/>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -36,15 +36,16 @@
 
         <TextView
             android:id="@+id/seen_profile"
-            android:layout_width="120dp"
+            android:layout_width="match_parent"
             android:layout_height="22dp"
-            android:layout_alignEnd="@+id/name_profile"
             android:layout_alignStart="@+id/name_profile"
             android:layout_below="@+id/name_profile"
             android:text="Seen 19 min ago | 189 meters away"
             android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/detailed_profile_button"
+            android:layout_alignEnd="@+id/detailed_profile_button" />
 
         <ImageButton
             android:id="@+id/detailed_profile_button"

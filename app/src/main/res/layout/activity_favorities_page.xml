@@ -24,11 +24,12 @@
             android:shadowDy="2"
             android:shadowRadius="6"
             android:singleLine="false"
-            android:text=" Favorites Page"
+            android:text="@string/favorites"
             android:textColor="@color/light_font"
             android:textSize="25sp"
             android:gravity="center_vertical"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textAlignment="center" />
         <View
             android:id="@+id/devider11"
             android:layout_width="fill_parent"
@@ -59,41 +60,45 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:src="@drawable/online2"/>
+                android:layout_height="wrap_content"
+                android:src="@drawable/online2"
+                android:layout_marginTop="3dp" />
 
             <TextView
                 android:id="@+id/online"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-8dp"
                 android:layout_marginTop="5dp"
                 android:background="#000000"
-                android:text="Online"
+                android:text="@string/online"
                 android:textColor="#ffffff"
-                android:textSize="10dp"/>
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/gps_acuuraty"/>
+                android:textSize="10dp"
+                android:layout_weight="0.05" />
 
             <TextView
                 android:id="@+id/distanceAcuuraty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
                 android:background="#000000"
-                android:text="15m"
+                android:text="@string/m"
                 android:textColor="#ffffff"
-                android:textSize="10dp"/>
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gps_acuuraty"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="0.90" />
 
         </TableRow>
-
         <TextView
             android:id="@+id/editText"
             android:layout_width="fill_parent"
@@ -107,7 +112,7 @@
             android:shadowDx="2"
             android:shadowDy="2"
             android:shadowRadius="15"
-            android:text="Mipo"
+            android:text="@string/app_name"
             android:textColor="#ffbe2c"
             android:textSize="30dp"
             android:textStyle="bold">

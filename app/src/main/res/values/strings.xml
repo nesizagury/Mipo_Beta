@@ -36,4 +36,112 @@
     </string-array>
 
 
+
+    <string-array name="lookingForSpinner1">
+        <item>All</item>
+        <item>Chat</item>
+        <item>Dates</item>
+        <item>Friends</item>
+        <item>Networking</item>
+        <item>Relationship</item>
+        <item>Right Now</item>
+    </string-array>
+
+    <string-array name="relationshipSpinner">
+        <item>All</item>
+        <item>Single</item>
+        <item>Committed</item>
+        <item>dating</item>
+        <item>Engaged</item>
+        <item>Exclusive</item>
+        <item>Married</item>
+        <item>Open relationship</item>
+        <item>Single</item>
+    </string-array>
+
+
+    <string-array name="originSpinner">
+    <item>All</item>
+    <item>Black</item>
+    <item>Latin</item>
+    <item>Middle eastern </item>
+    <item>Mixed</item>
+    <item>Native american</item>
+    <item>Other</item>
+    <item>South asia </item>
+    <item>White</item>
+</string-array>
+    <string-array name="bodyTypeSpinner">
+        <item>All</item>
+        <item>Toned</item>
+        <item>Large</item>
+        <item>Slim</item>
+    </string-array>
+
+
+    <string name="LoginAs">Login As</string>
+    <string name="LoginAsGuest">Login As Guest</string>
+    <string name="menu">Menu</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="SmsVerification">Sms Verification</string>
+    <string name="age">Age</string>
+    <string name="lookingFor">Looking For</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="bodyType">Body Type</string>
+    <string name="origin">Origin</string>
+    <string name="relationshipStatus">Relationship Status</string>
+    <string name="onlyPic">Only Pictures</string>
+    <string name="filter">Filter</string>
+    <string name="messages">Messages</string>
+    <string name="favorites">Favorites</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="all">All</string>
+    <string name="to">To</string>
+    <string name="turnGps">Turn on gps to show profiles</string>
+    <string name="smsExp">Dear User, Since its your first use of the app - you must go through a sort and simple registration.</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="optional">(optional)</string>
+    <string name="upload">Upload</string>
+    <string name="signUp">Done</string>
+    <string name="createProfile">Create Profile</string>
+    <string name="name">Name</string>
+    <string name="isSingle">are you single?</string>
+    <string name="next">Next</string>
+    <string name="about">about</string>
+    <string name="km">km</string>
+    <string name="meter">meters</string>
+    <string name="seen">seen</string>
+    <string name="before">ago</string>
+    <string name="minutes">minutes</string>
+    <string name="online">Online</string>
+    <string name="m">15m</string>
+    <string name="tracks">Tracks</string>
+    <string name="like">liked you!</string>
+    <string name="love">loves your profile!</string>
+    <string name="letsHang">wants to hang with you!</string>
+    <string name="sexy">thinks you are sexy!</string>
+    <string name="successLogin">Successfully Loged In</string>
+    <string name="PlzCreateProfile">To Continue - Create Profile</string>
+    <string name="addedToFavor">Added To Favorites</string>
+    <string name="likeTrack">You Sent "Like" To Her</string>
+    <string name="loveTrack">You Sent "Love" To Her</string>
+    <string name="hangTrack">You Sent "Lets Hang" To Her</string>
+    <string name="sexyTrack">You Sent "You Sexy" To Her</string>
+    <string name="successProfileCreated">Profile Created!</string>
+    <string name="bannedProfile">You banned this profile!</string>
+    <string name="removedFromFavor">Removed From Favorites</string>
+    <string name="enterNameAge">Please Enter Name And Age</string>
+    <string name="message">Message</string>
+    <string name="Profile">Profile</string>
+    <string name="expFromFundigo">To Login with Your "Fundigo" Details Please Fill the Following Fields:</string>
+    <string name="expFromFundigoOr">Or Login As Guest</string>
+
+
+
+
+
+
 </resources>

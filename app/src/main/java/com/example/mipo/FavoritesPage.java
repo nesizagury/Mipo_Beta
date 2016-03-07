@@ -15,7 +15,6 @@ import java.util.List;
 
 public class FavoritesPage extends Activity implements AdapterView.OnItemClickListener {
 
-
     GridView grid;
     public final static List<UserDetails> ListOfFavorites = new ArrayList<UserDetails> ();
 

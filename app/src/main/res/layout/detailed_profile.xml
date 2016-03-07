@@ -13,7 +13,8 @@
     <ImageView
         android:layout_width="110dp"
         android:layout_height="150dp"
-        android:id="@+id/detailed_image" />
+        android:id="@+id/detailed_image"
+        android:background="#dcdcdc" />
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +26,9 @@
         android:layout_alignTop="@+id/detailed_image"
         android:layout_toEndOf="@+id/detailed_image"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,7 +40,7 @@
         android:textColor="#000000"
         android:layout_above="@+id/detailed_body_nation"
         android:layout_toEndOf="@+id/detailed_image"
-        android:paddingLeft="4dp"/>
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="28dp"
@@ -46,7 +49,7 @@
         android:textSize="16sp"
         android:layout_marginLeft="5dp"
         android:layout_above="@+id/detailed_relatioStatus_seeking"
-        android:layout_alignStart="@+id/detailed_height_wheight"
+        android:layout_toEndOf="@+id/detailed_image"
         android:textColor="#000000" />
     <TextView
         android:layout_width="match_parent"
@@ -89,50 +92,47 @@
             android:textColor="#000000"
             />
         <TableRow
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dip"
-            android:layout_weight="50"
-            android:background="#000000"
+            android:layout_weight="60"
             android:id="@+id/tableRow3"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center">
 
-            <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/smell"
-                android:layout_alignParentStart="true"
-                android:onClick="hi"/>
 
             <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/imageButton8"
-                android:background="@drawable/lke"
-                android:layout_marginLeft="27dp"
-                android:layout_toEndOf="@+id/imageButton7"
-                android:onClick="like"/>
+                android:layout_weight="0.25"
+                android:onClick="like"
+                android:background="@drawable/like_track" />
 
             <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/imageButton9"
-                android:background="@drawable/heart"
-                android:layout_alignTop="@+id/imageButton8"
-                android:layout_toEndOf="@+id/imageButton8"
-                android:layout_marginLeft="25dp"
-                android:onClick="love"/>
+                android:layout_weight="0.25"
+                android:baselineAlignBottom="false"
+                android:onClick="love"
+                android:background="@drawable/love_track" />
+
             <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/fire"
-                android:layout_alignParentEnd="true"
-                android:layout_marginLeft="35dp"
-                android:layout_marginBottom="4dp"
-                android:onClick="hot"/>
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton3"
+                android:layout_weight="0.25"
+                android:onClick="letsHang"
+                android:background="@drawable/hang_track" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton7"
+                android:layout_weight="0.25"
+                android:onClick="sexy"
+                android:background="@drawable/sexy_track" />
         </TableRow>
 
 

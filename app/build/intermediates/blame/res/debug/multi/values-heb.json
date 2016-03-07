@@ -1,0 +1,1408 @@
+[
+    {
+        "outputFile": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\build\\intermediates\\res\\merged\\debug\\values-heb\\values-heb.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 19,
+                    "endOffset": 215
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 4,
+                        "startOffset": 3328,
+                        "endLine": 127,
+                        "endColumn": 19,
+                        "endOffset": 3488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 220,
+                    "endLine": 16,
+                    "endColumn": 19,
+                    "endOffset": 474
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 2455,
+                        "endLine": 96,
+                        "endColumn": 19,
+                        "endOffset": 2709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 479,
+                    "endLine": 27,
+                    "endColumn": 19,
+                    "endOffset": 786
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 3015,
+                        "endLine": 120,
+                        "endColumn": 19,
+                        "endOffset": 3322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 791,
+                    "endLine": 37,
+                    "endColumn": 19,
+                    "endOffset": 1084
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 2715,
+                        "endLine": 107,
+                        "endColumn": 19,
+                        "endOffset": 3008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1089,
+                    "endLine": 42,
+                    "endColumn": 19,
+                    "endOffset": 1237
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 400,
+                        "endLine": 15,
+                        "endColumn": 19,
+                        "endOffset": 548
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 1242,
+                    "endLine": 75,
+                    "endColumn": 19,
+                    "endOffset": 2023
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 555,
+                        "endLine": 50,
+                        "endColumn": 19,
+                        "endOffset": 1336
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2028,
+                    "endLine": 108,
+                    "endColumn": 19,
+                    "endOffset": 3133
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 1343,
+                        "endLine": 85,
+                        "endColumn": 19,
+                        "endOffset": 2448
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 3138,
+                    "endColumn": 45,
+                    "endOffset": 3179
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 4,
+                        "startOffset": 3533,
+                        "endColumn": 45,
+                        "endOffset": 3574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 3184,
+                    "endColumn": 52,
+                    "endOffset": 3232
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 131,
+                        "startColumn": 4,
+                        "startOffset": 3579,
+                        "endColumn": 52,
+                        "endOffset": 3627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 3237,
+                    "endColumn": 63,
+                    "endOffset": 3296
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 176,
+                        "startColumn": 4,
+                        "startOffset": 5667,
+                        "endColumn": 63,
+                        "endOffset": 5726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 3301,
+                    "endColumn": 42,
+                    "endOffset": 3339
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 6297,
+                        "endColumn": 42,
+                        "endOffset": 6335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 3344,
+                    "endColumn": 53,
+                    "endOffset": 3393
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 134,
+                        "startColumn": 4,
+                        "startOffset": 3723,
+                        "endColumn": 53,
+                        "endOffset": 3772
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 3398,
+                    "endColumn": 41,
+                    "endOffset": 3435
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 161,
+                        "startColumn": 4,
+                        "startOffset": 5007,
+                        "endColumn": 41,
+                        "endOffset": 5044
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 3440,
+                    "endColumn": 52,
+                    "endOffset": 3488
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 98,
+                        "endColumn": 52,
+                        "endOffset": 146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 3493,
+                    "endColumn": 56,
+                    "endOffset": 3545
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 177,
+                        "startColumn": 4,
+                        "startOffset": 5731,
+                        "endColumn": 56,
+                        "endOffset": 5783
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 3550,
+                    "endColumn": 35,
+                    "endOffset": 3581
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 135,
+                        "startColumn": 4,
+                        "startOffset": 3777,
+                        "endColumn": 35,
+                        "endOffset": 3808
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 3586,
+                    "endColumn": 36,
+                    "endOffset": 3618
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 4340,
+                        "endColumn": 36,
+                        "endOffset": 4372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 3623,
+                    "endColumn": 41,
+                    "endOffset": 3660
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 41,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 3665,
+                    "endColumn": 47,
+                    "endOffset": 3708
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 5330,
+                        "endColumn": 47,
+                        "endOffset": 5373
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 3713,
+                    "endColumn": 57,
+                    "endOffset": 3766
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 6083,
+                        "endColumn": 57,
+                        "endOffset": 6136
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 3771,
+                    "endColumn": 39,
+                    "endOffset": 3806
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 165,
+                        "startColumn": 4,
+                        "startOffset": 5172,
+                        "endColumn": 39,
+                        "endOffset": 5207
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 3811,
+                    "endColumn": 45,
+                    "endOffset": 3852
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 4,
+                        "startOffset": 3942,
+                        "endColumn": 45,
+                        "endOffset": 3983
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 3857,
+                    "endColumn": 54,
+                    "endOffset": 3907
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 4826,
+                        "endColumn": 54,
+                        "endOffset": 4876
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 3912,
+                    "endColumn": 51,
+                    "endOffset": 3959
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 133,
+                        "startColumn": 4,
+                        "startOffset": 3671,
+                        "endColumn": 51,
+                        "endOffset": 3718
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 3964,
+                    "endColumn": 53,
+                    "endOffset": 4013
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 185,
+                        "startColumn": 4,
+                        "startOffset": 6201,
+                        "endColumn": 53,
+                        "endOffset": 6250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 4018,
+                    "endColumn": 47,
+                    "endOffset": 4061
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 4,
+                        "startOffset": 4215,
+                        "endColumn": 52,
+                        "endOffset": 4263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 4066,
+                    "endColumn": 40,
+                    "endOffset": 4102
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 4,
+                        "startOffset": 4130,
+                        "endColumn": 40,
+                        "endOffset": 4166
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 4107,
+                    "endColumn": 36,
+                    "endOffset": 4139
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 5378,
+                        "endColumn": 36,
+                        "endOffset": 5410
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 4144,
+                    "endColumn": 56,
+                    "endOffset": 4196
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 4,
+                        "startOffset": 5895,
+                        "endColumn": 56,
+                        "endOffset": 5947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 4201,
+                    "endColumn": 39,
+                    "endOffset": 4236
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 137,
+                        "startColumn": 4,
+                        "startOffset": 3862,
+                        "endColumn": 39,
+                        "endOffset": 3897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 4241,
+                    "endColumn": 52,
+                    "endOffset": 4289
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 52,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 4294,
+                    "endColumn": 52,
+                    "endOffset": 4342
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 159,
+                        "startColumn": 4,
+                        "startOffset": 4917,
+                        "endColumn": 52,
+                        "endOffset": 4965
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 4347,
+                    "endColumn": 38,
+                    "endOffset": 4381
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 5049,
+                        "endColumn": 38,
+                        "endOffset": 5083
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 4386,
+                    "endColumn": 52,
+                    "endOffset": 4434
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 174,
+                        "startColumn": 4,
+                        "startOffset": 5562,
+                        "endColumn": 52,
+                        "endOffset": 5610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 4439,
+                    "endColumn": 50,
+                    "endOffset": 4485
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 5456,
+                        "endColumn": 50,
+                        "endOffset": 5502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 4490,
+                    "endColumn": 52,
+                    "endOffset": 4538
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 178,
+                        "startColumn": 4,
+                        "startOffset": 5788,
+                        "endColumn": 52,
+                        "endOffset": 5836
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 4543,
+                    "endColumn": 48,
+                    "endOffset": 4587
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 3813,
+                        "endColumn": 48,
+                        "endOffset": 3857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 4592,
+                    "endColumn": 54,
+                    "endOffset": 4642
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 5507,
+                        "endColumn": 54,
+                        "endOffset": 5557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 4647,
+                    "endColumn": 53,
+                    "endOffset": 4696
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 5841,
+                        "endColumn": 53,
+                        "endOffset": 5890
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 4701,
+                    "endColumn": 33,
+                    "endOffset": 4730
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 5296,
+                        "endColumn": 33,
+                        "endOffset": 5325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 4735,
+                    "endColumn": 35,
+                    "endOffset": 4766
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 4,
+                        "startOffset": 4304,
+                        "endColumn": 35,
+                        "endOffset": 4335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 4771,
+                    "endColumn": 38,
+                    "endOffset": 4805
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 132,
+                        "startColumn": 4,
+                        "startOffset": 3632,
+                        "endColumn": 38,
+                        "endOffset": 3666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 4810,
+                    "endColumn": 41,
+                    "endOffset": 4847
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 186,
+                        "startColumn": 4,
+                        "startOffset": 6255,
+                        "endColumn": 41,
+                        "endOffset": 6292
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 4852,
+                    "endColumn": 33,
+                    "endOffset": 4881
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 318,
+                        "endColumn": 41,
+                        "endOffset": 355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 4886,
+                    "endColumn": 43,
+                    "endOffset": 4925
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 4,
+                        "startOffset": 4171,
+                        "endColumn": 43,
+                        "endOffset": 4210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 4930,
+                    "endColumn": 37,
+                    "endOffset": 4963
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 163,
+                        "startColumn": 4,
+                        "startOffset": 5088,
+                        "endColumn": 37,
+                        "endOffset": 5121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 4968,
+                    "endColumn": 35,
+                    "endOffset": 4999
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 4268,
+                        "endColumn": 35,
+                        "endOffset": 4299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 5004,
+                    "endColumn": 40,
+                    "endOffset": 5040
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 5212,
+                        "endColumn": 40,
+                        "endOffset": 5248
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 5045,
+                    "endColumn": 35,
+                    "endOffset": 5076
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 158,
+                        "startColumn": 4,
+                        "startOffset": 4881,
+                        "endColumn": 35,
+                        "endOffset": 4912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 5081,
+                    "endColumn": 36,
+                    "endOffset": 5113
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 4970,
+                        "endColumn": 36,
+                        "endOffset": 5002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 5118,
+                    "endColumn": 42,
+                    "endOffset": 5156
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 167,
+                        "startColumn": 4,
+                        "startOffset": 5253,
+                        "endColumn": 42,
+                        "endOffset": 5291
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 5161,
+                    "endColumn": 45,
+                    "endOffset": 5202
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 4,
+                        "startOffset": 4084,
+                        "endColumn": 45,
+                        "endOffset": 4125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 5207,
+                    "endColumn": 48,
+                    "endOffset": 5251
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 4697,
+                        "endColumn": 48,
+                        "endOffset": 4741
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 5256,
+                    "endColumn": 39,
+                    "endOffset": 5291
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 140,
+                        "startColumn": 4,
+                        "startOffset": 3988,
+                        "endColumn": 39,
+                        "endOffset": 4023
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 5296,
+                    "endColumn": 51,
+                    "endOffset": 5343
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 4,
+                        "startOffset": 4602,
+                        "endColumn": 51,
+                        "endOffset": 4649
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 5348,
+                    "endColumn": 53,
+                    "endOffset": 5397
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 53,
+                        "endOffset": 253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 5402,
+                    "endColumn": 59,
+                    "endOffset": 5457
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 258,
+                        "endColumn": 59,
+                        "endOffset": 313
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 5462,
+                    "endColumn": 55,
+                    "endOffset": 5513
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 4,
+                        "startOffset": 4028,
+                        "endColumn": 55,
+                        "endOffset": 4079
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 5518,
+                    "endColumn": 59,
+                    "endOffset": 5573
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 184,
+                        "startColumn": 4,
+                        "startOffset": 6141,
+                        "endColumn": 59,
+                        "endOffset": 6196
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 5578,
+                    "endColumn": 45,
+                    "endOffset": 5619
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 164,
+                        "startColumn": 4,
+                        "startOffset": 5126,
+                        "endColumn": 45,
+                        "endOffset": 5167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 5624,
+                    "endColumn": 38,
+                    "endOffset": 5658
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 360,
+                        "endColumn": 38,
+                        "endOffset": 394
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 5663,
+                    "endColumn": 38,
+                    "endOffset": 5697
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 4,
+                        "startOffset": 3494,
+                        "endColumn": 38,
+                        "endOffset": 3528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 5702,
+                    "endColumn": 51,
+                    "endOffset": 5749
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 4,
+                        "startOffset": 5615,
+                        "endColumn": 51,
+                        "endOffset": 5662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 5754,
+                    "endColumn": 59,
+                    "endOffset": 5809
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 5952,
+                        "endColumn": 59,
+                        "endOffset": 6007
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 5814,
+                    "endColumn": 39,
+                    "endOffset": 5849
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 4,
+                        "startOffset": 4786,
+                        "endColumn": 39,
+                        "endOffset": 4821
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 167,
+                    "startColumn": 4,
+                    "startOffset": 5854,
+                    "endColumn": 127,
+                    "endOffset": 5977
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 4474,
+                        "endColumn": 127,
+                        "endOffset": 4597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 5982,
+                    "endColumn": 70,
+                    "endOffset": 6048
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 6012,
+                        "endColumn": 70,
+                        "endOffset": 6078
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 169,
+                    "startColumn": 4,
+                    "startOffset": 6053,
+                    "endColumn": 33,
+                    "endOffset": 6082
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 4377,
+                        "endColumn": 33,
+                        "endOffset": 4406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 6087,
+                    "endColumn": 40,
+                    "endOffset": 6123
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 5415,
+                        "endColumn": 40,
+                        "endOffset": 5451
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 6128,
+                    "endColumn": 62,
+                    "endOffset": 6186
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 150,
+                        "startColumn": 4,
+                        "startOffset": 4411,
+                        "endColumn": 62,
+                        "endOffset": 4469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 6191,
+                    "endColumn": 39,
+                    "endOffset": 6226
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 155,
+                        "startColumn": 4,
+                        "startOffset": 4746,
+                        "endColumn": 39,
+                        "endOffset": 4781
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 6231,
+                    "endColumn": 42,
+                    "endOffset": 6269
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 4,
+                        "startOffset": 4654,
+                        "endColumn": 42,
+                        "endOffset": 4692
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 6274,
+                    "endColumn": 39,
+                    "endOffset": 6309
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo-moshe_24_02_16\\app\\src\\main\\res\\values-heb\\strings.xml",
+                    "position": {
+                        "startLine": 138,
+                        "startColumn": 4,
+                        "startOffset": 3902,
+                        "endColumn": 39,
+                        "endOffset": 3937
+                    }
+                }
+            }
+        ]
+    }
+]

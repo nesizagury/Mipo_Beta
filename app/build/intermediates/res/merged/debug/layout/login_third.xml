@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Relationship status:" />
+            android:text="@string/relationshipStatus" />
 
         <EditText
             android:id="@+id/et_rs_status"
@@ -40,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Looking for:" />
+            android:text="@string/lookingFor" />
 
         <EditText
             android:id="@+id/et_looking_for"
@@ -60,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Write about yourself:" />
+            android:text="@string/about" />
 
         <EditText
             android:id="@+id/et_about"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="Upload picture" />
+        android:text="@string/upload" />
 
     <ImageView
         android:layout_width="150dp"
@@ -92,6 +92,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:text="Finish" />
+        android:text="@string/signUp" />
 
 </LinearLayout>

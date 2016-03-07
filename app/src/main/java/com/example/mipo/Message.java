@@ -3,7 +3,7 @@ package com.example.mipo;
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
-@ParseClassName("Message")
+@ParseClassName("MipoMessage")
 public class Message extends ParseObject {
 
     public String getMessageBody() {
