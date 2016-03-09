@@ -35,4 +35,8 @@ public class MenuActivity extends Activity {
         startActivity (intent);
         finish ();
     }
+
+    public void refreshData(View v) {
+        MainPageActivity.downloadProfilesDataInBackGround ();
+    }
 }

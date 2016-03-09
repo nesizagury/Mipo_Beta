@@ -48,9 +48,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.mipo.FileTestActivity" />
         <activity android:name="com.example.mipo.SmsSignUpActivity" />
-        <activity android:name="com.example.mipo.MessagesRoom" />
+        <activity android:name="com.example.mipo.MessagesRoomFragment" />
         <activity android:name="com.example.mipo.LoginActivity" />
         <activity android:name="com.example.mipo.LoginFromFundigoActivity" />
         <activity android:name="com.example.mipo.EditProfileActivity" />

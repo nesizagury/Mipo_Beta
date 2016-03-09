@@ -2,6 +2,7 @@ package com.example.mipo;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,11 +28,13 @@ public class MessagesRoomAdapter extends ArrayAdapter<MessageRoomBean> {
         super (c, 0, list);
         this.list = list;
         this.c = c;
-        setImageLoader ();
+        if (imageLoader == null || (imageLoader != null && imageLoader.isInited ())) {
+            setImageLoader ();
+        }
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
         if (view == null) {
             view = LayoutInflater.from (getContext ()).inflate (R.layout.messages_room_item, viewGroup, false);
             final MessageItemHolder m_holder = new MessageItemHolder (view);
@@ -51,6 +54,11 @@ public class MessagesRoomAdapter extends ArrayAdapter<MessageRoomBean> {
         holder.image.setTag (message_bean);
         holder.name.setTag (message_bean);
         holder.body.setTag (message_bean);
+        if (GlobalVariables.isHeb) {
+            holder.name.setGravity (Gravity.RIGHT);
+        } else{
+            holder.name.setGravity (Gravity.LEFT);
+        }
 
         return view;
     }
@@ -69,7 +77,7 @@ public class MessagesRoomAdapter extends ArrayAdapter<MessageRoomBean> {
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder (c)
                                                   .defaultDisplayImageOptions (options)
                                                   .threadPriority (Thread.MAX_PRIORITY)
-                                                  .threadPoolSize (4)
+                                                  .threadPoolSize (3)
                                                   .memoryCache (new WeakMemoryCache ())
                                                   .denyCacheImageMultipleSizesInMemory ()
                                                   .build ();

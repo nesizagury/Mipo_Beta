@@ -9,6 +9,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showAgeEditors"
         android:weightSum="1">
 
@@ -17,10 +18,11 @@
             android:layout_height="match_parent"
             android:text="@string/age"
             android:id="@+id/textView16"
-            android:layout_weight="0.30"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_weight="0.12"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"/>
 
         <EditText
             android:layout_width="49dp"
@@ -51,6 +53,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.03"
         android:onClick="showLookingForEditors"
         android:weightSum="1">
 
@@ -59,22 +62,23 @@
             android:layout_height="61dp"
             android:text="@string/lookingFor"
             android:id="@+id/textView17"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="15dp"
+            android:gravity="center_vertical"/>
 
         <Spinner
             android:layout_width="101dp"
             android:layout_height="52dp"
             android:id="@+id/spinner"
             android:layout_marginLeft="90dp"
-            android:visibility="visible" />
+            android:visibility="invisible" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showHeightEditors"
         android:weightSum="1">
 
@@ -83,10 +87,10 @@
             android:layout_height="match_parent"
             android:text="@string/height"
             android:layout_weight="0.11"
-            android:gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="7dp" />
+            android:paddingStart="15dp"
+            android:gravity="center_vertical"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -96,6 +100,7 @@
             android:layout_weight="0.09"
             android:textSize="17sp"
             android:gravity="center"
+            android:layout_marginLeft="100dp"
             android:visibility="invisible" />
 
         <EditText
@@ -135,6 +140,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showWeightEditors"
         android:weightSum="1" >
 
@@ -143,10 +149,10 @@
             android:layout_height="match_parent"
             android:text="@string/weight"
             android:layout_weight="0.11"
-            android:gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="7dp" />
+            android:paddingStart="15dp"
+            android:gravity="center_vertical"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -193,6 +199,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showBodyTypeEditors"
         android:weightSum="1" >
 
@@ -201,10 +208,10 @@
             android:layout_height="match_parent"
             android:text="@string/bodyType"
             android:layout_weight="0.11"
-            android:gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="7dp" />
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"/>
 
         <Spinner
             android:layout_width="94dp"
@@ -218,6 +225,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showOriginEditors"
         android:weightSum="1" >
 
@@ -226,10 +234,10 @@
             android:layout_height="match_parent"
             android:text="@string/origin"
             android:layout_weight="0.11"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="7dp" />
+            android:paddingStart="15dp"/>
 
         <Spinner
             android:layout_width="94dp"
@@ -242,6 +250,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.08"
         android:onClick="showRelationshipStatusEditors"
         android:weightSum="1" >
 
@@ -250,10 +259,10 @@
             android:layout_height="match_parent"
             android:text="@string/relationshipStatus"
             android:layout_weight="0.07"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginLeft="7dp" />
+            android:paddingStart="15dp"/>
 
         <Spinner
             android:layout_width="94dp"
@@ -266,7 +275,9 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1" >
+        android:layout_weight="0.08"
+        android:weightSum="1"
+        android:paddingStart="8dp">
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -285,6 +296,7 @@
         android:layout_height="wrap_content"
         android:text="@string/filter"
         android:onClick="Filter"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:layout_weight="0.08" />
 
 </LinearLayout>

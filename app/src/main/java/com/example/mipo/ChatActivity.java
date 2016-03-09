@@ -28,8 +28,6 @@ public class ChatActivity extends Activity {
     static String otherUserId;
     static UserDetails otherUser;
     static String other_user_name;
-    int combinedConversationId;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

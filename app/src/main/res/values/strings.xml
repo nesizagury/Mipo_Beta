@@ -3,42 +3,13 @@
 
     <string name="app_name">Mipo</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="profile_me">My Profile Pic</string>
     <string name="profile_other">Other profile pic</string>
     <string name="message_hint">Say anything</string>
     <string name="send">Send</string>
 
-    <string-array name="userNames">
-        <item>Moran Atias</item>
-        <item>Rotem Sela</item>
-        <item>Mila Kunis</item>
-    </string-array>
-
-
-    <string-array name="userNames1">
-
-        <item>Hadas.T</item>
-        <item>Sarah.L</item>
-        <item>Rebecca.S</item>
-        <item>Alin.B</item>
-        <item>Jenny.C</item>
-        <item>Karin.S</item>
-        <item>Adriana.L</item>
-        <item>Jennifer.D</item>
-        <item>Carmen.E</item>
-        <item>Irena.U</item>
-        <item>Angelina.G</item>
-        <item>Sandy.P</item>
-        <item>Sandy.P</item>
-        <item>Sandy.P</item>
-
-    </string-array>
-
-
-
     <string-array name="lookingForSpinner1">
-        <item>All</item>
+        <item>Do Not Show</item>
         <item>Chat</item>
         <item>Dates</item>
         <item>Friends</item>
@@ -47,37 +18,42 @@
         <item>Right Now</item>
     </string-array>
 
+    <string-array name="bodyTypeSpinner">
+        <item>Do Not Show</item>
+        <item>Slim</item>
+        <item>Toned</item>
+        <item>Average</item>
+        <item>Large</item>
+        <item>Stocky</item>
+    </string-array>
+
+    <string-array name="ethnicitySpinner">
+        <item>Do Not Show</item>
+        <item>Middle Eastern</item>
+        <item>Native American</item>
+        <item>Black</item>
+        <item>Latino</item>
+        <item>Mixed</item>
+        <item>Other</item>
+        <item>South Asian</item>
+        <item>White</item>
+    </string-array>
+
     <string-array name="relationshipSpinner">
-        <item>All</item>
-        <item>Single</item>
+        <item>Do Not Show</item>
         <item>Committed</item>
-        <item>dating</item>
+        <item>Dating</item>
         <item>Engaged</item>
         <item>Exclusive</item>
         <item>Married</item>
-        <item>Open relationship</item>
+        <item>Open Relationship</item>
+        <item>Partnered</item>
         <item>Single</item>
     </string-array>
 
+    <string name="doNotShow">Do Not Show</string>
 
-    <string-array name="originSpinner">
-    <item>All</item>
-    <item>Black</item>
-    <item>Latin</item>
-    <item>Middle eastern </item>
-    <item>Mixed</item>
-    <item>Native american</item>
-    <item>Other</item>
-    <item>South asia </item>
-    <item>White</item>
-</string-array>
-    <string-array name="bodyTypeSpinner">
-        <item>All</item>
-        <item>Toned</item>
-        <item>Large</item>
-        <item>Slim</item>
-    </string-array>
-
+    <string name="All">All</string>
 
     <string name="LoginAs">Login As</string>
     <string name="LoginAsGuest">Login As Guest</string>
@@ -89,8 +65,9 @@
     <string name="height">Height</string>
     <string name="weight">Weight</string>
     <string name="bodyType">Body Type</string>
-    <string name="origin">Origin</string>
+    <string name="origin">Ethnicity</string>
     <string name="relationshipStatus">Relationship Status</string>
+    <string name="statusLine">Status Line</string>
     <string name="onlyPic">Only Pictures</string>
     <string name="filter">Filter</string>
     <string name="messages">Messages</string>
@@ -104,13 +81,14 @@
     <string name="phoneNumber">Phone Number</string>
     <string name="username">Username</string>
     <string name="optional">(optional)</string>
-    <string name="upload">Upload</string>
+    <string name="upload">Upload picture</string>
     <string name="signUp">Done</string>
     <string name="createProfile">Create Profile</string>
+    <string name="pleaseProfile">Please Create Profile</string>
     <string name="name">Name</string>
-    <string name="isSingle">are you single?</string>
+    <string name="isSingle">What\'s is up with you today?</string>
     <string name="next">Next</string>
-    <string name="about">about</string>
+    <string name="about">Write about yourself:</string>
     <string name="km">km</string>
     <string name="meter">meters</string>
     <string name="seen">seen</string>
@@ -138,10 +116,7 @@
     <string name="Profile">Profile</string>
     <string name="expFromFundigo">To Login with Your "Fundigo" Details Please Fill the Following Fields:</string>
     <string name="expFromFundigoOr">Or Login As Guest</string>
-
-
-
-
-
+    <string name="refreshData">Refresh Data</string>
+    <string name="successLoggedIn">Successfully Logged in</string>
 
 </resources>

@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ChatListAdapter extends ArrayAdapter<Message> {
 
-    ImageLoader imageLoader;
+    static ImageLoader imageLoader;
     DisplayImageOptions options;
     int pixels;
     Context context;
@@ -30,11 +30,13 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
         super (context, 0, messages);
         this.otherUserIndex = otherUserIndex;
         this.context = context;
-        setImageLoader ();
+        if (imageLoader == null || (imageLoader != null && !imageLoader.isInited ())) {
+            setImageLoader ();
+        }
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         if (convertView == null) {
             convertView = LayoutInflater.from (getContext ()).inflate (R.layout.chat_item, parent, false);
@@ -65,7 +67,7 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
         return convertView;
     }
 
-    final class ViewHolder {
+    class ViewHolder {
         public ImageView imageLeft;
         public ImageView imageRight;
         public TextView body;
@@ -86,7 +88,7 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder (context)
                                                   .defaultDisplayImageOptions (options)
                                                   .threadPriority (Thread.MAX_PRIORITY)
-                                                  .threadPoolSize (8)
+                                                  .threadPoolSize (2)
                                                   .memoryCache (new WeakMemoryCache ())
                                                   .denyCacheImageMultipleSizesInMemory ()
                                                   .build ();

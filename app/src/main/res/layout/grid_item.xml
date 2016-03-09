@@ -17,7 +17,7 @@
         android:adjustViewBounds="false"
         android:clickable="false"
         android:scaleType="fitXY"
-        android:src="#eaeaea" />
+        android:src="@drawable/pic0" />
 
     <TextView
         android:id="@+id/textView1"
@@ -25,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
-        android:layout_marginLeft="4dp"
         android:gravity="top|left"
         android:shadowColor="#000000"
         android:shadowDx="2"
@@ -34,7 +33,9 @@
         android:singleLine="true"
         android:text="Alexendra.W"
         android:textColor="@color/light_font"
-        android:textSize="11dp"/>
+        android:textSize="11dp"
+        android:paddingStart="4dp"
+        />
 
 
     <ImageView
@@ -42,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         />
 
 </RelativeLayout>

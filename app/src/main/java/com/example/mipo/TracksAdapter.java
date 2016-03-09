@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,10 +32,12 @@ public class TracksAdapter extends ArrayAdapter<TrackItem> {
     String id;
 
     public TracksAdapter(Context c, List<TrackItem> list) {
-        super(c, 0, list);
+        super (c, 0, list);
         this.list = list;
         this.c = c;
-        setImageLoader();
+        if (imageLoader == null || (imageLoader != null && !imageLoader.isInited ())) {
+            setImageLoader ();
+        }
     }
 
     @Override
@@ -49,69 +50,57 @@ public class TracksAdapter extends ArrayAdapter<TrackItem> {
         }
         final TrackItem trackItem = (TrackItem) getItem (pos);
         final TrackItemHolder holder = (TrackItemHolder) view.getTag ();
+        final UserDetails userDetails = StaticMethods.getUserFromPhoneNum (trackItem.getSenderUserPhone ());
 
         if (list.get (pos).picUrl != null) {
             imageLoader.displayImage (list.get (pos).picUrl, holder.image);
         } else {
             holder.image.setImageResource (R.drawable.favorite);
         }
+        String trackLine = getTrackLine (trackItem.getTrackName ());
 
-        holder.name.setText (trackItem.getName() + " " + list.get(pos).getTrackName());
-        holder.image.setTag(trackItem);
-        holder.name.setTag(trackItem);
-
+        holder.name.setText (userDetails.getName () + " " + trackLine);
+        holder.image.setTag (trackItem);
+        holder.name.setTag (trackItem);
 
         profileButton = (Button) view.findViewById (R.id.profileButton);
-        profileButton.setOnClickListener(new View.OnClickListener() {
+        profileButton.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
+                switch (v.getId ()) {
                     case R.id.profileButton:
-                        Intent intent = new Intent(c, UserPage.class);
-                        Bundle b = new Bundle();
-                        for (int i = 0; i < GlobalVariables.userDataList.size(); i++) {
-                            if (list.get(pos).getPicUrl().equals(GlobalVariables.userDataList.get(i).getPicUrl())) {
-                                b.putInt("index", i);
-                                i = GlobalVariables.userDataList.size();
-                            }
-                        }
-                        intent.putExtras(b);
-                        intent.putExtra("userName", trackItem.getName());
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        c.startActivity(intent);
+                        Intent intent = new Intent (c, UserPage.class);
+                        Bundle b = new Bundle ();
+                        b.putInt ("index", userDetails.getIndexInAllDataList ());
+                        intent.putExtras (b);
+                        intent.putExtra ("userName", userDetails.getName ());
+                        intent.setFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
+                        c.startActivity (intent);
                         break;
 
                 }
             }
         });
-
 
         messageButton = (Button) view.findViewById (R.id.messageButton);
-        messageButton.setOnClickListener(new View.OnClickListener() {
+        messageButton.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
+                switch (v.getId ()) {
                     case R.id.messageButton:
-                        Intent intent = new Intent(c, ChatActivity.class);
-                        Bundle b = new Bundle();
-                        for (int i = 0; i < GlobalVariables.userDataList.size(); i++) {
-                            if (list.get(pos).getPicUrl().equals(GlobalVariables.userDataList.get(i).getPicUrl())) {
-                                b.putInt("index", i);
-                                id = GlobalVariables.userDataList.get(i).getUserPhoneNum();
-                                i = GlobalVariables.userDataList.size();
-                            }
-                        }
+                        Intent intent = new Intent (c, ChatActivity.class);
+                        Bundle b = new Bundle ();
+                        b.putInt ("index", userDetails.getIndexInAllDataList ());
                         intent.putExtra ("userId", id);
-                        intent.putExtra("userName", trackItem.getName());
-                        intent.putExtras(b);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        c.startActivity(intent);
+                        intent.putExtra ("userName", userDetails.getName ());
+                        intent.putExtras (b);
+                        intent.setFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
+                        c.startActivity (intent);
                         break;
 
                 }
             }
         });
-
 
         return view;
     }
@@ -121,31 +110,42 @@ public class TracksAdapter extends ArrayAdapter<TrackItem> {
         pixels = (int) (80 * density + 0.5f);
 
         options = new DisplayImageOptions.Builder ()
-                .cacheOnDisk (true)
-                .cacheInMemory (true)
-                .bitmapConfig (Bitmap.Config.RGB_565)
-                .imageScaleType (ImageScaleType.EXACTLY)
-                .resetViewBeforeLoading (true)
-                .build ();
+                          .cacheOnDisk (true)
+                          .cacheInMemory (true)
+                          .bitmapConfig (Bitmap.Config.RGB_565)
+                          .imageScaleType (ImageScaleType.EXACTLY)
+                          .resetViewBeforeLoading (true)
+                          .build ();
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder (c)
-                .defaultDisplayImageOptions (options)
-                .threadPriority (Thread.MAX_PRIORITY)
-                .threadPoolSize (4)
-                .memoryCache (new WeakMemoryCache ())
-                .denyCacheImageMultipleSizesInMemory ()
-                .build ();
+                                                  .defaultDisplayImageOptions (options)
+                                                  .threadPriority (Thread.MAX_PRIORITY)
+                                                  .threadPoolSize (4)
+                                                  .memoryCache (new WeakMemoryCache ())
+                                                  .denyCacheImageMultipleSizesInMemory ()
+                                                  .build ();
         imageLoader = ImageLoader.getInstance ();
         imageLoader.init (config);
     }
 
     class TrackItemHolder {
-
         ImageView image;
         TextView name;
 
         public TrackItemHolder(View v) {
             image = (ImageView) v.findViewById (R.id.trackImage);
             name = (TextView) v.findViewById (R.id.trackNameTV);
+        }
+    }
+
+    String getTrackLine(String nameFromParse) {
+        if (nameFromParse.equals ("like")) {
+            return c.getResources ().getString (R.string.like);
+        } else if (nameFromParse.equals ("love")) {
+            return c.getResources ().getString (R.string.love);
+        } else if (nameFromParse.equals ("letsHang")) {
+            return c.getResources ().getString (R.string.letsHang);
+        } else {
+            return c.getResources ().getString (R.string.sexy);
         }
     }
 

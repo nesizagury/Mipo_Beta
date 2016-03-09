@@ -11,7 +11,7 @@
         android:layout_height="fill_parent"
         android:focusable="false"
         android:scaleType="fitXY"
-        android:src="@drawable/pic2"/>
+        android:src="@drawable/pic0"/>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -27,25 +27,25 @@
             android:layout_height="30dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
             android:text="Alexandra.W , 28"
             android:textColor="#fffdfd"
             android:textSize="23sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/seen_profile"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="22dp"
+            android:layout_alignEnd="@+id/name_profile"
             android:layout_alignStart="@+id/name_profile"
             android:layout_below="@+id/name_profile"
             android:text="Seen 19 min ago | 189 meters away"
             android:textColor="#ffffff"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            android:layout_toStartOf="@+id/detailed_profile_button"
-            android:layout_alignEnd="@+id/detailed_profile_button" />
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
         <ImageButton
             android:id="@+id/detailed_profile_button"
@@ -54,7 +54,7 @@
             android:layout_alignBottom="@+id/seen_profile"
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/name_profile"
-            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/three_p"/>
 
     </RelativeLayout>
@@ -65,7 +65,7 @@
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/usrPage_image"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/favorite"/>
 
@@ -75,7 +75,7 @@
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/usrPage_image"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/report"/>
 

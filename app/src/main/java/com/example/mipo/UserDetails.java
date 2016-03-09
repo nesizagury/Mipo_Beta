@@ -1,7 +1,5 @@
 package com.example.mipo;
 
-import android.util.Log;
-
 import com.parse.ParseGeoPoint;
 
 import java.util.Date;
@@ -29,8 +27,7 @@ public class UserDetails {
     boolean isFilteredOK = true;
     boolean isOnline = false;
     double dist;
-    String userId;
-    List <String> blocked;
+    List<String> blocked;
 
     public UserDetails(String userPhoneNum,
                        String name,
@@ -47,14 +44,15 @@ public class UserDetails {
                        String picUrl,
                        ParseGeoPoint userLocation,
                        int indexInAllDataList,
-                       boolean isOnline,String userId,List blocked) {
+                       boolean isOnline,
+                       List blocked) {
         this.userPhoneNum = userPhoneNum;
         this.name = name;
         this.age = age;
         this.lastSeen = lastSeen;
         this.status = status;
         this.height = height;
-        Weight = weight;
+        this.Weight = weight;
         this.nation = nation;
         this.body_type = body_type;
         this.relationship_status = relationship_status;
@@ -64,7 +62,6 @@ public class UserDetails {
         this.userLocation = userLocation;
         this.indexInAllDataList = indexInAllDataList;
         this.isOnline = isOnline;
-        this.userId = userId;
         this.blocked = blocked;
     }
 
@@ -124,11 +121,11 @@ public class UserDetails {
         Weight = weight;
     }
 
-    public String getNation() {
+    public String getEthnicity() {
         return nation;
     }
 
-    public void setNation(String nation) {
+    public void setEtnicity(String nation) {
         this.nation = nation;
     }
 
@@ -220,15 +217,6 @@ public class UserDetails {
         this.isOnline = isOnline;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-
     public List getBlocked() {
 
         return blocked;
@@ -237,6 +225,4 @@ public class UserDetails {
     public void setBlocked(List blocked) {
         this.blocked = blocked;
     }
-
-
 }

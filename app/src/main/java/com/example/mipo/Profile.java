@@ -6,7 +6,6 @@ import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-import java.lang.reflect.Array;
 import java.util.Date;
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseUser getUser() {
-        return getParseUser("user");
+        return getParseUser ("user");
     }
 
     public void setUser(ParseUser user) {
@@ -30,7 +29,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseFile getPic() {
-        return getParseFile("pic");
+        return getParseFile ("pic");
     }
 
     public void setPic(ParseFile file) {
@@ -50,7 +49,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseGeoPoint getLocation() {
-        return getParseGeoPoint("location");
+        return getParseGeoPoint ("location");
     }
 
     public String getAbout() {
@@ -93,11 +92,11 @@ public class Profile extends ParseObject {
         put ("looking_for", looking_for);
     }
 
-    public String getNation() {
+    public String getEthnicity() {
         return getString ("nation");
     }
 
-    public void setNation(String nation) {
+    public void setEthnicity(String nation) {
         put ("nation", nation);
     }
 
@@ -127,7 +126,7 @@ public class Profile extends ParseObject {
     }
 
     public Date getLastSeen() {
-        return getDate("lastSeen");
+        return getDate ("lastSeen");
     }
 
     public void setLastSeen(Date lastSeen) {
@@ -151,7 +150,7 @@ public class Profile extends ParseObject {
     }
 
     public List getBlocked() {
-        return getList("blocked");
+        return getList ("blocked");
     }
 
     public void setBlocked(List blocked) {

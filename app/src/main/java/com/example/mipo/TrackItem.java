@@ -1,27 +1,27 @@
 package com.example.mipo;
 
-/**
- * Created by מנהל on 28/02/2016.
- */
 public class TrackItem {
 
     String name;
     String trackName;
     String picUrl;
+    String userPhone;
 
-    public TrackItem(String name, String trackName, String picUrl) {
+    public TrackItem(String name, String trackName, String picUrl, String userPhone) {
         this.name = name;
         this.trackName = trackName;
         this.picUrl = picUrl;
+        this.userPhone = userPhone;
     }
 
-    public String getName() {
-        return name;
+    public String getSenderUserPhone() {
+        return userPhone;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSenderUserPhone(String userPhone) {
+        this.userPhone = userPhone;
     }
+
 
     public String getTrackName() {
         return trackName;
@@ -29,13 +29,5 @@ public class TrackItem {
 
     public void setTrackName(String trackName) {
         this.trackName = trackName;
-    }
-
-    public String getPicUrl() {
-        return picUrl;
-    }
-
-    public void setPicUrl(String picUrl) {
-        this.picUrl = picUrl;
     }
 }

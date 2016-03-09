@@ -1,7 +1,6 @@
 package com.example.mipo;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -21,8 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,8 +46,6 @@ import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 
@@ -80,32 +75,17 @@ public class SmsSignUpActivity extends Activity {
     Spinner ageS;
     EditText heightET;
     Bitmap bmp;
-    LinearLayout stageOneLayout;
-    LinearLayout stageTwoLayout;
-    LinearLayout stageThreeLayout;
-    ParseUser user;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if(GlobalVariables.isHeb) {
-
-            setContentView(R.layout.activity_sms);
-        }
-        else
-            setContentView(R.layout.activity_sms_login);
-
-        stageOneLayout = (LinearLayout) findViewById (R.id.include_sms_activity1);
-        stageTwoLayout = (LinearLayout) findViewById (R.id.include_sms_activity2);
-        stageThreeLayout = (LinearLayout) findViewById (R.id.include_sms_activity3);
+        super.onCreate (savedInstanceState);
+        setContentView (R.layout.activity_sms_login);
 
         ageTV = (TextView) findViewById (R.id.ageTV);
         heightTV = (TextView) findViewById (R.id.heightTV);
         ageS = (Spinner) findViewById (R.id.ageS);
         heightET = (EditText) findViewById (R.id.heightET);
-
-
 
         array_spinnerAge = new String[50];
         for (int i = 0; i < array_spinnerAge.length; i++)
@@ -129,30 +109,28 @@ public class SmsSignUpActivity extends Activity {
 
 
         s = (Spinner) findViewById (R.id.spinner);
-
-
-
         ArrayAdapter adapter = new ArrayAdapter (this,
                                                         android.R.layout.simple_spinner_item,
                                                         array_spinner);
-        s.setAdapter(adapter);
+        s.setAdapter (adapter);
 
         usernameTV = (TextView) findViewById (R.id.usernameTV);
         usernameTE = (EditText) findViewById (R.id.usernameTE);
         phoneET = (EditText) findViewById (R.id.phoneET);
         phoneTV = (TextView) findViewById (R.id.phoneTV);
         imageV = (ImageView) findViewById (R.id.imageV);
+
         phoneET.setOnEditorActionListener (new TextView.OnEditorActionListener () {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if ((event != null &&
                              (event.getKeyCode () == KeyEvent.KEYCODE_ENTER)) ||
                             (actionId == EditorInfo.IME_ACTION_DONE)) {
-                    area = s.getSelectedItem().toString ();
-                    username = usernameTE.getText().toString();
-                    phone_number_to_verify = getNumber(phoneET.getText().toString(), area);
+                    area = s.getSelectedItem ().toString ();
+                    username = usernameTE.getText ().toString ();
+                    phone_number_to_verify = getNumber (phoneET.getText ().toString (), area);
                     phone_number_no_country_prefix = area + phoneET.getText ().toString ();
-                    getUserPreviousDetails();
-                   smsVerify (phone_number_to_verify);
+                    getUserPreviousDetails ();
+                    smsVerify (phone_number_to_verify);
                 }
                 return false;
             }
@@ -161,29 +139,24 @@ public class SmsSignUpActivity extends Activity {
         usernameTE.setOnEditorActionListener (new TextView.OnEditorActionListener () {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if ((event != null && (event.getKeyCode () == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
-                    signup = (Button) findViewById(R.id.button2);
-                    upload_button = (Button) findViewById(R.id.upload_button);
-                    imageV = (ImageView) findViewById(R.id.imageV);
+                    signup = (Button) findViewById (R.id.button2);
+                    upload_button = (Button) findViewById (R.id.upload_button);
+                    imageV = (ImageView) findViewById (R.id.imageV);
 
-                    if(!GlobalVariables.isHeb) {
-                      usernameTE.setVisibility(View.INVISIBLE);
-                      usernameTV.setVisibility(View.INVISIBLE);
-                      imageV.setVisibility(View.VISIBLE);
-                      upload_button.setVisibility(View.VISIBLE);
-                      signup.setVisibility(View.VISIBLE);
-                      optionalTV = (TextView) findViewById(R.id.optionalTV);
-                      optionalTV.setVisibility(View.VISIBLE);
-                      ageS.setVisibility(View.VISIBLE);
-                      ageTV.setVisibility(View.VISIBLE);
-                      heightTV.setVisibility(View.VISIBLE);
-                      heightET.setVisibility(View.VISIBLE);
-                  }
-                    else {
-
-                      stageTwoLayout.setVisibility(View.GONE);
-                      stageThreeLayout.setVisibility(View.VISIBLE);
-
-                  }
+                        usernameTE.setVisibility (View.INVISIBLE);
+                        usernameTV.setVisibility (View.INVISIBLE);
+                        imageV = (ImageView) findViewById (R.id.imageV);
+                        imageV.setVisibility (View.VISIBLE);
+                        upload_button = (Button) findViewById (R.id.upload_button);
+                        upload_button.setVisibility (View.VISIBLE);
+                        signup = (Button) findViewById (R.id.button2);
+                        signup.setVisibility (View.VISIBLE);
+                        optionalTV = (TextView) findViewById (R.id.optionalTV);
+                        optionalTV.setVisibility (View.VISIBLE);
+                        ageS.setVisibility (View.VISIBLE);
+                        ageTV.setVisibility (View.VISIBLE);
+                        heightTV.setVisibility (View.VISIBLE);
+                        heightET.setVisibility (View.VISIBLE);
                 }
                 return false;
             }
@@ -195,7 +168,7 @@ public class SmsSignUpActivity extends Activity {
         Profile profile;
         if (previousDataFound != null) {
             profile = previousDataFound;
-            ParseUser.logOut();
+            ParseUser.logOut ();
             try {
                 ParseUser.logIn (phone_number_no_country_prefix, phone_number_no_country_prefix);
             } catch (ParseException e) {
@@ -203,6 +176,14 @@ public class SmsSignUpActivity extends Activity {
             }
         } else {
             profile = new Profile ();
+            ParseUser user = new ParseUser ();
+            user.setUsername (phone_number_no_country_prefix);
+            user.setPassword (phone_number_no_country_prefix);
+            try {
+                user.signUp ();
+            } catch (ParseException e) {
+                e.printStackTrace ();
+            }
             profile.setNumber (area + phoneET.getText ().toString ());
             profile.setUser (user);
         }
@@ -210,31 +191,55 @@ public class SmsSignUpActivity extends Activity {
         profile.setAge (ageS.getSelectedItem ().toString ());
         profile.setHeight (String.valueOf (heightET.getText ().toString ()));
         profile.setLastSeen (new Date ());
-        if (image_selected) {
-            imageV.buildDrawingCache ();
-            ByteArrayOutputStream stream = new ByteArrayOutputStream ();
-            bmp.compress (CompressFormat.JPEG, 100, stream);
-            byte[] image = stream.toByteArray ();
-            ParseFile file = new ParseFile ("picturePath", image);
-            try {
-                file.save ();
-            } catch (ParseException e) {
-                e.printStackTrace ();
+        try {
+            if (image_selected) {
+                imageV.buildDrawingCache ();
+                ByteArrayOutputStream stream = new ByteArrayOutputStream ();
+                bmp.compress (CompressFormat.JPEG, 100, stream);
+                byte[] image = stream.toByteArray ();
+                ParseFile file = new ParseFile ("picturePath", image);
+                try {
+                    file.save ();
+                } catch (ParseException e) {
+                    e.printStackTrace ();
+                }
+                ParseACL parseAcl = new ParseACL ();
+                parseAcl.setPublicReadAccess (true);
+                parseAcl.setPublicWriteAccess (true);
+                profile.setACL (parseAcl);
+                profile.put ("pic", file);
+            } else {
+                bmp = BitmapFactory.decodeResource (this.getResources (),
+                                                           R.drawable.no_image_icon_md);
+                imageV.setImageBitmap (bmp);
+                imageV.buildDrawingCache ();
+                ByteArrayOutputStream stream = new ByteArrayOutputStream ();
+                bmp.compress (CompressFormat.JPEG, 100, stream);
+                byte[] image = stream.toByteArray ();
+                ParseFile file = new ParseFile ("picturePath", image);
+                try {
+                    file.save ();
+                } catch (ParseException e) {
+                    e.printStackTrace ();
+                }
+                ParseACL parseAcl = new ParseACL ();
+                parseAcl.setPublicReadAccess (true);
+                parseAcl.setPublicWriteAccess (true);
+                profile.setACL (parseAcl);
+                profile.put ("pic", file);
             }
-            ParseACL parseAcl = new ParseACL ();
-            parseAcl.setPublicReadAccess (true);
-            parseAcl.setPublicWriteAccess (true);
-            profile.setACL (parseAcl);
-            profile.put ("pic", file);
+        } catch (Exception e) {
+            e.printStackTrace ();
         }
         try {
             profile.save ();
             GlobalVariables.CUSTOMER_PHONE_NUM = phone_number_no_country_prefix;
-            Toast.makeText (getApplicationContext (), getResources().getString(R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
+            Toast.makeText (getApplicationContext (), getResources ().getString (R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
             saveToFile (phone_number_no_country_prefix);
             MainPageActivity.downloadProfilesDataInBackGround ();
             finish ();
         } catch (ParseException e) {
+            Toast.makeText (getApplicationContext (), " Error ): ", Toast.LENGTH_SHORT).show ();
             e.printStackTrace ();
         }
     }
@@ -276,7 +281,7 @@ public class SmsSignUpActivity extends Activity {
             ParcelFileDescriptor parcelFileDescriptor =
                     null;
             try {
-                parcelFileDescriptor = getContentResolver ().openFileDescriptor (selectedImage, "r");
+                parcelFileDescriptor = this.getContentResolver ().openFileDescriptor (selectedImage, "r");
             } catch (FileNotFoundException e) {
                 e.printStackTrace ();
             }
@@ -288,7 +293,7 @@ public class SmsSignUpActivity extends Activity {
                 e.printStackTrace ();
             }
             Matrix matrix = new Matrix ();
-            int angleToRotate = getOrientation (selectedImage);
+            int angleToRotate = StaticMethods.getOrientation (selectedImage, this);
             matrix.postRotate (angleToRotate);
             Bitmap rotatedBitmap = Bitmap.createBitmap (image,
                                                                0,
@@ -307,7 +312,7 @@ public class SmsSignUpActivity extends Activity {
         Config config = SinchVerification.config ().applicationKey ("b9ee3da5-0dc9-40aa-90aa-3d30320746f3").context (getApplicationContext ()).build ();
         VerificationListener listener = new MyVerificationListener ();
         Verification verification = SinchVerification.createSmsVerification (config, phone_number, listener);
-        verification.initiate();
+        verification.initiate ();
     }
 
     class MyVerificationListener implements VerificationListener {
@@ -333,20 +338,14 @@ public class SmsSignUpActivity extends Activity {
         @Override
         public void onVerified() {
             Toast.makeText (getApplicationContext (), phone_number_no_country_prefix + " Verified!",
-                                   Toast.LENGTH_SHORT).show();
-            if(!GlobalVariables.isHeb) {
-                usernameTV.setVisibility(View.VISIBLE);
-                usernameTE.setVisibility(View.VISIBLE);
-                phoneET.setVisibility(View.INVISIBLE);
-                phoneTV.setVisibility(View.INVISIBLE);
-                expTV.setVisibility(View.INVISIBLE);
-                s.setVisibility(View.INVISIBLE);
-            }
-            else {
-                stageOneLayout.setVisibility(View.GONE);
-                stageTwoLayout.setVisibility(View.VISIBLE);
-            }
-
+                                   Toast.LENGTH_SHORT).show ();
+                usernameTV.setVisibility (View.VISIBLE);
+                usernameTE.setVisibility (View.VISIBLE);
+                phoneET.setVisibility (View.INVISIBLE);
+                phoneTV.setVisibility (View.INVISIBLE);
+                expTV = (TextView) findViewById (R.id.explanationTV);
+                expTV.setVisibility (View.INVISIBLE);
+                s.setVisibility (View.INVISIBLE);
         }
 
         @Override
@@ -369,31 +368,39 @@ public class SmsSignUpActivity extends Activity {
     }
 
     void saveToFile(String phone_number) {
-        File myExternalFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "verify.txt");        try{
-            FileOutputStream fos = new FileOutputStream(myExternalFile);
-            fos.write(phone_number.getBytes());
-            fos.close();
-            Log.e("number", phone_number);
+        File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
+        try {
+            FileOutputStream fos = new FileOutputStream (myExternalFile);
+            fos.write (phone_number.getBytes ());
+            fos.close ();
+            Log.e ("number", phone_number);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
     }
 
     private void getUserPreviousDetails() {
-
         ParseQuery<Profile> query = ParseQuery.getQuery ("Profile");
         query.whereEqualTo ("number", phone_number_no_country_prefix);
         query.findInBackground (new FindCallback<Profile> () {
             public void done(List<Profile> profiles, ParseException e) {
                 if (e == null) {
-
                     if (profiles.size () > 0) {
                         previousDataFound = profiles.get (0);
                         if (usernameTE.getText ().toString ().isEmpty ()) {
                             usernameTE.setText (profiles.get (0).get ("name") + "");
                             usernameTE.setSelection (usernameTE.getText ().length ());
                         }
-
+                        heightET.setText (profiles.get (0).getHeight ());
+                        heightET.setSelection (heightET.getText ().length ());
+                        String age = profiles.get (0).getAge ();
+                        for (int i = 0; i < array_spinnerAge.length; i++) {
+                            String spinnerAge = array_spinnerAge[i];
+                            if (age.equals (spinnerAge)) {
+                                ageS.setSelection (i);
+                                break;
+                            }
+                        }
                         if (!image_selected) {
                             ParseFile imageFile = (ParseFile) profiles.get (0).get ("pic");
                             if (imageFile != null) {
@@ -401,7 +408,7 @@ public class SmsSignUpActivity extends Activity {
                                     public void done(byte[] data, ParseException e) {
                                         if (e == null) {
                                             image_selected = true;
-                                             bmp = BitmapFactory
+                                            Bitmap bmp = BitmapFactory
                                                                  .decodeByteArray (
                                                                                           data, 0,
                                                                                           data.length);
@@ -412,18 +419,6 @@ public class SmsSignUpActivity extends Activity {
                                     }
                                 });
                             }
-                        }
-                    }
-                    else
-                    {
-                        ParseUser.logOut();
-                        user = new ParseUser();
-                        user.setUsername (phone_number_no_country_prefix);
-                        user.setPassword (phone_number_no_country_prefix);
-                        try {
-                            user.signUp ();
-                        } catch (ParseException e1) {
-                            e1.printStackTrace ();
                         }
                     }
                 } else {

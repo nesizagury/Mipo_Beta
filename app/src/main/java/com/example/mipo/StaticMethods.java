@@ -3,11 +3,14 @@ package com.example.mipo;
 import android.Manifest.permission;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.support.v4.app.ActivityCompat;
@@ -18,6 +21,8 @@ import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseQuery;
 
+import java.text.DecimalFormat;
+import java.util.Date;
 import java.util.List;
 
 public class StaticMethods {
@@ -41,6 +46,20 @@ public class StaticMethods {
             locationProviders = Settings.Secure.getString (context.getContentResolver (), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
             return !TextUtils.isEmpty (locationProviders);
         }
+    }
+
+    public static int getOrientation(Uri selectedImage, Context context) {
+        int orientation = 0;
+        final String[] projection = new String[]{MediaStore.Images.Media.ORIENTATION};
+        final Cursor cursor = context.getContentResolver ().query (selectedImage, projection, null, null, null);
+        if (cursor != null) {
+            final int orientationColumnIndex = cursor.getColumnIndex (MediaStore.Images.Media.ORIENTATION);
+            if (cursor.moveToFirst ()) {
+                orientation = cursor.isNull (orientationColumnIndex) ? 0 : cursor.getInt (orientationColumnIndex);
+            }
+            cursor.close ();
+        }
+        return orientation;
     }
 
     public interface GpsICallback {
@@ -97,6 +116,7 @@ public class StaticMethods {
         public void onLocationChanged(final Location location) {
             if (location != null) {
                 GlobalVariables.MY_LOCATION = location;
+                GlobalVariables.LOCATION_ACCURACY = location.getAccuracy ();
                 if (!isGuestUser ()) {
                     ParseQuery<Profile> query = ParseQuery.getQuery ("Profile");
                     query.whereEqualTo ("number", GlobalVariables.CUSTOMER_PHONE_NUM);
@@ -149,10 +169,161 @@ public class StaticMethods {
         return GlobalVariables.CUSTOMER_PHONE_NUM == null || GlobalVariables.CUSTOMER_PHONE_NUM.isEmpty ();
     }
 
-    public static UserDetails getUserFromPhoneNum(String phone){
-        for(UserDetails userDetails : GlobalVariables.userDataList){
-            if(userDetails.getUserPhoneNum ().equals (phone)){
+    public static UserDetails getUserFromPhoneNum(String phone) {
+        for (UserDetails userDetails : GlobalVariables.userDataList) {
+            if (userDetails.getUserPhoneNum ().equals (phone)) {
                 return userDetails;
+            }
+        }
+        return null;
+    }
+
+    public static String getTimeLastSeenToShow(Date date) {
+        Date currentDate = new Date ();
+        long diff = currentDate.getTime () - date.getTime ();
+        long diffMinutes = diff / (60 * 1000);
+        if (diffMinutes < 60) {
+            return "Seen " + diffMinutes + " min ago";
+        } else {
+            long diffHours = diff / (60 * 60 * 1000);
+            if (diffHours < 24) {
+                return "Seen " + diffHours + " hour ago";
+            } else {
+                long diffDays = diff / (24 * 60 * 60 * 1000);
+                return "Seen " + diffDays + " days ago";
+            }
+        }
+    }
+
+    public static String getDistanceToShow(double distance) {
+        if (distance < 1000) {
+            int distanceInt = (int) distance;
+            return distanceInt + " meters away";
+        } else {
+            DecimalFormat df = new DecimalFormat ("#.##");
+            String dx = df.format (distance / 1000.0);
+            double formatedDistance = Double.valueOf (dx);
+            return formatedDistance + " km away";
+        }
+    }
+
+    public static String getTimeLastSeenToShowHeb(Date date) {
+        Date currentDate = new Date ();
+        long diff = currentDate.getTime () - date.getTime ();
+        long diffMinutes = diff / (60 * 1000);
+        if (diffMinutes < 60) {
+            return "נראה לפני " + diffMinutes + " דקות";
+        } else {
+            long diffHours = diff / (60 * 60 * 1000);
+            if (diffHours < 24) {
+                return "נראה לפני " + diffHours + " שעות";
+            } else {
+                long diffDays = diff / (24 * 60 * 60 * 1000);
+                return "נראה לפני " + diffHours + " ימים";
+            }
+        }
+    }
+
+    public static String getDistanceToShowHeb(double distance) {
+        if (distance < 1000) {
+            int distanceInt = (int) distance;
+            return distanceInt + " מטרים ממך" ;
+        } else {
+            DecimalFormat df = new DecimalFormat ("#.##");
+            String dx = df.format (distance / 1000.0);
+            double formatedDistance = Double.valueOf (dx);
+            return formatedDistance +" קמ ממך" ;
+        }
+    }
+
+    public static void initFilterValues() {
+        GlobalVariables.array_spinner_filter_Looking_for = new String[7];
+        GlobalVariables.array_spinner_filter_Looking_for[0] = "All";
+        GlobalVariables.array_spinner_filter_Looking_for[1] = "Chat";
+        GlobalVariables.array_spinner_filter_Looking_for[2] = "Dates";
+        GlobalVariables.array_spinner_filter_Looking_for[3] = "Friends";
+        GlobalVariables.array_spinner_filter_Looking_for[4] = "Networking";
+        GlobalVariables.array_spinner_filter_Looking_for[5] = "Relationship";
+        GlobalVariables.array_spinner_filter_Looking_for[6] = "Right Now";
+
+        GlobalVariables.array_spinner_filter_Body_type = new String[6];
+        GlobalVariables.array_spinner_filter_Body_type[0] = "All";
+        GlobalVariables.array_spinner_filter_Body_type[1] = "Slim";
+        GlobalVariables.array_spinner_filter_Body_type[2] = "Toned";
+        GlobalVariables.array_spinner_filter_Body_type[3] = "Average";
+        GlobalVariables.array_spinner_filter_Body_type[4] = "Large";
+        GlobalVariables.array_spinner_filter_Body_type[5] = "Stocky";
+
+        GlobalVariables.array_spinner_filter_Ethnicity = new String[9];
+        GlobalVariables.array_spinner_filter_Ethnicity[0] = "All";
+        GlobalVariables.array_spinner_filter_Ethnicity[1] = "Middle Eastern";
+        GlobalVariables.array_spinner_filter_Ethnicity[2] = "Native American";
+        GlobalVariables.array_spinner_filter_Ethnicity[3] = "Black";
+        GlobalVariables.array_spinner_filter_Ethnicity[4] = "Latino";
+        GlobalVariables.array_spinner_filter_Ethnicity[5] = "Mixed";
+        GlobalVariables.array_spinner_filter_Ethnicity[6] = "Other";
+        GlobalVariables.array_spinner_filter_Ethnicity[7] = "South Asian";
+        GlobalVariables.array_spinner_filter_Ethnicity[8] = "White";
+
+        GlobalVariables.array_spinner_filter_Relationship_Status = new String[9];
+        GlobalVariables.array_spinner_filter_Relationship_Status[0] = "All";
+        GlobalVariables.array_spinner_filter_Relationship_Status[1] = "Committed";
+        GlobalVariables.array_spinner_filter_Relationship_Status[2] = "Dating";
+        GlobalVariables.array_spinner_filter_Relationship_Status[3] = "Engaged";
+        GlobalVariables.array_spinner_filter_Relationship_Status[4] = "Exclusive";
+        GlobalVariables.array_spinner_filter_Relationship_Status[5] = "Married";
+        GlobalVariables.array_spinner_filter_Relationship_Status[6] = "Open Relationship";
+        GlobalVariables.array_spinner_filter_Relationship_Status[7] = "Partnered";
+        GlobalVariables.array_spinner_filter_Relationship_Status[8] = "Single";
+    }
+
+    public static void initProfileValues() {
+        GlobalVariables.array_spinner_profile_Looking_for = new String[7];
+        GlobalVariables.array_spinner_profile_Looking_for[0] = "Do Not Show";
+        GlobalVariables.array_spinner_profile_Looking_for[1] = "Chat";
+        GlobalVariables.array_spinner_profile_Looking_for[2] = "Dates";
+        GlobalVariables.array_spinner_profile_Looking_for[3] = "Friends";
+        GlobalVariables.array_spinner_profile_Looking_for[4] = "Networking";
+        GlobalVariables.array_spinner_profile_Looking_for[5] = "Relationship";
+        GlobalVariables.array_spinner_profile_Looking_for[6] = "Right Now";
+
+        GlobalVariables.array_spinner_profile_Body_type = new String[6];
+        GlobalVariables.array_spinner_profile_Body_type[0] = "Do Not Show";
+        GlobalVariables.array_spinner_profile_Body_type[1] = "Slim";
+        GlobalVariables.array_spinner_profile_Body_type[2] = "Toned";
+        GlobalVariables.array_spinner_profile_Body_type[3] = "Average";
+        GlobalVariables.array_spinner_profile_Body_type[4] = "Large";
+        GlobalVariables.array_spinner_profile_Body_type[5] = "Stocky";
+
+        GlobalVariables.array_spinner_profile_Ethnicity = new String[9];
+        GlobalVariables.array_spinner_profile_Ethnicity[0] = "Do Not Show";
+        GlobalVariables.array_spinner_profile_Ethnicity[1] = "Middle Eastern";
+        GlobalVariables.array_spinner_profile_Ethnicity[2] = "Native American";
+        GlobalVariables.array_spinner_profile_Ethnicity[3] = "Black";
+        GlobalVariables.array_spinner_profile_Ethnicity[4] = "Latino";
+        GlobalVariables.array_spinner_profile_Ethnicity[5] = "Mixed";
+        GlobalVariables.array_spinner_profile_Ethnicity[6] = "Other";
+        GlobalVariables.array_spinner_profile_Ethnicity[7] = "South Asian";
+        GlobalVariables.array_spinner_profile_Ethnicity[8] = "White";
+
+        GlobalVariables.array_spinner_profile_Relationship_Status = new String[9];
+        GlobalVariables.array_spinner_profile_Relationship_Status[0] = "Do Not Show";
+        GlobalVariables.array_spinner_profile_Relationship_Status[1] = "Committed";
+        GlobalVariables.array_spinner_profile_Relationship_Status[2] = "Dating";
+        GlobalVariables.array_spinner_profile_Relationship_Status[3] = "Engaged";
+        GlobalVariables.array_spinner_profile_Relationship_Status[4] = "Exclusive";
+        GlobalVariables.array_spinner_profile_Relationship_Status[5] = "Married";
+        GlobalVariables.array_spinner_profile_Relationship_Status[6] = "Open Relationship";
+        GlobalVariables.array_spinner_profile_Relationship_Status[7] = "Partnered";
+        GlobalVariables.array_spinner_profile_Relationship_Status[8] = "Single";
+    }
+
+    public static String getProfileDetailsAsString(String detail,
+                                                   String[] source,
+                                                   String[] displayStringArray) {
+        for (int i = 0; i < displayStringArray.length; i++) {
+            if (source[i].equals (detail)) {
+                return displayStringArray[i];
             }
         }
         return null;

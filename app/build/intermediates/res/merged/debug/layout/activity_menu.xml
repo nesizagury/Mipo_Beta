@@ -28,4 +28,12 @@
         android:id="@+id/smsVerification"
         android:onClick="smsVerification"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/refreshData"
+        android:id="@+id/refreshData"
+        android:onClick="refreshData"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

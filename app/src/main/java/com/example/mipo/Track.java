@@ -5,13 +5,13 @@ import com.parse.ParseObject;
 
 
 @ParseClassName("Track")
-public class Track extends ParseObject{
+public class Track extends ParseObject {
 
-    public String getName() {
+    public String getTrackName() {
         return getString ("name");
     }
 
-    public void setName(String name) {
+    public void setTrackName(String name) {
         put ("name", name);
     }
 
@@ -30,21 +30,5 @@ public class Track extends ParseObject{
 
     public void setSenderId(String senderId) {
         put ("senderId", senderId);
-    }
-
-    public String getSenderName() {
-        return getString ("senderName");
-    }
-
-    public void setSenderName(String senderName) {
-        put ("senderName", senderName);
-    }
-
-    public String getSenderPicUrl() {
-        return getString ("senderPicUrl");
-    }
-
-    public void setSenderPicUrl(String senderPicUrl) {
-        put ("senderPicUrl", senderPicUrl);
     }
 }

@@ -60,9 +60,8 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/online2"
-                android:layout_marginTop="3dp" />
+                android:layout_height="20dp"
+                android:src="@drawable/online2"/>
 
             <TextView
                 android:id="@+id/online"
@@ -72,33 +71,27 @@
                 android:background="#000000"
                 android:text="@string/online"
                 android:textColor="#ffffff"
-                android:textSize="10dp"
-                android:layout_weight="0.05" />
+                android:textSize="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/gps_acuuraty"/>
 
             <TextView
                 android:id="@+id/distanceAcuuraty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
                 android:layout_marginTop="5dp"
                 android:background="#000000"
-                android:text="@string/m"
+                android:text="15m"
                 android:textColor="#ffffff"
-                android:textSize="10dp" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/gps_acuuraty"
-                android:layout_marginTop="9dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:layout_weight="0.90" />
+                android:textSize="10dp"/>
 
         </TableRow>
+
         <TextView
             android:id="@+id/editText"
             android:layout_width="fill_parent"

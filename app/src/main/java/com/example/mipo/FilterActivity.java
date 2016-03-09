@@ -15,11 +15,15 @@ import java.util.List;
 
 public class FilterActivity extends Activity {
 
+    static private String array_spinner_filter_Looking_for[];
+    static private String array_spinner_filter_Body_type[];
+    static private String array_spinner_filter_Ethnicity[];
+    static private String array_spinner_filter_Relationship_Status[];
 
-    static private String optionSelectedLookingFor = "";
-    static private String optionSelectedBodyType = "";
-    static private String optionSelectedOrigine = "";
-    static private String optionSelectedStatus = "";
+    static private int optionSelectedLookingFor = -1;
+    static private int optionSelectedBodyType = -1;
+    static private int optionSelectedEthnicity = -1;
+    static private int optionSelectedStatus = -1;
 
     EditText age_minET;
     EditText age_maxET;
@@ -44,7 +48,7 @@ public class FilterActivity extends Activity {
 
     Spinner spinner_Looking_for;
     Spinner spinner_Body_type;
-    Spinner spinner_Origine;
+    Spinner spinner_Ethnicity;
     Spinner spinner_Status;
 
     boolean age_flag = false;
@@ -52,7 +56,7 @@ public class FilterActivity extends Activity {
     boolean height_flag = false;
     boolean weight_flag = false;
     boolean body_flag = false;
-    boolean origin_flag = false;
+    boolean ethnicity_flag = false;
     boolean relationship_flag = false;
 
 
@@ -120,77 +124,59 @@ public class FilterActivity extends Activity {
             }
         }
 
-        if (!optionSelectedLookingFor.equals ("")) {
+        if (optionSelectedLookingFor != -1) {
             looking_flag = true;
-            for (int i = 0; i < getResources().getStringArray(R.array.lookingForSpinner1).length; i++) {
-                if (optionSelectedLookingFor.equals (getResources().getStringArray(R.array.lookingForSpinner1)[i])) {
-                    spinner_Looking_for.setSelection (i);
-                    spinner_Looking_for.setVisibility (View.VISIBLE);
-                    break;
-                }
-            }
+            spinner_Looking_for.setSelection (optionSelectedLookingFor);
+            spinner_Looking_for.setVisibility (View.VISIBLE);
         }
 
-        if (!optionSelectedBodyType.equals ("")) {
+        if (optionSelectedBodyType != -1) {
             body_flag = true;
-            for (int i = 0; i < getResources().getStringArray(R.array.bodyTypeSpinner).length; i++) {
-                if (optionSelectedBodyType.equals (getResources().getStringArray(R.array.bodyTypeSpinner))) {
-                    spinner_Body_type.setSelection (i);
-                    spinner_Body_type.setVisibility (View.VISIBLE);
-                    break;
-                }
-            }
+            spinner_Body_type.setSelection (optionSelectedBodyType);
+            spinner_Body_type.setVisibility (View.VISIBLE);
         }
 
-        if (!optionSelectedOrigine.equals ("")) {
-            origin_flag = true;
-            for (int i = 0; i < getResources().getStringArray(R.array.originSpinner).length; i++) {
-                if (optionSelectedOrigine.equals (getResources().getStringArray(R.array.originSpinner)[i])) {
-                    spinner_Origine.setSelection (i);
-                    spinner_Origine.setVisibility (View.VISIBLE);
-                    break;
-                }
-            }
+        if (optionSelectedEthnicity != -1) {
+            ethnicity_flag = true;
+            spinner_Ethnicity.setSelection (optionSelectedEthnicity);
+            spinner_Ethnicity.setVisibility (View.VISIBLE);
         }
 
-        if (!optionSelectedStatus.equals ("")) {
+        if (optionSelectedStatus != -1) {
             relationship_flag = true;
-            for (int i = 0; i < getResources().getStringArray(R.array.relationshipSpinner).length; i++) {
-                if (optionSelectedStatus.equals (getResources().getStringArray(R.array.relationshipSpinner)[i])) {
-                    spinner_Status.setSelection (i);
-                    spinner_Status.setVisibility (View.VISIBLE);
-                    break;
-                }
-            }
+            spinner_Status.setSelection (optionSelectedStatus);
+            spinner_Status.setVisibility (View.VISIBLE);
         }
     }
 
     private void setSpinners() {
-
-
+        String[] arrayLookingFor = getResources().getStringArray(R.array.lookingForSpinner1);
+        arrayLookingFor[0] = getResources().getString (R.string.All);
         spinner_Looking_for = (Spinner) findViewById (R.id.spinner);
         ArrayAdapter adapter = new ArrayAdapter (this,
-                                                        android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.lookingForSpinner1));
+                                                        android.R.layout.simple_spinner_item, arrayLookingFor);
         spinner_Looking_for.setAdapter (adapter);
 
-
+        String[] arrayBody_type = getResources().getStringArray(R.array.bodyTypeSpinner);
+        arrayBody_type[0] = getResources().getString (R.string.All);
         spinner_Body_type = (Spinner) findViewById (R.id.spinner2);
         ArrayAdapter adapter2 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.bodyTypeSpinner));
+                                                         android.R.layout.simple_spinner_item, arrayBody_type);
         spinner_Body_type.setAdapter (adapter2);
 
-
-        spinner_Origine = (Spinner) findViewById (R.id.spinner3);
+        String[] arrayEthnicity = getResources().getStringArray(R.array.ethnicitySpinner);
+        arrayEthnicity[0] = getResources().getString (R.string.All);
+        spinner_Ethnicity = (Spinner) findViewById (R.id.spinner3);
         ArrayAdapter adapter3 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.originSpinner));
-        spinner_Origine.setAdapter (adapter3);
+                                                         android.R.layout.simple_spinner_item, arrayEthnicity);
+        spinner_Ethnicity.setAdapter (adapter3);
 
-
+        String[] arrayStatus = getResources().getStringArray(R.array.relationshipSpinner);
+        arrayStatus[0] = getResources().getString (R.string.All);
         spinner_Status = (Spinner) findViewById (R.id.spinner4);
         ArrayAdapter adapter4 = new ArrayAdapter (this,
-                                                         android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.relationshipSpinner));
+                                                         android.R.layout.simple_spinner_item, arrayStatus);
         spinner_Status.setAdapter (adapter4);
-
     }
 
 
@@ -258,7 +244,7 @@ public class FilterActivity extends Activity {
             looking_flag = true;
         } else {
             spinner_Looking_for.setVisibility (View.INVISIBLE);
-            optionSelectedLookingFor = "";
+            optionSelectedLookingFor = -1;
             looking_flag = false;
         }
     }
@@ -269,20 +255,20 @@ public class FilterActivity extends Activity {
             body_flag = true;
         } else {
             spinner_Body_type.setVisibility (View.INVISIBLE);
-            optionSelectedBodyType = "";
+            optionSelectedBodyType = -1;
             body_flag = false;
         }
     }
 
 
     public void showOriginEditors(View v) {
-        if (!origin_flag) {
-            spinner_Origine.setVisibility (View.VISIBLE);
-            origin_flag = true;
+        if (!ethnicity_flag) {
+            spinner_Ethnicity.setVisibility (View.VISIBLE);
+            ethnicity_flag = true;
         } else {
-            optionSelectedOrigine = "";
-            spinner_Origine.setVisibility (View.INVISIBLE);
-            origin_flag = false;
+            optionSelectedEthnicity = -1;
+            spinner_Ethnicity.setVisibility (View.INVISIBLE);
+            ethnicity_flag = false;
         }
     }
 
@@ -291,7 +277,7 @@ public class FilterActivity extends Activity {
             spinner_Status.setVisibility (View.VISIBLE);
             relationship_flag = true;
         } else {
-            optionSelectedStatus = "";
+            optionSelectedStatus = -1;
             spinner_Status.setVisibility (View.INVISIBLE);
             relationship_flag = false;
         }
@@ -349,8 +335,8 @@ public class FilterActivity extends Activity {
         if (spinner_Looking_for.getVisibility () == View.INVISIBLE)
             return "";
         else {
-            optionSelectedLookingFor = spinner_Looking_for.getSelectedItem ().toString ();
-            return optionSelectedLookingFor;
+            optionSelectedLookingFor = spinner_Looking_for.getSelectedItemPosition ();
+            return GlobalVariables.array_spinner_filter_Looking_for[optionSelectedLookingFor];
         }
     }
 
@@ -358,17 +344,17 @@ public class FilterActivity extends Activity {
         if (spinner_Body_type.getVisibility () == View.INVISIBLE)
             return "";
         else {
-            optionSelectedBodyType = spinner_Body_type.getSelectedItem ().toString ();
-            return optionSelectedBodyType;
+            optionSelectedBodyType = spinner_Body_type.getSelectedItemPosition ();
+            return GlobalVariables.array_spinner_filter_Body_type[optionSelectedBodyType];
         }
     }
 
     public String getOrigin() {
-        if (spinner_Origine.getVisibility () == View.INVISIBLE)
+        if (spinner_Ethnicity.getVisibility () == View.INVISIBLE)
             return "";
         else {
-            optionSelectedOrigine = spinner_Origine.getSelectedItem ().toString ();
-            return optionSelectedOrigine;
+            optionSelectedEthnicity = spinner_Ethnicity.getSelectedItemPosition ();
+            return GlobalVariables.array_spinner_filter_Ethnicity[optionSelectedEthnicity];
         }
     }
 
@@ -377,8 +363,8 @@ public class FilterActivity extends Activity {
         if (spinner_Status.getVisibility () == View.INVISIBLE)
             return "";
         else {
-            optionSelectedStatus = spinner_Status.getSelectedItem ().toString ();
-            return optionSelectedStatus;
+            optionSelectedStatus = spinner_Status.getSelectedItemPosition ();
+            return GlobalVariables.array_spinner_filter_Relationship_Status[optionSelectedStatus];
         }
     }
 
@@ -496,12 +482,12 @@ public class FilterActivity extends Activity {
         }
 
         // check for origin filter request
-        if (spinner_Origine.getVisibility () == View.VISIBLE) {
+        if (spinner_Ethnicity.getVisibility () == View.VISIBLE) {
             String origine = getOrigin ();
             if (!(origine.equals ("All"))) {
                 for (int i = 0; i < GlobalVariables.userDataList.size (); i++) {
                     UserDetails user = GlobalVariables.userDataList.get (i);
-                    String origine_user = user.getNation ();
+                    String origine_user = user.getEthnicity ();
                     try {
                         if (!(origine_user.equals (origine))) {
                             user.setIsFilteredOK (false);
@@ -516,7 +502,7 @@ public class FilterActivity extends Activity {
         // check for relationship status filter request
         if (spinner_Status.getVisibility () == View.VISIBLE) {
             String status = getRelationshipStatus ();
-            if (!(status.equals(getResources().getString(R.string.LoginAs)))) {
+            if (!(status.equals ("All"))) {
                 for (int i = 0; i < GlobalVariables.userDataList.size (); i++) {
                     UserDetails user = GlobalVariables.userDataList.get (i);
                     String relationship_status_user = user.getRelationship_status ();
