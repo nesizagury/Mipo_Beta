@@ -28,8 +28,8 @@ public class MainActivity extends Activity {
         ParseObject.registerSubclass (Profile.class);
         ParseObject.registerSubclass (Track.class);
         Parse.initialize (this,
-                                 "zHbkCgWz7FPRNK0E3mnB7HwRgEuKalaqnADvr8qK",
-                                 "KOerUm6IRSMz4gPOqNAsNVn0QsCHVWC0SIWI3tle");
+                                 "A0F3SEBpsYzx5v68Q9W2C5qWz6A9X7fQVPVyq2j7",
+                                 "gTAI3XhpLTikFqVmveGnBNHtZuV0xEKPzqYeODys");
         ParseACL defaultAcl = new ParseACL ();
         defaultAcl.setPublicReadAccess (true);
         defaultAcl.setPublicWriteAccess (true);
