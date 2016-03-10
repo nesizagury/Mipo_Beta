@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\git\\Mipo_Beta\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\git\\Mipo_Beta\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\menu\\main.xml"
     }

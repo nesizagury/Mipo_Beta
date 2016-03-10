@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\git\Mipo_Beta\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_9dfe130806870cc25cd1a24b5c8fdca9b5dbbd17.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.0_d0cf2c13d2417db468fa0f11435a86c9d3dd60ba.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0_ff2146d1e946e2c1d8ad0f922d871c7e11fbf8d9.jar" />
+    </item>
+    <item
+        jar="C:\Users\nesi\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.5\442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_bf9da341ee1db04682653011572ec4d366430fea.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\libs\acra-4.6.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b99297996579b72496c9f81b0c12d8404c74e618">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\acra-4.6.2_1dfac410e9bdc6fdec1455cb764f9a0433c568c4.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_c2ef974d0d885616b196e9ae906a19820763cd5d.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_d83c3e840b9d31b5c8afe9195a7db4f4917fe4f5.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\app\libs\sinch-android-verification-1.1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="65b6a8cb4ba101671e3900b727f796937545b64f">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\sinch-android-verification-1.1.2_5da68d685b861c8b1234bc93fb6d13a2bb50f6af.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\Parse-1.11.0\Parse-1.11.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="54a0d027ea5d5b0dae92833991bb68f9b3da6ca6">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\Parse-1.11.0_330d137f3b4a7f66b277adaa5de0593844c36278.jar" />
+    </item>
+    <item
+        jar="C:\Users\nesi\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_6748ef1ccf99ed6f937705ed84faf5af0c20b511.jar" />
+    </item>
+    <item
+        jar="C:\Users\nesi\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0_c753c909a85130700d5fa190b2ca392caff2da9c.jar" />
+    </item>
+    <item
+        jar="D:\git\Mipo_Beta\bolts-tasks-1.3.0\bolts-tasks-1.3.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="D:\git\Mipo_Beta\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.3.0_f4b0f3ba003fce9194b420bc41d492a3a81075e4.jar" />
+    </item>
+
+</items>
