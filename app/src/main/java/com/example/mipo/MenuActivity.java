@@ -37,6 +37,6 @@ public class MenuActivity extends Activity {
     }
 
     public void refreshData(View v) {
-        MainPageActivity.downloadProfilesDataInBackGround ();
+        MainPageActivity.downloadProfilesData ();
     }
 }

@@ -18,6 +18,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import java.util.Date;
 import java.util.List;
 
 public class TracksAdapter extends ArrayAdapter<TrackItem> {
@@ -69,15 +70,21 @@ public class TracksAdapter extends ArrayAdapter<TrackItem> {
             public void onClick(View v) {
                 switch (v.getId ()) {
                     case R.id.profileButton:
-                        Intent intent = new Intent (c, UserPage.class);
                         Bundle b = new Bundle ();
-                        b.putInt ("index", userDetails.getIndexInAllDataList ());
+                        Intent intent = new Intent (c, UserPage.class);
+                        UserDetails user = userDetails;
+                        intent.putExtra ("userName", user.name);
+                        intent.putExtra ("userCurrent", StaticMethods.isCurrentUser (user));
+                        b.putString ("userID", user.getUserPhoneNum ());
+                        b.putInt ("index", user.getIndexInAllDataList ());
+                        Date currentDate = new Date ();
+                        long diff = currentDate.getTime () - user.getLastSeen ().getTime ();
+                        long diffMinutes = diff / (60 * 1000);
+                        b.putInt ("online", (int) diffMinutes);
                         intent.putExtras (b);
-                        intent.putExtra ("userName", userDetails.getName ());
                         intent.setFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
                         c.startActivity (intent);
                         break;
-
                 }
             }
         });

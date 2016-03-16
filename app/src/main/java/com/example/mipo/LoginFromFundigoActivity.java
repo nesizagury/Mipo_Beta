@@ -9,15 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.parse.GetCallback;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
 public class LoginFromFundigoActivity extends Activity {
 
@@ -40,24 +40,22 @@ public class LoginFromFundigoActivity extends Activity {
 
         ParseQuery query = new ParseQuery ("Profile");
         query.whereEqualTo ("number", number);
-        query.getFirstInBackground (new GetCallback<Profile> () {
-            public void done(Profile object, ParseException e) {
-                if (e == null) {
-                    if (object.getAge () != null) {
-                        File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
-                        try {
-                            FileOutputStream fos = new FileOutputStream (myExternalFile);
-                            fos.write (number.getBytes ());
-                            fos.close ();
-                            GlobalVariables.CUSTOMER_PHONE_NUM = number;
-                            login ();
-                        } catch (IOException e1) {
-                            e1.printStackTrace ();
-                        }
-                    }
-                }
+        Profile object = null;
+        try {
+            object = (Profile) query.getFirst ();
+            if (object.getAge () != null) {
+                File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
+                FileOutputStream fos = new FileOutputStream (myExternalFile);
+                fos.write (number.getBytes ());
+                fos.close ();
+                GlobalVariables.CUSTOMER_PHONE_NUM = number;
+                login ();
             }
-        });
+        } catch (IOException e1) {
+            e1.printStackTrace ();
+        } catch (ParseException e) {
+            e.printStackTrace ();
+        }
     }
 
     public void guestLogin(View view) {
@@ -69,6 +67,7 @@ public class LoginFromFundigoActivity extends Activity {
         Intent intent = new Intent (this, MainPageActivity.class);
         startActivity (intent);
         finish ();
+        LoginActivity.LoogedIn = true;
     }
 
     public void fundigoLogin(View view) {
@@ -80,28 +79,27 @@ public class LoginFromFundigoActivity extends Activity {
     }
 
     void saveToFileAndServer(String phone_number) { // this function turns the fundigo user into a mipo user
-        File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
+        ParseQuery<Profile> query = new ParseQuery ("Profile");
+        query.whereEqualTo ("number", phone_number);
+        Profile object = null;
         try {
+            object = query.getFirst ();
+            object.put ("age", ageET.getText ().toString ());
+            object.put ("height", heightET.getText ().toString ());
+            object.put ("lastSeen", new Date ());
+            object.save ();
+            File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
             FileOutputStream fos = new FileOutputStream (myExternalFile);
             fos.write (phone_number.getBytes ());
             fos.close ();
             Log.e ("number", phone_number);
+        } catch (ParseException e) {
+            e.printStackTrace ();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace ();
         } catch (IOException e) {
             e.printStackTrace ();
         }
-
-        ParseQuery query = new ParseQuery ("Profile");
-        query.whereEqualTo ("number", phone_number);
-        query.getFirstInBackground (new GetCallback<ParseObject> () {
-            public void done(ParseObject object, ParseException e) {
-                if (e == null) {
-
-                    object.put ("age", ageET.getText ().toString ());
-                    object.put ("height", heightET.getText ().toString ());
-                    object.saveInBackground ();
-                }
-            }
-        });
     }
 
     public void login() {
@@ -111,6 +109,7 @@ public class LoginFromFundigoActivity extends Activity {
             Intent intent = new Intent (LoginFromFundigoActivity.this, MainPageActivity.class);
             startActivity (intent);
             finish ();
+            LoginActivity.LoogedIn = true;
         } catch (ParseException e) {
             e.printStackTrace ();
         }

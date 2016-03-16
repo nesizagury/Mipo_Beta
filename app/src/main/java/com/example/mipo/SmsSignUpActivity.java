@@ -2,7 +2,6 @@ package com.example.mipo;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
@@ -29,6 +28,7 @@ import com.parse.GetDataCallback;
 import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseFile;
+import com.parse.ParseGeoPoint;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.sinch.verification.CodeInterceptionException;
@@ -68,7 +68,8 @@ public class SmsSignUpActivity extends Activity {
     ImageView imageV;
     TextView optionalTV;
     TextView expTV;
-    boolean image_selected;
+    boolean image_selected = false;
+    boolean image_was_before = false;
     Profile previousDataFound;
     TextView ageTV;
     TextView heightTV;
@@ -143,20 +144,20 @@ public class SmsSignUpActivity extends Activity {
                     upload_button = (Button) findViewById (R.id.upload_button);
                     imageV = (ImageView) findViewById (R.id.imageV);
 
-                        usernameTE.setVisibility (View.INVISIBLE);
-                        usernameTV.setVisibility (View.INVISIBLE);
-                        imageV = (ImageView) findViewById (R.id.imageV);
-                        imageV.setVisibility (View.VISIBLE);
-                        upload_button = (Button) findViewById (R.id.upload_button);
-                        upload_button.setVisibility (View.VISIBLE);
-                        signup = (Button) findViewById (R.id.button2);
-                        signup.setVisibility (View.VISIBLE);
-                        optionalTV = (TextView) findViewById (R.id.optionalTV);
-                        optionalTV.setVisibility (View.VISIBLE);
-                        ageS.setVisibility (View.VISIBLE);
-                        ageTV.setVisibility (View.VISIBLE);
-                        heightTV.setVisibility (View.VISIBLE);
-                        heightET.setVisibility (View.VISIBLE);
+                    usernameTE.setVisibility (View.INVISIBLE);
+                    usernameTV.setVisibility (View.INVISIBLE);
+                    imageV = (ImageView) findViewById (R.id.imageV);
+                    imageV.setVisibility (View.VISIBLE);
+                    upload_button = (Button) findViewById (R.id.upload_button);
+                    upload_button.setVisibility (View.VISIBLE);
+                    signup = (Button) findViewById (R.id.button2);
+                    signup.setVisibility (View.VISIBLE);
+                    optionalTV = (TextView) findViewById (R.id.optionalTV);
+                    optionalTV.setVisibility (View.VISIBLE);
+                    ageS.setVisibility (View.VISIBLE);
+                    ageTV.setVisibility (View.VISIBLE);
+                    heightTV.setVisibility (View.VISIBLE);
+                    heightET.setVisibility (View.VISIBLE);
                 }
                 return false;
             }
@@ -191,11 +192,18 @@ public class SmsSignUpActivity extends Activity {
         profile.setAge (ageS.getSelectedItem ().toString ());
         profile.setHeight (String.valueOf (heightET.getText ().toString ()));
         profile.setLastSeen (new Date ());
+        ParseGeoPoint parseGeoPoint = new ParseGeoPoint (32.78486991,
+                                                                35.52234626);
+        profile.setLocation (parseGeoPoint);
         try {
             if (image_selected) {
                 imageV.buildDrawingCache ();
                 ByteArrayOutputStream stream = new ByteArrayOutputStream ();
-                bmp.compress (CompressFormat.JPEG, 100, stream);
+                if(bmp.getByteCount () > 500000) {
+                    bmp.compress (CompressFormat.JPEG, 100, stream);
+                } else{
+                    bmp.compress (CompressFormat.PNG, 100, stream);
+                }
                 byte[] image = stream.toByteArray ();
                 ParseFile file = new ParseFile ("picturePath", image);
                 try {
@@ -208,7 +216,7 @@ public class SmsSignUpActivity extends Activity {
                 parseAcl.setPublicWriteAccess (true);
                 profile.setACL (parseAcl);
                 profile.put ("pic", file);
-            } else {
+            } else if (!image_was_before) {
                 bmp = BitmapFactory.decodeResource (this.getResources (),
                                                            R.drawable.no_image_icon_md);
                 imageV.setImageBitmap (bmp);
@@ -236,7 +244,7 @@ public class SmsSignUpActivity extends Activity {
             GlobalVariables.CUSTOMER_PHONE_NUM = phone_number_no_country_prefix;
             Toast.makeText (getApplicationContext (), getResources ().getString (R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
             saveToFile (phone_number_no_country_prefix);
-            MainPageActivity.downloadProfilesDataInBackGround ();
+            MainPageActivity.downloadProfilesData ();
             finish ();
         } catch (ParseException e) {
             Toast.makeText (getApplicationContext (), " Error ): ", Toast.LENGTH_SHORT).show ();
@@ -339,13 +347,13 @@ public class SmsSignUpActivity extends Activity {
         public void onVerified() {
             Toast.makeText (getApplicationContext (), phone_number_no_country_prefix + " Verified!",
                                    Toast.LENGTH_SHORT).show ();
-                usernameTV.setVisibility (View.VISIBLE);
-                usernameTE.setVisibility (View.VISIBLE);
-                phoneET.setVisibility (View.INVISIBLE);
-                phoneTV.setVisibility (View.INVISIBLE);
-                expTV = (TextView) findViewById (R.id.explanationTV);
-                expTV.setVisibility (View.INVISIBLE);
-                s.setVisibility (View.INVISIBLE);
+            usernameTV.setVisibility (View.VISIBLE);
+            usernameTE.setVisibility (View.VISIBLE);
+            phoneET.setVisibility (View.INVISIBLE);
+            phoneTV.setVisibility (View.INVISIBLE);
+            expTV = (TextView) findViewById (R.id.explanationTV);
+            expTV.setVisibility (View.INVISIBLE);
+            s.setVisibility (View.INVISIBLE);
         }
 
         @Override
@@ -407,12 +415,12 @@ public class SmsSignUpActivity extends Activity {
                                 imageFile.getDataInBackground (new GetDataCallback () {
                                     public void done(byte[] data, ParseException e) {
                                         if (e == null) {
-                                            image_selected = true;
                                             Bitmap bmp = BitmapFactory
                                                                  .decodeByteArray (
                                                                                           data, 0,
                                                                                           data.length);
                                             imageV.setImageBitmap (bmp);
+                                            image_was_before = true;
                                         } else {
                                             e.printStackTrace ();
                                         }
@@ -426,19 +434,5 @@ public class SmsSignUpActivity extends Activity {
                 }
             }
         });
-    }
-
-    public int getOrientation(Uri selectedImage) {
-        int orientation = 0;
-        final String[] projection = new String[]{MediaStore.Images.Media.ORIENTATION};
-        final Cursor cursor = this.getContentResolver ().query (selectedImage, projection, null, null, null);
-        if (cursor != null) {
-            final int orientationColumnIndex = cursor.getColumnIndex (MediaStore.Images.Media.ORIENTATION);
-            if (cursor.moveToFirst ()) {
-                orientation = cursor.isNull (orientationColumnIndex) ? 0 : cursor.getInt (orientationColumnIndex);
-            }
-            cursor.close ();
-        }
-        return orientation;
     }
 }

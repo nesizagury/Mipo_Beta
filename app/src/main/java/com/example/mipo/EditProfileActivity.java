@@ -46,8 +46,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
     LinearLayout edit_profile_first_sub_part;
     LinearLayout edit_profile_second_sub_part;
     private static final int SELECT_PICTURE = 1;
-    String picturePath;
-    private boolean pictureSelected;
+    private boolean pictureSelected = false;
     Bitmap bmp;
 
     Spinner spinner_Looking_for;
@@ -161,12 +160,12 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                         }
                     }
                     if (spinner_realationship_Status.getVisibility () == View.VISIBLE) {
-                        if(getRelationshipStatus () != null) {
+                        if (getRelationshipStatus () != null) {
                             profile.setRelationship_status (getRelationshipStatus ());
                         }
                     }
                     if (spinner_Looking_for.getVisibility () == View.VISIBLE) {
-                        if(getLookingFor () != null) {
+                        if (getLookingFor () != null) {
                             profile.setLooking_for (getLookingFor ());
                         }
                     }
@@ -242,58 +241,52 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                         et_about.setText (profile.getAbout ());
                         et_about.setSelection (et_about.getText ().length ());
                     }
-
-                    if (spinner_Looking_for.getVisibility () == View.INVISIBLE) {
-                        String current_looking_for = profile.getLooking_for ();
-                        if (current_looking_for != null) {
-                            for (int i = 0; i < GlobalVariables.array_spinner_filter_Looking_for.length; i++) {
-                                if (current_looking_for.equals (GlobalVariables.array_spinner_filter_Looking_for[i])) {
-                                    spinner_Looking_for.setSelection (i);
-                                    spinner_Looking_for.setVisibility (View.VISIBLE);
-                                    break;
-                                }
+                    String current_looking_for = profile.getLooking_for ();
+                    if (current_looking_for != null) {
+                        for (int i = 0; i < GlobalVariables.array_spinner_profile_Looking_for.length; i++) {
+                            if (current_looking_for.equals (GlobalVariables.array_spinner_filter_Looking_for[i])) {
+                                spinner_Looking_for.setSelection (i);
+                                spinner_Looking_for.setVisibility (View.VISIBLE);
+                                break;
                             }
                         }
                     }
 
-                    if (spinner_Body_type.getVisibility () == View.INVISIBLE) {
-                        String current_Body_type = profile.getBody_type ();
-                        if (current_Body_type != null) {
-                            for (int i = 0; i < GlobalVariables.array_spinner_filter_Body_type.length; i++) {
-                                if (current_Body_type.equals (GlobalVariables.array_spinner_filter_Body_type[i])) {
-                                    spinner_Body_type.setSelection (i);
-                                    spinner_Body_type.setVisibility (View.VISIBLE);
-                                    break;
-                                }
+                    String current_Body_type = profile.getBody_type ();
+                    if (current_Body_type != null) {
+                        for (int i = 0; i < GlobalVariables.array_spinner_profile_Body_type.length; i++) {
+                            if (current_Body_type.equals (GlobalVariables.array_spinner_filter_Body_type[i])) {
+                                spinner_Body_type.setSelection (i);
+                                spinner_Body_type.setVisibility (View.VISIBLE);
+                                break;
                             }
                         }
                     }
 
-                    if (spinner_Ethnicity.getVisibility () == View.INVISIBLE) {
-                        String current_Ethnicity = profile.getEthnicity ();
-                        if (current_Ethnicity != null) {
-                            for (int i = 0; i < GlobalVariables.array_spinner_filter_Ethnicity.length; i++) {
-                                if (current_Ethnicity.equals (GlobalVariables.array_spinner_filter_Ethnicity[i])) {
-                                    spinner_Ethnicity.setSelection (i);
-                                    spinner_Ethnicity.setVisibility (View.VISIBLE);
-                                    break;
-                                }
+
+                    String current_Ethnicity = profile.getEthnicity ();
+                    if (current_Ethnicity != null) {
+                        for (int i = 0; i < GlobalVariables.array_spinner_profile_Ethnicity.length; i++) {
+                            if (current_Ethnicity.equals (GlobalVariables.array_spinner_filter_Ethnicity[i])) {
+                                spinner_Ethnicity.setSelection (i);
+                                spinner_Ethnicity.setVisibility (View.VISIBLE);
+                                break;
                             }
                         }
                     }
 
-                    if (spinner_realationship_Status.getVisibility () == View.INVISIBLE) {
-                        String current_realationship_Status = profile.getRelationship_status ();
-                        if (current_realationship_Status != null) {
-                            for (int i = 0; i < GlobalVariables.array_spinner_filter_Relationship_Status.length; i++) {
-                                if (current_realationship_Status.equals (GlobalVariables.array_spinner_filter_Relationship_Status[i])) {
-                                    spinner_realationship_Status.setSelection (i);
-                                    spinner_realationship_Status.setVisibility (View.VISIBLE);
-                                    break;
-                                }
+
+                    String current_realationship_Status = profile.getRelationship_status ();
+                    if (current_realationship_Status != null) {
+                        for (int i = 0; i < GlobalVariables.array_spinner_profile_Relationship_Status.length; i++) {
+                            if (current_realationship_Status.equals (GlobalVariables.array_spinner_filter_Relationship_Status[i])) {
+                                spinner_realationship_Status.setSelection (i);
+                                spinner_realationship_Status.setVisibility (View.VISIBLE);
+                                break;
                             }
                         }
                     }
+
 
                     if (!pictureSelected) {
                         ParseFile imageFile = (ParseFile) profile.getPic ();
@@ -305,7 +298,6 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                                                       .decodeByteArray (
                                                                                data, 0,
                                                                                data.length);
-                                        pictureSelected = true;
                                         pic.setImageBitmap (bmp);
                                     } else {
                                         e.printStackTrace ();

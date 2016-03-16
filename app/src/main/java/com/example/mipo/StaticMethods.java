@@ -114,7 +114,7 @@ public class StaticMethods {
 
         @Override
         public void onLocationChanged(final Location location) {
-            if (location != null) {
+            if (location != null && GlobalVariables.CUSTOMER_PHONE_NUM != null) {
                 GlobalVariables.MY_LOCATION = location;
                 GlobalVariables.LOCATION_ACCURACY = location.getAccuracy ();
                 if (!isGuestUser ()) {
@@ -227,12 +227,12 @@ public class StaticMethods {
     public static String getDistanceToShowHeb(double distance) {
         if (distance < 1000) {
             int distanceInt = (int) distance;
-            return distanceInt + " מטרים ממך" ;
+            return distanceInt + " מטרים ממך";
         } else {
             DecimalFormat df = new DecimalFormat ("#.##");
             String dx = df.format (distance / 1000.0);
             double formatedDistance = Double.valueOf (dx);
-            return formatedDistance +" קמ ממך" ;
+            return formatedDistance + " קמ ממך";
         }
     }
 

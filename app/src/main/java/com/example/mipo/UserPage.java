@@ -89,31 +89,38 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
 
             TextView userNameTF = (TextView) findViewById (R.id.name_profile);
             TextView seenTF = (TextView) findViewById (R.id.seen_profile);
-            userNameTF.setText (user_name + " , " + userDetails.getAge ());
+            String nameAge = user_name + " , " + userDetails.getAge ();
+            userNameTF.setText (nameAge);
             if (!GlobalVariables.isHeb) {
                 userNameTF.setGravity (Gravity.LEFT);
                 if (user_current) {
-                    seenTF.setText ("Online" + " | " + "0 meters away");
+                    String timeDist = "Online" + " | " + "0 meters away";
+                    seenTF.setText (timeDist);
                 } else {
                     String distance = StaticMethods.getDistanceToShow (userDetails.getDist ());
                     if (online < 10) {
-                        seenTF.setText ("Online" + " | " + distance);
+                        String timeDist = "Online" + " | " + distance;
+                        seenTF.setText (timeDist);
                     } else {
                         String lastSeenText = StaticMethods.getTimeLastSeenToShow (userDetails.getLastSeen ());
-                        seenTF.setText (lastSeenText + " | " + distance);
+                        String timeDist = lastSeenText + " | " + distance;
+                        seenTF.setText (timeDist);
                     }
                 }
             } else {
                 userNameTF.setGravity (Gravity.RIGHT);
                 if (user_current) {
-                    seenTF.setText ("0 מטרים ממך" + " | " + "מחובר");
+                    String timeDist = "0 מטרים ממך" + " | " + "מחובר";
+                    seenTF.setText (timeDist);
                 } else {
                     String distance = StaticMethods.getDistanceToShowHeb (userDetails.getDist ());
                     if (online < 10) {
-                        seenTF.setText (distance + " | " + "מחובר");
+                        String timeDist = distance + " | " + "מחובר";
+                        seenTF.setText (timeDist);
                     } else {
                         String lastSeenText = StaticMethods.getTimeLastSeenToShowHeb (userDetails.getLastSeen ());
-                        seenTF.setText (distance + " | " + lastSeenText);
+                        String timeDist = distance + " | " + lastSeenText;
+                        seenTF.setText (timeDist);
                     }
                 }
             }
@@ -204,7 +211,7 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
 
                     object.add ("blocked", GlobalVariables.currentUser.getUserPhoneNum ());
                     object.saveInBackground ();
-                    MainPageActivity.downloadProfilesDataInBackGround ();
+                    MainPageActivity.downloadProfilesData ();
                     finish ();
 
                 }
