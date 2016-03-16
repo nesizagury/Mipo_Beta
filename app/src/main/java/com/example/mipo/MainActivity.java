@@ -30,8 +30,8 @@ public class MainActivity extends Activity  implements GpsICallback {
         ParseObject.registerSubclass (Profile.class);
         ParseObject.registerSubclass (Track.class);
         Parse.initialize (this,
-                                 "zHbkCgWz7FPRNK0E3mnB7HwRgEuKalaqnADvr8qK",
-                                 "KOerUm6IRSMz4gPOqNAsNVn0QsCHVWC0SIWI3tle");
+                                 "RJvGyrtJDjDVi8pll79cOl7mg6HGrNIXnx4IhR4L",
+                                 "hGCEGvd43cFw0ixPXEXBggebX9Bl1dRfHGpPsDlM");
         ParseACL defaultAcl = new ParseACL ();
         defaultAcl.setPublicReadAccess (true);
         defaultAcl.setPublicWriteAccess (true);
