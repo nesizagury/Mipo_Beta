@@ -365,28 +365,28 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                             e.printStackTrace ();
                         }
                     }
-                });
+                }); 
+				ParseQuery<Profile> query = new ParseQuery ("Profile");
+				query.orderByDescending ("createdAt");
+				query.findInBackground (new FindCallback<Profile> () {
+					public void done(List<Profile> profilesList, ParseException e) {
+						if (e == null) {
+							for (int i = 0; i < profilesList.size (); i++) {
+								Profile profile = profilesList.get (i);
+								for (UserDetails userDetails : GlobalVariables.userDataList) {
+									if (userDetails.getUserPhoneNum ().equals (profile.getNumber ())) {
+										userDetails.setLastSeen (profile.getLastSeen ());
+										userDetails.setUserLocation (profile.getLocation ());
+										break;
+									}
+								}
+							}
+						} else {
+							e.printStackTrace ();
+						}
+					}
+				});
             }
-            ParseQuery<Profile> query = new ParseQuery ("Profile");
-            query.orderByDescending ("createdAt");
-            query.findInBackground (new FindCallback<Profile> () {
-                public void done(List<Profile> profilesList, ParseException e) {
-                    if (e == null) {
-                        for (int i = 0; i < profilesList.size (); i++) {
-                            Profile profile = profilesList.get (i);
-                            for (UserDetails userDetails : GlobalVariables.userDataList) {
-                                if (userDetails.getUserPhoneNum ().equals (profile.getNumber ())) {
-                                    userDetails.setLastSeen (profile.getLastSeen ());
-                                    userDetails.setUserLocation (profile.getLocation ());
-                                    break;
-                                }
-                            }
-                        }
-                    } else {
-                        e.printStackTrace ();
-                    }
-                }
-            });
             handler.postDelayed (this, 10000);
         }
     };
