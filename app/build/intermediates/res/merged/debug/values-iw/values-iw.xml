@@ -19,6 +19,10 @@
         <item>דרום אסייתית</item>
         <item>אשכנזית</item>
     </string-array>
+    <string-array name="gender_array">
+        <item>גבר</item>
+        <item>אישה</item>
+    </string-array>
     <string-array name="lookingForSpinner1">
         <item>אל תראה</item>
         <item>צאט</item>
@@ -65,33 +69,44 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"‏שתף עם %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"כווץ"</string>
     <string name="about">על עצמי</string>
+    <string name="about_app">אודות</string>
     <string name="action_settings">Settings</string>
     <string name="addedToFavor">התווסף למועדפים</string>
     <string name="age">גיל</string>
     <string name="all">הכול</string>
     <string name="app_name">מיפו</string>
     <string name="away">0 קילומטר ממך </string>
+    <string name="back">חזור</string>
     <string name="bannedProfile">ממשתמש זה נחסם!</string>
     <string name="before">לפני</string>
+    <string name="block_profiles">משתמשים חסומים</string>
     <string name="bodyType">מבנה גוף</string>
+    <string name="cancel_block">בטל\n חסימה</string>
     <string name="createProfile">יצירת פרופיל</string>
     <string name="doNotShow">אל תראה</string>
     <string name="editProfile">ערוך פרופיל</string>
     <string name="enterNameAge">הכנס שם וגיל</string>
+    <string name="enter_name">הכנס כינוי בבקשה</string>
+    <string name="enter_phone_number">הכנס מספר טלפון</string>
     <string name="favorites">  מועדפים</string>
     <string name="filter">פילטר</string>
     <string name="from">ממך</string>
+    <string name="gender">מין</string>
     <string name="hangTrack">שלחת לה "בואי נצא"</string>
+    <string name="have_no_block">אין לך משתמשים חסומים</string>
     <string name="height">גובה</string>
     <string name="isSingle">מה שלומך היום?</string>
     <string name="km">קילומטר</string>
+    <string name="legal_statement">הצהרה משפטית</string>
     <string name="letsHang">רוצה לצאת איתך</string>
     <string name="like">עשה/עשתה לך לייק</string>
     <string name="likeTrack">שלחת לה "לייק"</string>
     <string name="lookingFor">מתעניין/ת</string>
+    <string name="looking_for">מחפש/ת</string>
     <string name="love">אהב/ה את הפרופיל שלך</string>
     <string name="loveTrack">שלחת לה "אהבתי"</string>
     <string name="m">15מ</string>
+    <string name="man">גבר</string>
     <string name="max">מקס</string>
     <string name="menu">תפריט</string>
     <string name="message">הודעה</string>
@@ -107,9 +122,11 @@
     <string name="optional">(אופציונלי)</string>
     <string name="origin">מוצא</string>
     <string name="phoneNumber">מספר הטלפון</string>
+    <string name="phone_number_must_be_7">מספר טלפון חייב להיות באורך 7 ספרות</string>
     <string name="pleaseProfile">אנא צור פרופיל</string>
     <string name="profile_me">My Profile Pic</string>
     <string name="profile_other">Other profile pic</string>
+    <string name="read_legal_statement">קרא הצהרה משפטית ואשר בבקשה</string>
     <string name="refreshData">רענן פרופילים</string>
     <string name="relationshipStatus">מצב זוגי</string>
     <string name="removedFromFavor">הוסר מהמועדפים</string>
@@ -127,7 +144,9 @@
     <string name="to">עד</string>
     <string name="tracks">עקבות</string>
     <string name="turnGps">הפעל gps כדי להציג משתמשים</string>
+    <string name="type_or_upload">הקלד הודעה או העלה תמונה</string>
     <string name="upload">העלה תמונה</string>
     <string name="username">כינוי</string>
     <string name="weight">משקל</string>
+    <string name="woman">אישה</string>
 </resources>

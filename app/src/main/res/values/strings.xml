@@ -51,6 +51,8 @@
         <item>Single</item>
     </string-array>
 
+
+
     <string name="doNotShow">Do Not Show</string>
 
     <string name="All">All</string>
@@ -118,5 +120,42 @@
     <string name="expFromFundigoOr">Or Login As Guest</string>
     <string name="refreshData">Refresh Data</string>
     <string name="successLoggedIn">Successfully Logged in</string>
+    <string name="title_activity_sms_sign_up_activity_part1">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string-array name="gender_array">
+        <item>man</item>
+        <item>woman</item>
+    </string-array>
+
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="phone_number_must_be_7">Phone Number Must Be 7 Digests Long</string>
+    <string name="man">Mam</string>
+    <string name="woman">Woman</string>
+    <string name="looking_for">Looking For</string>
+    <string name="gender">Gender</string>
+    <string name="back">Back</string>
+    <string name="legal_statement">Legal Statement</string>
+    <string name="enter_name">Please Enter Name</string>
+    <string name="read_legal_statement">Please Read Legal Statement And Approve</string>
+    <string name="about_app">About</string>
+    <string name="block_profiles">Block Profiles</string>
+    <string name="cancel_block">Cancel\n Block</string>
+    <string name="have_no_block">You Have No Block Users</string>
+    <string name="type_or_upload">Type a Message Or Upload a Picture</string>
+
+
 
 </resources>

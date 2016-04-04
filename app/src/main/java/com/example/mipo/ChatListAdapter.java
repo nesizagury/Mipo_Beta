@@ -1,7 +1,9 @@
 package com.example.mipo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +29,7 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
     int otherUserIndex;
 
     public ChatListAdapter(Context context, int otherUserIndex, List<Message> messages) {
-        super (context, 0, messages);
+        super(context, 0, messages);
         this.otherUserIndex = otherUserIndex;
         this.context = context;
         if (imageLoader == null || (imageLoader != null && !imageLoader.isInited ())) {
@@ -43,34 +45,71 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
             final ViewHolder holder = new ViewHolder ();
             holder.imageLeft = (ImageView) convertView.findViewById (R.id.ivProfileLeft);
             holder.imageRight = (ImageView) convertView.findViewById (R.id.ivProfileRight);
+            holder.masImage =(ImageView)convertView.findViewById(R.id.msg_pic);
             holder.body = (TextView) convertView.findViewById (R.id.tvBody);
+            holder.masImage.setImageDrawable(null);
+
             convertView.setTag (holder);
         }
+
+
+
         final Message message = (Message) getItem (position);
         final ViewHolder holder = (ViewHolder) convertView.getTag ();
         final boolean isMe = message.getSenderId ().equals (GlobalVariables.CUSTOMER_PHONE_NUM);
         // Show-hide image based on the logged-in user.
         // Display the profile image to the right for our user, left for other users.
+
+        holder.masImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (getContext(), ViewUserPic.class);
+                intent.putExtra("picUrl",message.getPic().getUrl());
+                context.startActivity(intent);
+            }
+        });
         if (isMe) {
-            imageLoader.displayImage (GlobalVariables.currentUser.getPicUrl (), holder.imageRight);
+            imageLoader.displayImage(GlobalVariables.currentUser.getPicUrl(), holder.imageRight);
             holder.imageRight.setVisibility (View.VISIBLE);
-            holder.imageLeft.setVisibility (View.GONE);
-            holder.body.setGravity (Gravity.CENTER_VERTICAL | Gravity.RIGHT);
+            holder.imageLeft.setVisibility(View.GONE);
+            holder.body.setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
+
         } else {
-            UserDetails userDetails = GlobalVariables.userDataList.get (otherUserIndex);
-            imageLoader.displayImage (userDetails.getPicUrl (), holder.imageLeft);
-            holder.imageLeft.setVisibility (View.VISIBLE);
-            holder.imageRight.setVisibility (View.GONE);
-            holder.body.setGravity (Gravity.CENTER_VERTICAL | Gravity.LEFT);
+            UserDetails userDetails = GlobalVariables.userDataList.get(otherUserIndex);
+            imageLoader.displayImage(userDetails.getPicUrl(), holder.imageLeft);
+            holder.imageLeft.setVisibility(View.VISIBLE);
+            holder.imageRight.setVisibility(View.GONE);
+            holder.body.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
+
         }
+
+        if(message.getPic()!=null) {
+            String parseFile=message.getPic().getUrl();
+            holder.masImage.setVisibility(View.VISIBLE);
+            imageLoader.displayImage(message.getPic().getUrl(), holder.masImage);
+
+
+        }else{
+            holder.masImage.setImageDrawable(null);
+            holder.masImage.setVisibility(View.GONE);
+
+
+        }
+
+
         holder.body.setText (message.getMessageBody ());
+        this.notifyDataSetChanged();
         return convertView;
     }
+
 
     class ViewHolder {
         public ImageView imageLeft;
         public ImageView imageRight;
+        public ImageView masImage;
         public TextView body;
+
+
     }
 
     public void setImageLoader() {

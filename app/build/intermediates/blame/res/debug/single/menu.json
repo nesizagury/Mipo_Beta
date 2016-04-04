@@ -2,5 +2,13 @@
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

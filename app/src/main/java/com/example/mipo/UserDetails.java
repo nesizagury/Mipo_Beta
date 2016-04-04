@@ -20,6 +20,8 @@ public class UserDetails {
     String looking_for;
     String about;
     String picUrl;
+    String gender;
+    String preferred;
     ParseGeoPoint userLocation;
     int indexInAllDataList;
 
@@ -28,8 +30,9 @@ public class UserDetails {
     boolean isOnline = false;
     double dist;
     List<String> blocked;
+    List<String> blockedBy;
 
-    public UserDetails(String userPhoneNum,
+    public UserDetails(String userPhoneNum,String gender,String preferred,
                        String name,
                        String age,
                        Date lastSeen,
@@ -45,8 +48,11 @@ public class UserDetails {
                        ParseGeoPoint userLocation,
                        int indexInAllDataList,
                        boolean isOnline,
-                       List blocked) {
+                       List blocked,
+                       List blockedBy) {
         this.userPhoneNum = userPhoneNum;
+        this.gender=gender;
+        this.preferred=preferred;
         this.name = name;
         this.age = age;
         this.lastSeen = lastSeen;
@@ -63,6 +69,8 @@ public class UserDetails {
         this.indexInAllDataList = indexInAllDataList;
         this.isOnline = isOnline;
         this.blocked = blocked;
+        this.blockedBy=blockedBy;
+
     }
 
     public String getUserPhoneNum() {
@@ -71,6 +79,22 @@ public class UserDetails {
 
     public void setUserPhoneNum(String userPhoneNum) {
         this.userPhoneNum = userPhoneNum;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getPreferred() {
+        return preferred;
+    }
+
+    public void setPreferred(String preferred) {
+        this.preferred = preferred;
     }
 
     public String getName() {
@@ -217,10 +241,13 @@ public class UserDetails {
         this.isOnline = isOnline;
     }
 
-    public List getBlocked() {
+    public List getBlockedBy() {return blockedBy;}
 
-        return blocked;
+    public void setBlockedBy(List blockedBy) {
+        this.blockedBy = blockedBy;
     }
+
+    public List getBlocked() {return blocked;}
 
     public void setBlocked(List blocked) {
         this.blocked = blocked;

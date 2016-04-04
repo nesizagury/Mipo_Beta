@@ -2,23 +2,43 @@ package com.example.mipo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ParcelFileDescriptor;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseACL;
 import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseQuery;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChatActivity extends Activity {
 
+    private int SELECT_PICTURE=1;
+    private boolean image_selected=false;
+    private Bitmap bmp;
+    private ImageButton uploadPic;
+    private ImageButton delete_image;
+    private ImageView message_pic;
     private EditText etMessage;
     private ListView lvChat;
     private ArrayList<Message> mMessages;
@@ -31,18 +51,26 @@ public class ChatActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
+        super.onCreate(savedInstanceState);
         this.requestWindowFeature (Window.FEATURE_NO_TITLE);
         setContentView (R.layout.activity_chat);
-        Intent intent = getIntent ();
+        Intent intent = getIntent();
 
         otherUserId = intent.getStringExtra ("userId");
-        other_user_name = intent.getStringExtra ("userName");
+        other_user_name = intent.getStringExtra("userName");
         int otherUserIndex = intent.getIntExtra ("index", 0);
         otherUser = GlobalVariables.userDataList.get (otherUserIndex);
 
         etMessage = (EditText) findViewById (R.id.etMessage);
         lvChat = (ListView) findViewById (R.id.lvChat);
+        message_pic=(ImageView)findViewById(R.id.message_pic);
+        uploadPic=(ImageButton)findViewById(R.id.upload_pic);
+        delete_image=(ImageButton)findViewById(R.id.delete_image);
+        if(!image_selected){
+            message_pic.setVisibility(View.GONE);
+            delete_image.setVisibility(View.GONE);
+
+        }
 
         mMessages = new ArrayList<Message> ();
         // Automatically scroll to the bottom when a data set change notification is received and only if the last item is already visible on screen. Don't scroll to the bottom otherwise.
@@ -56,6 +84,12 @@ public class ChatActivity extends Activity {
     }
 
     public void sendMessage(View view) {
+        if(etMessage.getText ().toString ().isEmpty() && image_selected==false){
+            Toast.makeText(getApplicationContext(),R.string.type_or_upload,Toast.LENGTH_LONG).show();
+            return;
+        }
+
+
         String body = etMessage.getText ().toString ();
         Message message = new Message ();
         String currentPhone = GlobalVariables.CUSTOMER_PHONE_NUM;
@@ -67,15 +101,53 @@ public class ChatActivity extends Activity {
             message.setUserNum1 (otherPhone);
             message.setUserNum2 (currentPhone);
         }
-        message.setSenderId (currentPhone);
-        message.setMessageBody (body);
+        message.setSenderId(currentPhone);
+        message.setMessageBody(body);
+        try {
+            if (image_selected) {
+                message_pic.buildDrawingCache();
+                ByteArrayOutputStream stream = new ByteArrayOutputStream ();
+                if(bmp.getByteCount () > 500000) {
+                    bmp.compress (Bitmap.CompressFormat.JPEG, 100, stream);
+                } else{
+                    bmp.compress (Bitmap.CompressFormat.PNG, 100, stream);
+                }
+                byte[] image = stream.toByteArray ();
+                ParseFile file = new ParseFile ("picturePath", image);
+                try {
+                    file.save ();
+                } catch (ParseException e) {
+                    e.printStackTrace ();
+                }
+                ParseACL parseAcl = new ParseACL ();
+                parseAcl.setPublicReadAccess (true);
+                parseAcl.setPublicWriteAccess (true);
+                message.setACL (parseAcl);
+                message.put ("pic", file);
+            }else {
+                message.put ("pic", null);
+            }
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
+        mMessages.add(message);
+        lvChat.invalidateViews();
+
+
         try {
             message.save ();
         } catch (ParseException e) {
             e.printStackTrace ();
         }
+
+
+        message_pic.setVisibility(View.GONE);
+        delete_image.setVisibility(View.GONE);
+        image_selected=false;
+        message_pic.setImageDrawable(null);
+        bmp=null;
         etMessage.setText ("");
-        receiveNoBackGround ();
+        receiveMessage ();
         deleteMessageRoomItem (body);
     }
 
@@ -113,7 +185,7 @@ public class ChatActivity extends Activity {
     }
 
     private void receiveNoBackGround() {
-        ParseQuery<Message> query = ParseQuery.getQuery (Message.class);
+        ParseQuery<Message> query = ParseQuery.getQuery(Message.class);
         String currentPhone = GlobalVariables.CUSTOMER_PHONE_NUM;
         String otherPhone = otherUser.getUserPhoneNum ();
         if (currentPhone.compareTo (otherPhone) > 0) {
@@ -123,7 +195,7 @@ public class ChatActivity extends Activity {
             query.whereEqualTo ("userNum1", otherPhone);
             query.whereEqualTo ("userNum2", currentPhone);
         }
-        query.orderByAscending ("createdAt");
+        query.orderByAscending("createdAt");
         List<Message> messages = null;
         try {
             messages = query.find ();
@@ -195,7 +267,7 @@ public class ChatActivity extends Activity {
                             room.setUserNum1 (otherPhone);
                             room.setUserNum2 (currentPhone);
                         }
-                        room.setLastMessage (currentPhone + ": " + body);
+                        room.setLastMessage(currentPhone + ": " + body);
                         room.saveInBackground ();
                     }
                 } else {
@@ -207,13 +279,55 @@ public class ChatActivity extends Activity {
 
     @Override
     public void onPause() {
-        super.onPause ();
-        handler.removeCallbacks (runnable);
+        super.onPause();
+        handler.removeCallbacks(runnable);
     }
 
     @Override
     public void onRestart() {
-        super.onRestart ();
-        handler.postDelayed (runnable, 500);
+        super.onRestart();
+        handler.postDelayed(runnable, 500);
+    }
+
+    public void imageUpload(View view) {
+        Intent i = new Intent (
+                Intent.ACTION_PICK,
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(i, SELECT_PICTURE);
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == SELECT_PICTURE && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            ParcelFileDescriptor parcelFileDescriptor = null;
+            try {
+                parcelFileDescriptor = this.getContentResolver ().openFileDescriptor (selectedImage, "r");
+            } catch (FileNotFoundException e) {
+                e.printStackTrace ();
+            }
+            FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor ();
+            Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
+            try {
+                parcelFileDescriptor.close ();
+            } catch (IOException e) {
+                e.printStackTrace ();
+            }
+            Matrix matrix = new Matrix ();
+            int angleToRotate = StaticMethods.getOrientation(selectedImage, this);
+            matrix.postRotate (angleToRotate);
+            Bitmap rotatedBitmap = Bitmap.createBitmap (image,0, 0, image.getWidth (), image.getHeight (), matrix, true);
+            bmp = rotatedBitmap;
+            message_pic.setImageBitmap(rotatedBitmap);
+            image_selected = true;
+            delete_image.setVisibility(View.VISIBLE);
+            message_pic.setVisibility(View.VISIBLE);
+        }
+    }
+    public void removePic(){
+        message_pic.setImageDrawable(null);
+        delete_image.setVisibility(View.INVISIBLE);
+        message_pic.setVisibility(View.INVISIBLE);
+
     }
 }

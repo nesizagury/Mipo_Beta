@@ -114,7 +114,7 @@ public class StaticMethods {
 
         @Override
         public void onLocationChanged(final Location location) {
-            if (location != null && GlobalVariables.CUSTOMER_PHONE_NUM != null) {
+            if (location != null) {
                 GlobalVariables.MY_LOCATION = location;
                 GlobalVariables.LOCATION_ACCURACY = location.getAccuracy ();
                 if (!isGuestUser ()) {

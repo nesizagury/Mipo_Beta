@@ -1,195 +1,623 @@
 [
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m4.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m4.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m1.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m1.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\three_p.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\three_p.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\like_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\like_track.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\three_p.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\three_p.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gps_acuuraty.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\gps_acuuraty.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online2.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\online2.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\report.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\report.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\lke.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\lke.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg.jpg",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\bg.jpg"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favoritecolored.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\favoritecolored.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\message.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\message.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\report.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\report.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fire.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\fire.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\smell.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\smell.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favorite.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\favorite.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\love_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\love_track.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m3.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m3.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gps_acuuraty.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\gps_acuuraty.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\offline.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\offline.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\online.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m4.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m4.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m1.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m1.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pic0.jpg",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\pic0.jpg"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pic0.jpg",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\pic0.jpg"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m3.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m3.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg.jpg",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\bg.jpg"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m2.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pic0.jpg",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\pic0.jpg"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\report.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\report.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\like_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\like_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sexy_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\sexy_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m4.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m4.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\heart.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\online2.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\lke.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\lke.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg.jpg",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\bg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m1.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m1.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m3.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m3.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\heart.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sexy_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\sexy_track.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\smell.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\smell.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m1.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m1.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\like_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\like_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fire.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\fire.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\report.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\report.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fire.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\fire.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\offline.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\offline.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\smell.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\smell.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favorite.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\message.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\message.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online2.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\online2.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\lke.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\lke.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\smell.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\smell.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\heart.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\offline.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\offline.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\three_p.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\three_p.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gps_acuuraty.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\gps_acuuraty.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favorite.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\message.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\message.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\love_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\love_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fire.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\fire.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\online.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\hang_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\hang_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\three_p.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\three_p.png"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
     },
     {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\online.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sexy_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\sexy_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\message.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\message.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
@@ -200,75 +628,191 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\offline.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\offline.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\love_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\love_track.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m2.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m2.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m2.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\m2.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\heart.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\heart.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\like_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\like_track.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sexy_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\sexy_track.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\hang_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\hang_track.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\online.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\hang_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\hang_track.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favoritecolored.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\favoritecolored.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favorite.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\love_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\love_track.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favoritecolored.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\favoritecolored.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\hang_track.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\hang_track.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m2.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m2.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\online2.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\online2.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg.jpg",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable-xhdpi\\bg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\lke.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\lke.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m4.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m4.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\favoritecolored.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\favoritecolored.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\pic0.jpg",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\pic0.jpg"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\m3.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_16_3_16\\app\\src\\main\\res\\drawable-xhdpi\\m3.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\MAMO\\Desktop\\Mipo_Beta-mipo_mamo_27_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
     }
 ]

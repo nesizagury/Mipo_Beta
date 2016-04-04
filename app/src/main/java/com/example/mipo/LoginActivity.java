@@ -38,6 +38,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         number = readFromFile ();
         if (number != null && !number.equals ("") && !isFundigo) {
             GlobalVariables.CUSTOMER_PHONE_NUM = number;
+
         }
         if (isFundigo) {
             Intent intent = new Intent (LoginActivity.this, LoginFromFundigoActivity.class);

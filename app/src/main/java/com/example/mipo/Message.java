@@ -1,10 +1,20 @@
 package com.example.mipo;
 
 import com.parse.ParseClassName;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 
 @ParseClassName("MipoMessage")
 public class Message extends ParseObject {
+
+    public ParseFile getPic() {
+
+        return getParseFile ("pic");
+    }
+
+    public void setPic(ParseFile file) {
+        put ("pic", file);
+    }
 
     public String getMessageBody() {
         return getString ("messageBody");

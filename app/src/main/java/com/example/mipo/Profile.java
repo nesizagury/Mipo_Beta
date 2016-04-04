@@ -10,7 +10,18 @@ import java.util.Date;
 import java.util.List;
 
 @ParseClassName("Profile")
-public class Profile extends ParseObject {
+public class Profile extends ParseObject  {
+
+    public String getGender() {return getString ("gender");}
+
+    public void setGender(String gender) {put ("gender", gender);}
+
+    public String getPreferred() {
+        return getString ("preferred");
+    }
+
+    public void setPreferred(String preferred) {put ("preferred", preferred);}
+
 
     public String getName() {
         return getString ("name");
@@ -21,7 +32,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseUser getUser() {
-        return getParseUser ("user");
+        return getParseUser("user");
     }
 
     public void setUser(ParseUser user) {
@@ -29,7 +40,7 @@ public class Profile extends ParseObject {
     }
 
     public ParseFile getPic() {
-        return getParseFile ("pic");
+        return getParseFile("pic");
     }
 
     public void setPic(ParseFile file) {
@@ -49,11 +60,11 @@ public class Profile extends ParseObject {
     }
 
     public ParseGeoPoint getLocation() {
-        return getParseGeoPoint ("location");
+        return getParseGeoPoint("location");
     }
 
     public String getAbout() {
-        return getString ("about");
+        return getString("about");
     }
 
     public void setAbout(String about) {
@@ -126,7 +137,7 @@ public class Profile extends ParseObject {
     }
 
     public Date getLastSeen() {
-        return getDate ("lastSeen");
+        return getDate("lastSeen");
     }
 
     public void setLastSeen(Date lastSeen) {
@@ -147,6 +158,14 @@ public class Profile extends ParseObject {
 
     public String getFbUrl() {
         return getString ("fbUrl");
+    }
+
+    public List getBlockedBy() {
+        return getList("banned");
+    }
+
+    public void setBlockedBy(List blockedBy) {
+        put ("banned", blockedBy);
     }
 
     public List getBlocked() {

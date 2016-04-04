@@ -110,9 +110,7 @@ public class SmsSignUpActivity extends Activity {
 
 
         s = (Spinner) findViewById (R.id.spinner);
-        ArrayAdapter adapter = new ArrayAdapter (this,
-                                                        android.R.layout.simple_spinner_item,
-                                                        array_spinner);
+        ArrayAdapter adapter = new ArrayAdapter (this, android.R.layout.simple_spinner_item, array_spinner);
         s.setAdapter (adapter);
 
         usernameTV = (TextView) findViewById (R.id.usernameTV);
@@ -132,6 +130,9 @@ public class SmsSignUpActivity extends Activity {
                     phone_number_no_country_prefix = area + phoneET.getText ().toString ();
                     getUserPreviousDetails ();
                     smsVerify (phone_number_to_verify);
+
+
+
                 }
                 return false;
             }

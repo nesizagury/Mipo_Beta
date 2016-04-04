@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -53,11 +54,13 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
     Spinner spinner_Body_type;
     Spinner spinner_Ethnicity;
     Spinner spinner_realationship_Status;
+    Spinner edit_pro_preferred_s;
+    Spinner edit_pro_gender_s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
-        setContentView (R.layout.activity_edit_profile);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_edit_profile);
         tv_create = (TextView) findViewById (R.id.tv_create);
         et_name = (EditText) findViewById (R.id.et_name);
         et_status = (EditText) findViewById (R.id.et_status);
@@ -70,6 +73,8 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
         btn_pic = (Button) findViewById (R.id.btn_pic);
         pic = (ImageView) findViewById (R.id.pic);
         setSpinners ();
+
+
 
         btn_next1.setOnClickListener (this);
         btn_next2.setOnClickListener (this);
@@ -152,6 +157,18 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                             profile.setEthnicity (getEthnicity ());
                         }
                     }
+                    if (edit_pro_gender_s.getVisibility () == View.VISIBLE) {
+                        if (getGender() != null) {
+                            profile.setGender(getGender());
+                            Log.d("m123","EditP upload gender: "+getGender());
+                        }
+                    }
+
+                    if (edit_pro_preferred_s.getVisibility () == View.VISIBLE) {
+                        if (getPreferred() != null) {
+                            profile.setPreferred(getPreferred());
+                        }
+                    }
                     profile.setHeight (et_height.getText ().toString ());
                     profile.setWeight (et_weight.getText ().toString ());
                     if (spinner_Body_type.getVisibility () == View.VISIBLE) {
@@ -188,15 +205,17 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                         e1.printStackTrace ();
                     }
                     GlobalVariables.currentUser.setName (et_name.getText ().toString ());
-                    GlobalVariables.currentUser.setAge (et_age.getText ().toString ());
-                    GlobalVariables.currentUser.setAbout (et_about.getText ().toString ());
-                    GlobalVariables.currentUser.setHeight (et_height.getText ().toString ());
-                    GlobalVariables.currentUser.setWeight (et_weight.getText ().toString ());
-                    GlobalVariables.currentUser.setStatus (et_status.getText ().toString ());
-                    GlobalVariables.currentUser.setLooking_for (getLookingFor ());
-                    GlobalVariables.currentUser.setRelationship_status (getRelationshipStatus ());
-                    GlobalVariables.currentUser.setBody_type (getBodyType ());
-                    GlobalVariables.currentUser.setEtnicity (getEthnicity ());
+                    GlobalVariables.currentUser.setAge(et_age.getText().toString());
+                    GlobalVariables.currentUser.setAbout(et_about.getText().toString());
+                    GlobalVariables.currentUser.setHeight(et_height.getText().toString());
+                    GlobalVariables.currentUser.setWeight(et_weight.getText().toString());
+                    GlobalVariables.currentUser.setStatus(et_status.getText().toString());
+                    GlobalVariables.currentUser.setLooking_for(getLookingFor());
+                    GlobalVariables.currentUser.setRelationship_status(getRelationshipStatus());
+                    GlobalVariables.currentUser.setBody_type(getBodyType());
+                    GlobalVariables.currentUser.setEtnicity(getEthnicity());
+                    GlobalVariables.currentUser.setPreferred(getPreferred());
+                    GlobalVariables.currentUser.setGender(getGender());
                     GlobalVariables.currentUser.setPicUrl (profile.getPic ().getUrl ());
                     Toast.makeText (getApplicationContext (), getResources ().getString (R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
                 } else {
@@ -236,6 +255,22 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                     if (profile.getWeight () != null) {
                         et_weight.setText (profile.getWeight ());
                         et_weight.setSelection (et_weight.getText ().length ());
+                    }
+                    String[] arrGender= getApplicationContext().getResources().getStringArray (R.array.gender_array);
+                    for (int i = 0; i < arrGender.length; i++) {
+                        String spinneGender = arrGender[i];
+                        if (profile.getGender().equals (spinneGender)) {
+                            edit_pro_gender_s.setSelection (i);
+                            break;
+                        }
+                    }
+
+                    for (int i = 0; i < arrGender.length; i++) {
+                        String spinneLockingFor = arrGender[i];
+                        if (profile.getPreferred().equals (spinneLockingFor)) {
+                            edit_pro_preferred_s.setSelection (i);
+                            break;
+                        }
                     }
                     if (profile.getAbout () != null) {
                         et_about.setText (profile.getAbout ());
@@ -331,6 +366,16 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
         ArrayAdapter adapter4 = new ArrayAdapter (this,
                                                          android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.relationshipSpinner));
         spinner_realationship_Status.setAdapter (adapter4);
+
+        edit_pro_gender_s=(Spinner)findViewById(R.id.edit_pro_gender_s);
+        ArrayAdapter adapter5 = new ArrayAdapter (this,
+                android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.gender_array));
+        edit_pro_gender_s.setAdapter (adapter5);
+
+        edit_pro_preferred_s=(Spinner)findViewById(R.id.edit_pro_preferred_s);
+        ArrayAdapter adapter6 = new ArrayAdapter (this,
+                android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.gender_array));
+        edit_pro_preferred_s.setAdapter (adapter6);
     }
 
     public String getLookingFor() {
@@ -366,6 +411,31 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                 return null;
             }
             return GlobalVariables.array_spinner_profile_Ethnicity[position];
+        }
+    }
+
+    public String getGender() {
+        if (edit_pro_gender_s.getVisibility () == View.INVISIBLE)
+            return "";
+        else {
+            if(edit_pro_gender_s.getSelectedItemPosition()==0){
+                return "man";
+            }else{
+                return "woman";
+            }
+
+        }
+    }
+
+    public String getPreferred() {
+        if (edit_pro_preferred_s.getVisibility () == View.INVISIBLE)
+            return "";
+        else {
+            if(edit_pro_preferred_s.getSelectedItemPosition()==0){
+                return "man";
+            }else{
+                return "woman";
+            }
         }
     }
 

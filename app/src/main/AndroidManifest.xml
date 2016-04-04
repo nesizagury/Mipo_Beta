@@ -1,76 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mipo"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="22"/>
+        android:targetSdkVersion="22" />
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <application
-        android:name="com.example.mipo.Mipo"
+        android:name=".Mipo"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UserPage" />
+        <activity android:name=".DetailedProfileActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".FavoritesPage" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CommunicationsActivity" />
+        <activity android:name=".ChatActivity" />
         <activity
-            android:name="com.example.mipo.MainActivity"/>
-
-        <activity
-            android:name="com.example.mipo.UserPage"
-            />
-        <activity
-            android:name="com.example.mipo.DetailedProfileActivity"
-            />
-        <activity
-            android:name="com.example.mipo.MenuActivity"
-            />
-        <activity
-            android:name="com.example.mipo.FavoritesPage"
-            />
-        <activity
-            android:name="com.example.mipo.LoginActivity"
-            />
-        <activity
-            android:name="com.example.mipo.CommunicationsActivity"
-            />
-        <activity
-            android:name="com.example.mipo.ChatActivity"
-            />
-        <activity
-            android:name="com.example.mipo.MainPageActivity"
-            android:label="@string/app_name">
+            android:name=".MainPageActivity"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SmsSignUpActivity" />
+        <activity android:name=".LoginFromFundigoActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".FilterActivity" />
         <activity
-            android:name="com.example.mipo.SmsSignUpActivity"
-            />
-        <activity
-            android:name=".LoginFromFundigoActivity"
-            />
-        <activity
-            android:name=".EditProfileActivity"
-            />
-        <activity
-            android:name="com.example.mipo.FilterActivity"
-            />
+            android:name=".SmsSignUpActivityPart1"
+            android:label="@string/title_activity_sms_sign_up_activity_part1" >
+        </activity>
+        <activity android:name=".SmsSignUpActivityPart2" >
+        </activity>
+        <activity android:name=".ViewUserPic" >
+        </activity>
+        <activity android:name=".LegalStatement" >
+        </activity>
+        <activity android:name=".AboutActivity" >
+        </activity>
+        <activity android:name=".BlockProfilesActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="#ffffff"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
     <ListView
         android:id="@+id/lvChat"
-        android:transcriptMode="alwaysScroll"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_above="@+id/llSend"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1.04" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/delete_image"
+            android:src="@drawable/x_128"
+
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:id="@+id/message_pic"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/llSend"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:background="#ffffff"
         android:paddingTop="5dp"
@@ -25,7 +43,8 @@
         android:layout_height="wrap_content" >
         <EditText
             android:id="@+id/etMessage"
-            android:layout_toLeftOf="@+id/btSend"
+            android:layout_toStartOf="@+id/btSend"
+            android:layout_toEndOf="@+id/upload_pic"
             android:layout_alignBottom="@+id/btSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,16 +53,31 @@
             android:inputType="textLongMessage"
             android:imeOptions="actionSend"
             />
+
         <Button
             android:id="@+id/btSend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingRight="10dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:text="@string/send"
             android:onClick="sendMessage"
             android:textSize="18sp"
             android:gravity="center">
         </Button>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/upload_pic"
+            android:src="@drawable/upload"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/btSend"
+            android:onClick="imageUpload"
+            />
+
+
     </RelativeLayout>
-</RelativeLayout>
+</LinearLayout>
+

@@ -1,10 +1,12 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="#ffbe2c"
                 android:clickable="false"
-                tools:context=".MainActivity">
+                tools:context=".MainActivity"
+                >
 
     <LinearLayout
         android:id="@+id/welocme_linear"
@@ -97,24 +99,29 @@
             android:textColor="#ffffff"
             android:gravity="center_vertical|center_horizontal"
             android:textStyle="italic"/>
-
-        <GridView
-            android:id="@+id/gridView1"
+        <android.support.v4.widget.SwipeRefreshLayout
             android:layout_width="fill_parent"
             android:layout_height="0dip"
             android:layout_alignParentBottom="false"
             android:layout_alignParentEnd="false"
             android:layout_below="@+id/turnOnGps"
             android:layout_weight="308"
-            android:background="#000000"
-            android:horizontalSpacing="4dp"
-            android:numColumns="3"
-            android:verticalSpacing="4dp"
-            android:scrollingCache="false"
-            android:animationCache="false"
-            android:persistentDrawingCache="scrolling"
-            android:cacheColorHint="@android:color/transparent">
-        </GridView>
+            android:id="@+id/swipe">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gridView1"
+                android:background="#000000"
+                android:horizontalSpacing="4dp"
+                android:numColumns="3"
+                android:verticalSpacing="4dp"
+                android:scrollingCache="false"
+                android:animationCache="false"
+                android:persistentDrawingCache="scrolling"
+                android:cacheColorHint="@android:color/transparent">
+            </GridView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
 
         <TableRow
             android:id="@+id/tableRow2"

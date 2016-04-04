@@ -18,6 +18,8 @@
         <item>לעכשיו</item>
     </string-array>
 
+
+
     <string-array name="bodyTypeSpinner">
         <item>אל תראה</item>
         <item>רזה</item>
@@ -117,4 +119,25 @@
     <string name="refreshData">רענן פרופילים</string>
     <string name="successLoggedIn">התחברת בהצלחה!</string>
     <string name="pleaseProfile">אנא צור פרופיל</string>
+
+    <string-array name="gender_array">
+        <item>גבר</item>
+        <item>אישה</item>
+    </string-array>
+
+    <string name="enter_phone_number">הכנס מספר טלפון</string>
+    <string name="phone_number_must_be_7">מספר טלפון חייב להיות באורך 7 ספרות</string>
+    <string name="man">גבר</string>
+    <string name="woman">אישה</string>
+    <string name="looking_for">מחפש/ת</string>
+    <string name="gender">מין</string>
+    <string name="back">חזור</string>
+    <string name="legal_statement">הצהרה משפטית</string>
+    <string name="enter_name">הכנס כינוי בבקשה</string>
+    <string name="read_legal_statement">קרא הצהרה משפטית ואשר בבקשה</string>
+    <string name="about_app">אודות</string>
+    <string name="block_profiles">משתמשים חסומים</string>
+    <string name="cancel_block">בטל\n חסימה</string>
+    <string name="have_no_block">אין לך משתמשים חסומים</string>
+    <string name="type_or_upload">הקלד הודעה או העלה תמונה</string>
 </resources>

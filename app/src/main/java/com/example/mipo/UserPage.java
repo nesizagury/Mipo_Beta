@@ -22,8 +22,9 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.parse.GetCallback;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseQuery;
+
+import java.util.Arrays;
 
 public class UserPage extends Activity implements ImageButton.OnClickListener {
 
@@ -39,6 +40,7 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
     ImageLoader imageLoader;
     DisplayImageOptions options;
     UserDetails userDetails;
+    ImageView user_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,23 +70,24 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
             userDetails = GlobalVariables.userDataList.get (index);
             if (imageLoader == null || (imageLoader != null && !imageLoader.isInited ())) {
                 options = new DisplayImageOptions.Builder ()
-                                  .cacheOnDisk (true)
-                                  .cacheInMemory (true)
-                                  .bitmapConfig (Bitmap.Config.RGB_565)
-                                  .imageScaleType (ImageScaleType.EXACTLY)
-                                  .resetViewBeforeLoading (true)
-                                  .build ();
+                        .cacheOnDisk (true)
+                        .cacheInMemory (true)
+                        .bitmapConfig (Bitmap.Config.RGB_565)
+                        .imageScaleType (ImageScaleType.EXACTLY)
+                        .resetViewBeforeLoading (true)
+                        .build ();
                 ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder (this)
-                                                          .defaultDisplayImageOptions (options)
-                                                          .threadPriority (Thread.MAX_PRIORITY)
-                                                          .threadPoolSize (4)
-                                                          .memoryCache (new WeakMemoryCache ())
-                                                          .denyCacheImageMultipleSizesInMemory ()
-                                                          .build ();
+                        .defaultDisplayImageOptions (options)
+                        .threadPriority (Thread.MAX_PRIORITY)
+                        .threadPoolSize (4)
+                        .memoryCache (new WeakMemoryCache ())
+                        .denyCacheImageMultipleSizesInMemory ()
+                        .build ();
                 imageLoader = ImageLoader.getInstance ();
                 imageLoader.init (config);
             }
-            ImageView user_image = (ImageView) findViewById (R.id.usrPage_image);
+            user_image = (ImageView) findViewById (R.id.usrPage_image);
+            user_image.setOnClickListener(this);
             imageLoader.displayImage (userDetails.getPicUrl (), user_image);
 
             TextView userNameTF = (TextView) findViewById (R.id.name_profile);
@@ -148,11 +151,15 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
             intent.putExtras (b);
             startActivity (intent);
         }
-
+        if(v==user_image){
+            Intent intent = new Intent (this, ViewUserPic.class);
+            intent.putExtra("picUrl",GlobalVariables.userDataList.get (index).getPicUrl());
+            startActivity(intent);
+        }
         if (v == favorite_button) {
             UserDetails userDetails = GlobalVariables.userDataList.get (index);
             SharedPreferences prefs = this.getSharedPreferences (
-                                                                        "com.example.mipo", Context.MODE_PRIVATE);
+                    "com.example.mipo", Context.MODE_PRIVATE);
             if (userDetails.isFavorite ()) {
                 prefs.edit ().putBoolean (userDetails.getUserPhoneNum (), false).apply ();
                 userDetails.setFavorite (false);
@@ -192,31 +199,43 @@ public class UserPage extends Activity implements ImageButton.OnClickListener {
     public void BlockUser() {
         ParseQuery query = new ParseQuery ("Profile");
         query.whereEqualTo ("number", GlobalVariables.currentUser.getUserPhoneNum ());
-        query.getFirstInBackground (new GetCallback<ParseObject> () {
-            public void done(ParseObject object, ParseException e) {
+        query.getFirstInBackground (new GetCallback<Profile> () {
+            public void done(Profile object, ParseException e) {
                 if (e == null) {
 
-                    object.add ("blocked", userDetails.getUserPhoneNum ());
-                    object.saveInBackground ();
-
+                    if(object.getBlocked()!=null){
+                        if(object.getBlocked().indexOf(userDetails.getUserPhoneNum ())==-1) {
+                            object.add("blocked",userDetails.getUserPhoneNum());
+                            object.saveInBackground();
+                        }
+                    }else{
+                        String[] b={userDetails.getUserPhoneNum()};
+                        object.setBlocked(Arrays.asList(b));
+                        object.saveInBackground();
+                    }
+                }else{
+                    e.printStackTrace();
                 }
-
             }
         });
+
         ParseQuery query2 = new ParseQuery ("Profile");
         query2.whereEqualTo ("number", userDetails.getUserPhoneNum ());
-        query2.getFirstInBackground (new GetCallback<ParseObject> () {
-            public void done(ParseObject object, ParseException e) {
+        query2.getFirstInBackground (new GetCallback<Profile> () {
+            public void done(Profile object, ParseException e) {
                 if (e == null) {
 
-                    object.add ("blocked", GlobalVariables.currentUser.getUserPhoneNum ());
-                    object.saveInBackground ();
-                    MainPageActivity.downloadProfilesData ();
-                    finish ();
+                    String[] b={GlobalVariables.currentUser.userPhoneNum};
+                    object.setBlockedBy(Arrays.asList(b));
+                    object.saveInBackground();
 
                 }
 
             }
         });
+        MainPageActivity.downloadProfilesData ();
+        finish ();
+
+
     }
 }

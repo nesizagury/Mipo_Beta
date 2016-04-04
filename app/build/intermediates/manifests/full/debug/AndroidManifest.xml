@@ -19,6 +19,13 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
+
     <application
         android:name="com.example.mipo.Mipo"
         android:allowBackup="true"
@@ -47,6 +54,20 @@
         <activity android:name="com.example.mipo.LoginFromFundigoActivity" />
         <activity android:name="com.example.mipo.EditProfileActivity" />
         <activity android:name="com.example.mipo.FilterActivity" />
+        <activity
+            android:name="com.example.mipo.SmsSignUpActivityPart1"
+            android:label="@string/title_activity_sms_sign_up_activity_part1" >
+        </activity>
+        <activity android:name="com.example.mipo.SmsSignUpActivityPart2" >
+        </activity>
+        <activity android:name="com.example.mipo.ViewUserPic" >
+        </activity>
+        <activity android:name="com.example.mipo.LegalStatement" >
+        </activity>
+        <activity android:name="com.example.mipo.AboutActivity" >
+        </activity>
+        <activity android:name="com.example.mipo.BlockProfilesActivity" >
+        </activity>
     </application>
 
 </manifest>
