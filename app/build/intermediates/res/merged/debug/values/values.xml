@@ -19,6 +19,10 @@
         <item>South Asian</item>
         <item>White</item>
     </string-array>
+    <string-array name="gender_array">
+        <item>man</item>
+        <item>woman</item>
+    </string-array>
     <string-array name="lookingForSpinner1">
         <item>Do Not Show</item>
         <item>Chat</item>
@@ -61,6 +65,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -151,6 +156,7 @@
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
@@ -318,35 +324,52 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about">Write about yourself:</string>
+    <string name="about_app">About</string>
     <string name="action_settings">Settings</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
     <string name="addedToFavor">Added To Favorites</string>
     <string name="age">Age</string>
     <string name="all">All</string>
     <string name="app_name">Mipo</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="back">Back</string>
     <string name="bannedProfile">You banned this profile!</string>
     <string name="before">ago</string>
+    <string name="block_profiles">Block Profiles</string>
     <string name="bodyType">Body Type</string>
+    <string name="cancel_block">Cancel\n Block</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="createProfile">Create Profile</string>
     <string name="doNotShow">Do Not Show</string>
     <string name="editProfile">Edit Profile</string>
     <string name="enterNameAge">Please Enter Name And Age</string>
+    <string name="enter_name">Please Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
     <string name="expFromFundigo">To Login with Your "Fundigo" Details Please Fill the Following Fields:</string>
     <string name="expFromFundigoOr">Or Login As Guest</string>
     <string name="favorites">Favorites</string>
     <string name="filter">Filter</string>
+    <string name="gender">Gender</string>
     <string name="hangTrack">You Sent "Lets Hang" To Her</string>
+    <string name="have_no_block">You Have No Block Users</string>
     <string name="height">Height</string>
     <string name="isSingle">What\'s is up with you today?</string>
     <string name="km">km</string>
+    <string name="legal_statement">Legal Statement</string>
     <string name="letsHang">wants to hang with you!</string>
     <string name="like">liked you!</string>
     <string name="likeTrack">You Sent "Like" To Her</string>
     <string name="lookingFor">Looking For</string>
+    <string name="looking_for">Looking For</string>
     <string name="love">loves your profile!</string>
     <string name="loveTrack">You Sent "Love" To Her</string>
     <string name="m">15m</string>
+    <string name="man">Mam</string>
     <string name="max">Max</string>
     <string name="menu">Menu</string>
     <string name="message">Message</string>
@@ -361,10 +384,17 @@
     <string name="onlyPic">Only Pictures</string>
     <string name="optional">(optional)</string>
     <string name="origin">Ethnicity</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
     <string name="phoneNumber">Phone Number</string>
+    <string name="phone_number_must_be_7">Phone Number Must Be 7 Digests Long</string>
     <string name="pleaseProfile">Please Create Profile</string>
     <string name="profile_me">My Profile Pic</string>
     <string name="profile_other">Other profile pic</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="read_legal_statement">Please Read Legal Statement And Approve</string>
     <string name="refreshData">Refresh Data</string>
     <string name="relationshipStatus">Relationship Status</string>
     <string name="removedFromFavor">Removed From Favorites</string>
@@ -379,12 +409,15 @@
     <string name="successLoggedIn">Successfully Logged in</string>
     <string name="successLogin">Successfully Loged In</string>
     <string name="successProfileCreated">Profile Created!</string>
+    <string name="title_activity_sms_sign_up_activity_part1">Sign in</string>
     <string name="to">To</string>
     <string name="tracks">Tracks</string>
     <string name="turnGps">Turn on gps to show profiles</string>
+    <string name="type_or_upload">Type a Message Or Upload a Picture</string>
     <string name="upload">Upload picture</string>
     <string name="username">Username</string>
     <string name="weight">Weight</string>
+    <string name="woman">Woman</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

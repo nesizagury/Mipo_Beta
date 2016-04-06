@@ -16,16 +16,20 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_item_left.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\msg_item_left.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_favorities_page.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_favorities_page.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
@@ -36,8 +40,20 @@
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_tracks.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\face_fragment.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\face_fragment.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\face_item.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\face_item.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_item.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\function_item.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -68,6 +84,10 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat_new.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_chat_new.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
@@ -82,6 +102,10 @@
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sms_sign_up_activity_part2.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_sms_sign_up_activity_part2.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_filter.xml",
@@ -156,6 +180,10 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_legal_statement.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_legal_statement.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item_subheader.xml"
     },
@@ -172,8 +200,16 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sms_sign_up_activity_part1.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_sms_sign_up_activity_part1.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\msg_item_right.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\msg_item_right.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
@@ -190,6 +226,10 @@
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detailed_profile.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\detailed_profile.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_block_profiles.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_block_profiles.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -240,12 +280,24 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message_input_tool_box.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\message_input_tool_box.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_user_pic.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\activity_view_user_pic.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -262,6 +314,10 @@
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sms_activity3.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\sms_activity3.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\block_user_row.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\layout\\block_user_row.xml"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",

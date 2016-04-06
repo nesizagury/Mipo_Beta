@@ -11,8 +11,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.view.Window;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -50,6 +52,12 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
         super.onCreate (savedInstanceState);
         this.requestWindowFeature (Window.FEATURE_NO_TITLE);
         setContentView (R.layout.activity_main_page);
+        final SwipeRefreshLayout swipeView = (SwipeRefreshLayout) findViewById (R.id.swipe);
+        swipeView.setColorScheme (android.R.color.holo_blue_bright,
+                                         android.R.color.holo_green_light,
+                                         android.R.color.holo_orange_light,
+                                         android.R.color.holo_red_light);
+        swipeView.setEnabled (false);
         if (getIntent ().getStringExtra ("fundigo") != null &&
                     getIntent ().getStringExtra ("fundigo").equals ("fun") && !MainActivity.didLogin) {
             GlobalVariables.userPhoneNumFromFundigo = getIntent ().getStringExtra ("index");
@@ -57,12 +65,12 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             startActivity (intent);
             getIntent ().putExtra ("fundigo", "none");
             finish ();
-        } else if(!MainActivity.didLogin){
+        } else if (!MainActivity.didLogin) {
             Intent intent = new Intent (MainPageActivity.this, MainActivity.class);
             startActivity (intent);
             finish ();
         }
-        if(MainActivity.didLogin) {
+        if (MainActivity.didLogin) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 getWindow ().getDecorView ().setLayoutDirection (View.LAYOUT_DIRECTION_LOCALE);
             }
@@ -81,6 +89,35 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             }
             gridAdapter = new GridAdaptor (this, filteredUsersList, false);
             grid.setAdapter (gridAdapter);
+
+            swipeView.setOnRefreshListener (new SwipeRefreshLayout.OnRefreshListener () {
+                @Override
+                public void onRefresh() {
+                    swipeView.setRefreshing (true);
+                    downloadProfilesData ();
+                    (new Handler ()).postDelayed (new Runnable () {
+                        @Override
+                        public void run() {
+                            swipeView.setRefreshing (false);
+
+                        }
+                    }, 3000);
+                }
+            });
+
+            grid.setOnScrollListener (new AbsListView.OnScrollListener () {
+                @Override
+                public void onScrollStateChanged(AbsListView absListView, int i) {
+                }
+
+                @Override
+                public void onScroll(AbsListView absListView, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                    if (firstVisibleItem == 0)
+                        swipeView.setEnabled (true);
+                    else
+                        swipeView.setEnabled (false);
+                }
+            });
             grid.setOnItemClickListener (this);
             handler.postDelayed (runnable, 3000);
             if (GlobalVariables.userDataList.size () == 0) {
@@ -126,6 +163,8 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                 long diffMinutes = diff / (60 * 1000);
                 GlobalVariables.userDataList.add (new UserDetails (
                                                                           profile.getNumber (),
+                                                                          profile.getGender (),
+                                                                          profile.getPreferred (),
                                                                           profile.getName (),
                                                                           profile.getAge (),
                                                                           profile.getLastSeen (),
@@ -141,7 +180,8 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                                                                           profile.getLocation (),
                                                                           i,
                                                                           diffMinutes < 10,
-                                                                          profile.getBlocked ()
+                                                                          profile.getBlocked (),
+                                                                          profile.getBlockedBy ()
 
                 ));
                 if (GlobalVariables.userDataList.get (i).getUserPhoneNum ().equals ("GUEST") &&
@@ -156,31 +196,68 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                 SharedPreferences prefs = context.getSharedPreferences (
                                                                                "com.example.mipo", Context.MODE_PRIVATE);
                 UserDetails userDetails = GlobalVariables.userDataList.get (i);
-                boolean isFav = prefs.getBoolean (userDetails.getUserPhoneNum (),false);
+                boolean isFav = prefs.getBoolean (userDetails.getUserPhoneNum (), false);
                 if (isFav) {
                     userDetails.setFavorite (true);
                 } else {
                     userDetails.setFavorite (false);
                 }
             }
-            if (GlobalVariables.currentUser.getBlocked () != null) {
-                List<String> blockedList = null;
-                blockedList = GlobalVariables.currentUser.getBlocked ();
-                for (int i = 0; i < blockedList.size (); i++) {
-                    for (int j = 0; j < GlobalVariables.userDataList.size (); j++) {
-                        if (blockedList.get (i).equals (GlobalVariables.userDataList.get (j).getUserPhoneNum ())) {
-                            GlobalVariables.userDataList.remove (j);
+
+            if (GlobalVariables.userDataList.indexOf (GlobalVariables.currentUser) == -1) {
+                GlobalVariables.userDataList.add (GlobalVariables.currentUser);
+            }
+
+            List<UserDetails> filteredUsersListNew = new ArrayList<UserDetails> ();
+            filteredUsersListNew.add (GlobalVariables.currentUser);
+
+            for (int i = 0; i < GlobalVariables.userDataList.size (); i++) {
+                UserDetails user = GlobalVariables.userDataList.get (i);
+                if (!user.equals (GlobalVariables.currentUser) && user.isFilteredOK () &&
+                            GlobalVariables.currentUser.getPreferred ().equals (GlobalVariables.userDataList.get (i).getGender ()) &&
+                            GlobalVariables.currentUser.getGender ().equals (GlobalVariables.userDataList.get (i).getPreferred ())) {
+                    filteredUsersListNew.add (user);
+                }
+            }
+
+            if (GlobalVariables.currentUser.getBlockedBy () != null) {
+                List<String> blockedByList = null;
+                blockedByList = GlobalVariables.currentUser.getBlockedBy ();
+
+                for (int i = 0; i < blockedByList.size (); i++) {
+                    for (int j = 0; j < filteredUsersListNew.size (); j++) {
+                        if (blockedByList.get (i).equals (filteredUsersListNew.get (j).getUserPhoneNum ())) {
+                            filteredUsersListNew.remove (j);
                             break;
                         }
                     }
                 }
+            }
 
-                for (int i = 0; i < GlobalVariables.userDataList.size (); i++)
-                    GlobalVariables.userDataList.get (i).setIndexInAllDataList (i);
+            if (GlobalVariables.currentUser.getBlocked () != null) {
+                List<String> blockedList = null;
+                blockedList = GlobalVariables.currentUser.getBlocked ();
+
+                for (int i = 0; i < blockedList.size (); i++) {
+                    for (int j = 0; j < filteredUsersListNew.size (); j++) {
+                        if (blockedList.get (i).equals (filteredUsersListNew.get (j).getUserPhoneNum ())) {
+                            filteredUsersListNew.remove (j);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < GlobalVariables.userDataList.size (); i++) {
+                GlobalVariables.userDataList.get (i).setIndexInAllDataList (i);
+            }
+            if (GlobalVariables.CUSTOMER_PHONE_NUM == null) {
+                filteredUsersListNew.clear ();
+                filteredUsersListNew.addAll (GlobalVariables.userDataList);
             }
             if (GlobalVariables.MY_LOCATION != null) {
                 filteredUsersList.clear ();
-                filteredUsersList.addAll (GlobalVariables.userDataList);
+                filteredUsersList.addAll (filteredUsersListNew);
                 sortFilteredProfilesListByDistAndUpdateAllDist ();
                 gridAdapter.notifyDataSetChanged ();
             } else {
@@ -311,8 +388,6 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
     @Override
     public void gpsCallback() {
         if (firstTimeGotLocation) {
-            filteredUsersList.clear ();
-            filteredUsersList.addAll (GlobalVariables.userDataList);
             sortFilteredProfilesListByDistAndUpdateAllDist ();
             gridAdapter.notifyDataSetChanged ();
             firstTimeGotLocation = false;
@@ -365,27 +440,27 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                             e.printStackTrace ();
                         }
                     }
-                }); 
-				ParseQuery<Profile> query = new ParseQuery ("Profile");
-				query.orderByDescending ("createdAt");
-				query.findInBackground (new FindCallback<Profile> () {
-					public void done(List<Profile> profilesList, ParseException e) {
-						if (e == null) {
-							for (int i = 0; i < profilesList.size (); i++) {
-								Profile profile = profilesList.get (i);
-								for (UserDetails userDetails : GlobalVariables.userDataList) {
-									if (userDetails.getUserPhoneNum ().equals (profile.getNumber ())) {
-										userDetails.setLastSeen (profile.getLastSeen ());
-										userDetails.setUserLocation (profile.getLocation ());
-										break;
-									}
-								}
-							}
-						} else {
-							e.printStackTrace ();
-						}
-					}
-				});
+                });
+                query = new ParseQuery ("Profile");
+                query.orderByDescending ("createdAt");
+                query.findInBackground (new FindCallback<Profile> () {
+                    public void done(List<Profile> profilesList, ParseException e) {
+                        if (e == null) {
+                            for (int i = 0; i < profilesList.size (); i++) {
+                                Profile profile = profilesList.get (i);
+                                for (UserDetails userDetails : GlobalVariables.userDataList) {
+                                    if (userDetails.getUserPhoneNum ().equals (profile.getNumber ())) {
+                                        userDetails.setLastSeen (profile.getLastSeen ());
+                                        userDetails.setUserLocation (profile.getLocation ());
+                                        break;
+                                    }
+                                }
+                            }
+                        } else {
+                            e.printStackTrace ();
+                        }
+                    }
+                });
             }
             handler.postDelayed (this, 10000);
         }

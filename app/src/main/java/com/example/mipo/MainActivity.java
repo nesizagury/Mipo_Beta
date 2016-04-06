@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.example.mipo.StaticMethods.GpsICallback;
+import com.example.mipo.chat.Message;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseObject;
@@ -25,7 +26,7 @@ public class MainActivity extends Activity  implements GpsICallback {
 
     public void connectToParse() {
         ParseUser.enableAutomaticUser ();
-        ParseObject.registerSubclass (com.example.mipo.Message.class);
+        ParseObject.registerSubclass (Message.class);
         ParseObject.registerSubclass (com.example.mipo.Room.class);
         ParseObject.registerSubclass (Profile.class);
         ParseObject.registerSubclass (Track.class);

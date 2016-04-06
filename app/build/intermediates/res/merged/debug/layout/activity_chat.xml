@@ -1,49 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#ffffff"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
     <ListView
         android:id="@+id/lvChat"
-        android:transcriptMode="alwaysScroll"
-        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llSend"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_above="@+id/llSend"
+        android:layout_alignParentTop="true"
+        android:transcriptMode="alwaysScroll"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/message_pic"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/llSend"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="#ffffff"
-        android:paddingTop="5dp"
         android:paddingBottom="10dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:layout_height="wrap_content" >
+        android:paddingTop="5dp"
+        android:weightSum="200">
+
         <EditText
             android:id="@+id/etMessage"
-            android:layout_toLeftOf="@+id/btSend"
-            android:layout_alignBottom="@+id/btSend"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="130"
             android:layout_height="wrap_content"
             android:gravity="top"
             android:hint="@string/message_hint"
-            android:inputType="textLongMessage"
             android:imeOptions="actionSend"
+            android:inputType="textLongMessage"
             />
+
+        <ImageButton
+            android:id="@+id/upload_pic"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="imageUpload"
+            android:src="@drawable/upload"
+            android:maxHeight="30dp"
+            android:scaleType="fitXY"/>
+
         <Button
             android:id="@+id/btSend"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="45"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:layout_alignParentRight="true"
-            android:text="@string/send"
+            android:gravity="center"
             android:onClick="sendMessage"
+            android:paddingRight="10dp"
+            android:text="@string/send"
             android:textSize="18sp"
-            android:gravity="center">
+            android:maxHeight="30dp">
         </Button>
-    </RelativeLayout>
+
+    </LinearLayout>
 </RelativeLayout>

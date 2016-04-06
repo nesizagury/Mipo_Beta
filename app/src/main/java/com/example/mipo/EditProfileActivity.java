@@ -9,12 +9,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,7 +45,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
     Button btn_next2;
     Button btn_pic;
     ImageView pic;
-    LinearLayout edit_profile_first_sub_part;
+    ScrollView edit_profile_first_sub_part;
     LinearLayout edit_profile_second_sub_part;
     private static final int SELECT_PICTURE = 1;
     private boolean pictureSelected = false;
@@ -53,6 +55,8 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
     Spinner spinner_Body_type;
     Spinner spinner_Ethnicity;
     Spinner spinner_realationship_Status;
+    Spinner edit_pro_preferred_s;
+    Spinner edit_pro_gender_s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +78,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
         btn_next1.setOnClickListener (this);
         btn_next2.setOnClickListener (this);
         btn_pic.setOnClickListener (this);
-        edit_profile_first_sub_part = (LinearLayout) findViewById (R.id.include_login_first);
+        edit_profile_first_sub_part = (ScrollView) findViewById (R.id.include_login_first);
         edit_profile_first_sub_part.setVisibility (View.VISIBLE);
         edit_profile_second_sub_part = (LinearLayout) findViewById (R.id.include_login_second);
         if (GlobalVariables.CUSTOMER_PHONE_NUM != null && !GlobalVariables.CUSTOMER_PHONE_NUM.equals ("")) {
@@ -152,6 +156,18 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                             profile.setEthnicity (getEthnicity ());
                         }
                     }
+                    if (edit_pro_gender_s.getVisibility () == View.VISIBLE) {
+                        if (getGender () != null) {
+                            profile.setGender (getGender ());
+                            Log.d ("m123", "EditP upload gender: " + getGender ());
+                        }
+                    }
+
+                    if (edit_pro_preferred_s.getVisibility () == View.VISIBLE) {
+                        if (getPreferred () != null) {
+                            profile.setPreferred (getPreferred ());
+                        }
+                    }
                     profile.setHeight (et_height.getText ().toString ());
                     profile.setWeight (et_weight.getText ().toString ());
                     if (spinner_Body_type.getVisibility () == View.VISIBLE) {
@@ -197,8 +213,11 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                     GlobalVariables.currentUser.setRelationship_status (getRelationshipStatus ());
                     GlobalVariables.currentUser.setBody_type (getBodyType ());
                     GlobalVariables.currentUser.setEtnicity (getEthnicity ());
+                    GlobalVariables.currentUser.setPreferred (getPreferred ());
+                    GlobalVariables.currentUser.setGender (getGender ());
                     GlobalVariables.currentUser.setPicUrl (profile.getPic ().getUrl ());
-                    Toast.makeText (getApplicationContext (), getResources ().getString (R.string.successProfileCreated), Toast.LENGTH_SHORT).show ();
+                    MainPageActivity.downloadProfilesData ();
+                    finish ();
                 } else {
                     Toast.makeText (getApplicationContext (), "Profile was not saved!, error", Toast.LENGTH_SHORT).show ();
                     e.printStackTrace ();
@@ -236,6 +255,22 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                     if (profile.getWeight () != null) {
                         et_weight.setText (profile.getWeight ());
                         et_weight.setSelection (et_weight.getText ().length ());
+                    }
+                    String[] arrGender = getApplicationContext ().getResources ().getStringArray (R.array.gender_array);
+                    for (int i = 0; i < arrGender.length; i++) {
+                        String spinneGender = arrGender[i];
+                        if (profile.getGender ().equals (spinneGender)) {
+                            edit_pro_gender_s.setSelection (i);
+                            break;
+                        }
+                    }
+
+                    for (int i = 0; i < arrGender.length; i++) {
+                        String spinneLockingFor = arrGender[i];
+                        if (profile.getPreferred ().equals (spinneLockingFor)) {
+                            edit_pro_preferred_s.setSelection (i);
+                            break;
+                        }
                     }
                     if (profile.getAbout () != null) {
                         et_about.setText (profile.getAbout ());
@@ -331,6 +366,16 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
         ArrayAdapter adapter4 = new ArrayAdapter (this,
                                                          android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.relationshipSpinner));
         spinner_realationship_Status.setAdapter (adapter4);
+
+        edit_pro_gender_s = (Spinner) findViewById (R.id.edit_pro_gender_s);
+        ArrayAdapter adapter5 = new ArrayAdapter (this,
+                                                         android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.gender_array));
+        edit_pro_gender_s.setAdapter (adapter5);
+
+        edit_pro_preferred_s = (Spinner) findViewById (R.id.edit_pro_preferred_s);
+        ArrayAdapter adapter6 = new ArrayAdapter (this,
+                                                         android.R.layout.simple_spinner_item, getResources ().getStringArray (R.array.gender_array));
+        edit_pro_preferred_s.setAdapter (adapter6);
     }
 
     public String getLookingFor() {
@@ -366,6 +411,31 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                 return null;
             }
             return GlobalVariables.array_spinner_profile_Ethnicity[position];
+        }
+    }
+
+    public String getGender() {
+        if (edit_pro_gender_s.getVisibility () == View.INVISIBLE)
+            return "";
+        else {
+            if (edit_pro_gender_s.getSelectedItemPosition () == 0) {
+                return "man";
+            } else {
+                return "woman";
+            }
+
+        }
+    }
+
+    public String getPreferred() {
+        if (edit_pro_preferred_s.getVisibility () == View.INVISIBLE)
+            return "";
+        else {
+            if (edit_pro_preferred_s.getSelectedItemPosition () == 0) {
+                return "man";
+            } else {
+                return "woman";
+            }
         }
     }
 

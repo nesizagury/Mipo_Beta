@@ -49,7 +49,7 @@
             android:name="com.example.mipo.CommunicationsActivity"
             />
         <activity
-            android:name="com.example.mipo.ChatActivity"
+            android:name=".chat.ChatActivity"
             />
         <activity
             android:name="com.example.mipo.MainPageActivity"
@@ -60,17 +60,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mipo.SmsSignUpActivity"
-            />
+            android:name=".SmsSignUpActivityPart1"
+            android:label="@string/title_activity_sms_sign_up_activity_part1"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name=".SmsSignUpActivityPart2"
+                  android:windowSoftInputMode="stateHidden">
+        </activity>
         <activity
             android:name=".LoginFromFundigoActivity"
             />
         <activity
             android:name=".EditProfileActivity"
+            android:windowSoftInputMode="stateHidden"
             />
         <activity
             android:name="com.example.mipo.FilterActivity"
             />
+        <activity android:name=".ViewUserPic" >
+        </activity>
+        <activity android:name=".LegalStatement" >
+        </activity>
+        <activity android:name=".AboutActivity" >
+        </activity>
+        <activity android:name=".BlockProfilesActivity" >
+        </activity>
     </application>
 
 </manifest>

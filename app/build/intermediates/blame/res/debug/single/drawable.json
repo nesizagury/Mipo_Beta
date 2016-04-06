@@ -1,127 +1,111 @@
 [
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\three_p.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\three_p.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig1.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig1.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gps_acuuraty.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\gps_acuuraty.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\heart.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\heart.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m3.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m3.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic0.jpg",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\pic0.jpg"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig22.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig22.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\back.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\report.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\report.png"
-    },
-    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me0.jpg",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\me0.jpg"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big4.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big4.png"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m4.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m4.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig19.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig19.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big3.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big3.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig21.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig21.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\online.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\online.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatfrom_bg_normal.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatfrom_bg_normal.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatto_bg_normal.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatto_bg_normal.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m1.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m1.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\background_tab.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\online2.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\online2.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig2.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig23.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig23.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hang_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\hang_track.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_state_fail_resend.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\msg_state_fail_resend.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sexy_track.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\sexy_track.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messages_time_background.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\messages_time_background.9.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig18.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig18.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatto_bg_focused.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatto_bg_focused.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatfrom_bg_focused.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatfrom_bg_focused.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig4.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig4.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offline.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\offline.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favorite.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\favorite.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig7.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig7.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -136,28 +120,36 @@
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\favoritecolored.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig6.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig6.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\row_border.xml",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\row_border.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_refresh.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\ic_menu_refresh.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x_128.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\x_128.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig10.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig10.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig16.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig16.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_cate_rib.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\em_cate_rib.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\like_track.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\like_track.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smell.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\smell.png"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\keyboard_btn_normal.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\keyboard_btn_normal.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_shape.xml",
@@ -168,8 +160,324 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\take_photo.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\take_photo.9.png"
+    },
+    {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg.jpg",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\bg.jpg"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\love_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\love_track.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_drawable.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\divider_drawable.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatfrom_bg_pressed.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatfrom_bg_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big2.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatfrom_bg.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatfrom_bg.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big5.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big5.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\gallery.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m2.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\no_image_icon_md.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\no_image_icon_md.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatto_bg_pressed.9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatto_bg_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big8.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big8.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig14.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig14.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\three_p.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\three_p.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_cate_bat.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\em_cate_bat.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_cate_magic.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\em_cate_magic.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig4.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig4.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m3.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m3.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\heart.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\heart.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\point_normal.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\point_normal.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic0.jpg",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\pic0.jpg"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\report.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\report.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me0.jpg",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\me0.jpg"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig7.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig7.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig3.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig3.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig6.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig6.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_cate_duck.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\em_cate_duck.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig13.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig13.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m4.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m4.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_state_failed_resend.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\msg_state_failed_resend.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\type_select_btn_normal.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\type_select_btn_normal.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\online.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\online.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig15.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig15.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\upload.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\upload.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig12.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig12.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m1.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m1.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big9.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big9.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\online2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\online2.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fuction_item_backgroup.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\fuction_item_backgroup.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hang_track.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\hang_track.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig5.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig5.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig1.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig1.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big7.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big7.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig17.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig17.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig11.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig11.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big1.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big1.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favorite.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\favorite.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chatto_bg.xml",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\chatto_bg.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig20.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig20.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big10.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big10.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\big6.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\big6.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_refresh.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\ic_menu_refresh.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cig3.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\cig3.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig24.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig24.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_cate_doll.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\em_cate_doll.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\device_2014_08_21_215311.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\device_2014_08_21_215311.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smell.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\smell.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig8.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig8.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\avatar.png"
+    },
+    {
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig2.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig2.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\message.png",
@@ -184,51 +492,27 @@
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\love_track.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\love_track.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dig5.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\dig5.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_drawable.xml",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\divider_drawable.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\msg_state_fail_resend_pressed.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\msg_state_fail_resend_pressed.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\Mipo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\face_btn_normal.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\face_btn_normal.png"
     },
     {
         "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fire.png",
         "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\fire.png"
     },
     {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\m2.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\m2.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\no_image_icon_md.png",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\no_image_icon_md.png"
-    },
-    {
-        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
-        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\background.xml"
+        "merged": "D:\\Mipo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\point_selected.png",
+        "source": "D:\\Mipo-master\\app\\src\\main\\res\\drawable\\point_selected.png"
     }
 ]

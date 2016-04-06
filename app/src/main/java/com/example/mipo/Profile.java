@@ -12,6 +12,22 @@ import java.util.List;
 @ParseClassName("Profile")
 public class Profile extends ParseObject {
 
+    public String getGender() {
+        return getString ("gender");
+    }
+
+    public void setGender(String gender) {
+        put ("gender", gender);
+    }
+
+    public String getPreferred() {
+        return getString ("preferred");
+    }
+
+    public void setPreferred(String preferred) {
+        put ("preferred", preferred);
+    }
+
     public String getName() {
         return getString ("name");
     }
@@ -116,7 +132,6 @@ public class Profile extends ParseObject {
         put ("status", status);
     }
 
-
     public String getWeight() {
         return getString ("weight");
     }
@@ -147,6 +162,14 @@ public class Profile extends ParseObject {
 
     public String getFbUrl() {
         return getString ("fbUrl");
+    }
+
+    public List getBlockedBy() {
+        return getList ("banned");
+    }
+
+    public void setBlockedBy(List blockedBy) {
+        put ("banned", blockedBy);
     }
 
     public List getBlocked() {

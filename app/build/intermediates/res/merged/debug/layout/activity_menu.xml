@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
         android:text="@string/menu"
-        android:id="@+id/textView18"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25sp"
-        android:layout_marginTop="5dp" />
+        android:textSize="25sp"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/editProfile"
         android:id="@+id/editProfile"
-        android:onClick="editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:onClick="editProfile"
+        android:text="@string/editProfile"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/SmsVerification"
         android:id="@+id/smsVerification"
-        android:onClick="smsVerification"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/refreshData"
+        android:layout_gravity="center_horizontal"
+        android:onClick="smsVerification"
+        android:text="@string/SmsVerification"/>
+
+    <Button
         android:id="@+id/refreshData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:onClick="refreshData"
-        android:layout_gravity="center_horizontal" />
+        android:text="@string/refreshData"/>
+
+    <Button
+        android:id="@+id/block_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="BlockProfiles"
+        android:text="@string/block_profiles"/>
+
+    <Button
+        android:id="@+id/aboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="AboutApp"
+        android:text="@string/about_app"/>
+
 </LinearLayout>
