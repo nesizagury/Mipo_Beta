@@ -37,4 +37,43 @@ public class Message extends ParseObject {
     public String getSenderId() {
         return getString ("senderId");
     }
+
+    public void setSeen(boolean seen) {
+        put ("seen", seen);
+    }
+
+    public boolean getSeen() {
+        return getBoolean("seen");
+    }
+
+    public boolean getPending() {
+        return getBoolean("pending");
+    }
+
+    public void setReceiverId(String receiverId) {
+        put ("receiverId", receiverId);
+    }
+
+    public String getReceiverId() {
+        return getString("receiverId");
+    }
+
+
+    public void setIndex(int index) {
+        put ("index", index);
+    }
+
+    public int getIndex() {
+        return getInt("index");
+    }
+
+    public void setKey(String key) {
+        put ("key", key);
+    }
+
+    public String getKey() {
+        return getString("key");
+    }
+
+
 }

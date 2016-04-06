@@ -20,7 +20,7 @@
             android:layout_height="0dip"
             android:layout_weight="35"
             android:background="#ffbe2c"
-            android:weightSum="40.0">
+            android:weightSum="43.0">
 
             <ImageButton
                 android:id="@+id/imageButton2"
@@ -35,19 +35,37 @@
                 android:scaleType="fitXY"
                 android:onClick="openMenu"/>
 
+            <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:background="#ffbe2c"
+            >
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="2dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="2dp"
-                android:layout_weight="10"
                 android:background="@drawable/m3"
                 android:onClick="goToMessages"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_weight="6"
+                android:layout_margin="0dp" />
 
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/messageCntTV"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#000000" />
+            </TableRow>
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="0dp"

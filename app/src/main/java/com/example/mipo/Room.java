@@ -29,4 +29,12 @@ public class Room extends ParseObject {
     public String getUserNum2() {
         return getString ("userNum2");
     }
+
+    public void setNewMessages(String newMessages) {
+        put ("newMessages", newMessages);
+    }
+
+    public String getNewMessages() {
+        return getString("newMessages");
+    }
 }

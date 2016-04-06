@@ -2,6 +2,7 @@ package com.example.mipo;
 
 import android.Manifest.permission;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.location.Location;
@@ -15,13 +16,18 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -114,7 +120,7 @@ public class StaticMethods {
 
         @Override
         public void onLocationChanged(final Location location) {
-            if (location != null && GlobalVariables.CUSTOMER_PHONE_NUM != null) {
+            if (location != null) {
                 GlobalVariables.MY_LOCATION = location;
                 GlobalVariables.LOCATION_ACCURACY = location.getAccuracy ();
                 if (!isGuestUser ()) {
@@ -327,5 +333,119 @@ public class StaticMethods {
             }
         }
         return null;
+    }
+
+    public static void loadMessagesInBackground() {
+
+        final List<Boolean> l = new ArrayList<>();
+        final ParseQuery<Room> query = ParseQuery.getQuery (Room.class);
+        query.whereEqualTo ("userNum1", GlobalVariables.CUSTOMER_PHONE_NUM);
+        query.orderByDescending("updatedAt");
+        query.include("MipoMessage");
+        final ArrayList<MessageRoomBean> mrbListNew = new ArrayList<MessageRoomBean> ();
+        query.findInBackground (new FindCallback<Room> () {
+            public void done(final List<Room> rooms, ParseException e) {
+                if (e == null) {
+
+                    for (int i = 0; i < rooms.size(); i++) {
+                        ParseObject message = ParseObject.create("Message");
+                        message = rooms.get(i).getParseObject("messagePointer");
+                        try {
+                            if(message.fetchIfNeeded().getString("receiverId").equals(GlobalVariables.CUSTOMER_PHONE_NUM))
+                                l.add(message.getBoolean("seen"));
+                            else
+                                l.add(true);
+                        } catch (ParseException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                    final ParseQuery<Room> query2 = ParseQuery.getQuery (Room.class);
+                    query2.whereEqualTo ("userNum2", GlobalVariables.CUSTOMER_PHONE_NUM);
+                    query2.orderByDescending("updatedAt");
+                    query2.include("MipoMessage");
+                    query2.findInBackground (new FindCallback<Room> () {
+                        public void done(List<Room> rooms2, ParseException e) {
+                            if (e == null) {
+                                for (int i = 0; i < rooms2.size(); i++) {
+                                    ParseObject message = ParseObject.create("Message");
+                                    message = rooms2.get(i).getParseObject("messagePointer");
+                                    try {
+                                        if(message.fetchIfNeeded().getString("receiverId").equals(GlobalVariables.CUSTOMER_PHONE_NUM))
+                                            l.add(message.getBoolean("seen"));
+                                        else
+                                            l.add(true);
+                                    } catch (ParseException e1) {
+                                        e1.printStackTrace();
+                                    }
+                                }
+
+                                rooms.addAll (rooms2);
+                                Collections.sort(rooms, new Comparator<Room>() {
+                                    public int compare(Room o1, Room o2) {
+                                        return o2.getUpdatedAt().compareTo(o1.getUpdatedAt());
+                                    }
+                                });
+                                for (int i = 0; i < rooms.size (); i++) {
+                                    Room room = rooms.get (i);
+                                    String otherPhoneNum = "";
+                                    if (room.getUserNum1 ().equals (GlobalVariables.CUSTOMER_PHONE_NUM)) {
+                                        otherPhoneNum = room.getUserNum2 ();
+                                    } else {
+                                        otherPhoneNum = room.getUserNum1 ();
+                                    }
+                                    UserDetails otherUser = getUserFromPhoneNum(otherPhoneNum);
+                                    if(GlobalVariables.userDataList.contains(otherUser))
+                                        mrbListNew.add(new MessageRoomBean(otherUser.getName(),
+                                                room.getLastMessage(),
+                                                otherUser.getUserPhoneNum(),
+                                                otherUser.getPicUrl(),
+                                                otherUser.indexInAllDataList,l.get(i)
+                                        ));
+                                if(MessagesRoomFragment.messageRoomBeanArrayList != null) {
+                                     MessagesRoomFragment.messageRoomBeanArrayList.clear();
+                                     MessagesRoomFragment.messageRoomBeanArrayList.addAll(mrbListNew);
+                                     MessagesRoomFragment.messagesRoomAdapter.notifyDataSetChanged();
+                                    }
+                                }
+                            } else {
+                                e.printStackTrace ();
+                            }
+                            int cnt = 0;
+                            for (int i = 0; i < l.size(); i++) {
+                                if(!l.get(i))
+                                    cnt++;
+                                GlobalVariables.messagesCounter = cnt;
+                            }
+
+                        }
+                    });
+                } else {
+                    e.printStackTrace ();
+                }
+            }
+        });
+    }
+
+
+    public static void openUserPage(Context c,String user_phone){
+
+        UserDetails userDetails = getUserFromPhoneNum(user_phone);
+        if (userDetails != null) {
+            int position = userDetails.getIndexInAllDataList();
+            UserDetails user = GlobalVariables.userDataList.get(position);
+            Bundle b = new Bundle();
+            Intent intent = new Intent(c, UserPage.class);
+            intent.putExtra("userName", user.name);
+            intent.putExtra("userCurrent", StaticMethods.isCurrentUser(user));
+            b.putString("userID", user.getUserPhoneNum());
+            b.putInt("index", user.getIndexInAllDataList());
+            Date currentDate = new Date();
+            long diff = currentDate.getTime() - user.getLastSeen().getTime();
+            long diffMinutes = diff / (60 * 1000);
+            b.putInt("online", (int) diffMinutes);
+            intent.putExtras(b);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            c.startActivity(intent);
+        }
     }
 }

@@ -2,6 +2,7 @@ package com.example.mipo;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,9 +21,7 @@ import java.util.List;
 
 public class ChatListAdapter extends ArrayAdapter<Message> {
 
-    static ImageLoader imageLoader;
-    DisplayImageOptions options;
-    int pixels;
+
     Context context;
     int otherUserIndex;
 
@@ -30,9 +29,7 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
         super (context, 0, messages);
         this.otherUserIndex = otherUserIndex;
         this.context = context;
-        if (imageLoader == null || (imageLoader != null && !imageLoader.isInited ())) {
-            setImageLoader ();
-        }
+
     }
 
     @Override
@@ -41,26 +38,27 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
         if (convertView == null) {
             convertView = LayoutInflater.from (getContext ()).inflate (R.layout.chat_item, parent, false);
             final ViewHolder holder = new ViewHolder ();
-            holder.imageLeft = (ImageView) convertView.findViewById (R.id.ivProfileLeft);
-            holder.imageRight = (ImageView) convertView.findViewById (R.id.ivProfileRight);
+            holder.imageV = (ImageView) convertView.findViewById (R.id.vIV);
             holder.body = (TextView) convertView.findViewById (R.id.tvBody);
             convertView.setTag (holder);
         }
         final Message message = (Message) getItem (position);
         final ViewHolder holder = (ViewHolder) convertView.getTag ();
         final boolean isMe = message.getSenderId ().equals (GlobalVariables.CUSTOMER_PHONE_NUM);
-        // Show-hide image based on the logged-in user.
-        // Display the profile image to the right for our user, left for other users.
         if (isMe) {
-            imageLoader.displayImage (GlobalVariables.currentUser.getPicUrl (), holder.imageRight);
-            holder.imageRight.setVisibility (View.VISIBLE);
-            holder.imageLeft.setVisibility (View.GONE);
+            if(message.getSeen())
+                holder.imageV.setImageResource(R.drawable.green_v);
+            else
+            if(message.getPending())
+                holder.imageV.setImageResource(R.drawable.two_v);
+            else
+                holder.imageV.setImageResource(R.drawable.v);
+
+            holder.imageV.setVisibility(View.VISIBLE);
             holder.body.setGravity (Gravity.CENTER_VERTICAL | Gravity.RIGHT);
         } else {
             UserDetails userDetails = GlobalVariables.userDataList.get (otherUserIndex);
-            imageLoader.displayImage (userDetails.getPicUrl (), holder.imageLeft);
-            holder.imageLeft.setVisibility (View.VISIBLE);
-            holder.imageRight.setVisibility (View.GONE);
+            holder.imageV.setVisibility (View.GONE);
             holder.body.setGravity (Gravity.CENTER_VERTICAL | Gravity.LEFT);
         }
         holder.body.setText (message.getMessageBody ());
@@ -70,31 +68,11 @@ public class ChatListAdapter extends ArrayAdapter<Message> {
     class ViewHolder {
         public ImageView imageLeft;
         public ImageView imageRight;
+        public ImageView imageV;
         public TextView body;
     }
 
-    public void setImageLoader() {
 
-        float density = context.getResources ().getDisplayMetrics ().density;
-        pixels = (int) (64 * density + 0.5f);
-
-        options = new DisplayImageOptions.Builder ()
-                          .cacheOnDisk (true)
-                          .cacheInMemory (true)
-                          .bitmapConfig (Bitmap.Config.RGB_565)
-                          .imageScaleType (ImageScaleType.EXACTLY)
-                          .resetViewBeforeLoading (true)
-                          .build ();
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder (context)
-                                                  .defaultDisplayImageOptions (options)
-                                                  .threadPriority (Thread.MAX_PRIORITY)
-                                                  .threadPoolSize (2)
-                                                  .memoryCache (new WeakMemoryCache ())
-                                                  .denyCacheImageMultipleSizesInMemory ()
-                                                  .build ();
-        imageLoader = ImageLoader.getInstance ();
-        imageLoader.init (config);
-    }
 
 
 }

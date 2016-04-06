@@ -1,158 +1,254 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:2:1-76:12
-	package
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-	android:versionName
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:6:5-30
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-	android:versionCode
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:5:5-28
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:2:1-121:12
 	xmlns:android
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:4:5-63
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:4:5-63
+	package
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:6:5-30
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:8:5-10:40
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:8:5-10:40
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:10:9-38
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:10:9-38
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:9:9-35
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Mipo-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:9:9-35
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:12:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:14:22-68
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:12:5-80
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:15:5-80
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:13:5-78
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:16:5-78
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:16:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:14:5-80
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:17:5-80
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:17:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:15:5-74
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:18:5-74
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:15:22-72
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:18:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:16:5-79
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:19:5-79
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:16:22-77
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:19:22-77
 uses-permission#android.permission.INTERNET
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:17:5-66
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:17:22-64
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:20:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:18:5-78
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:21:5-78
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:18:22-76
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.READ_SMS
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:19:5-66
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:22:5-66
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:19:22-64
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:22:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:20:5-69
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:23:5-69
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:20:22-67
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:23:22-67
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:25:5-82
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:25:22-79
+permission#com.example.mipo.permission.C2D_MESSAGE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:26:5-27:47
+	android:protectionLevel
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:27:9-44
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:26:17-71
+uses-permission#com.example.mipo.permission.C2D_MESSAGE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:28:22-76
 application
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:23:5-74:19
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.0] D:\Mipo-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:27:9-41
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:30:5-119:19
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:28:9-35
-	android:allowBackup
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:25:9-35
-	android:icon
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:26:9-45
-	android:theme
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:29:9-40
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:24:9-45
-activity#com.example.mipo.MainActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:30:9-31:59
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:31:13-57
-activity#com.example.mipo.UserPage
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:33:9-35:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:34:13-53
-activity#com.example.mipo.DetailedProfileActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:36:9-38:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:37:13-68
-activity#com.example.mipo.MenuActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:39:9-41:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:40:13-57
-activity#com.example.mipo.FavoritesPage
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:42:9-44:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:43:13-58
-activity#com.example.mipo.LoginActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:45:9-47:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:46:13-58
-activity#com.example.mipo.CommunicationsActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:48:9-50:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:49:13-67
-activity#com.example.mipo.ChatActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:51:9-53:15
-	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:52:13-57
-activity#com.example.mipo.MainPageActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:54:9-61:20
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:35:9-35
 	android:label
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:56:13-45
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:34:9-41
+	android:allowBackup
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:32:9-35
+	android:icon
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:33:9-45
+	android:theme
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:36:9-40
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:55:13-61
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:31:9-45
+activity#com.example.mipo.MainActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:38:9-39:59
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:39:13-57
+activity#com.example.mipo.UserPage
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:41:9-43:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:42:13-53
+activity#com.example.mipo.DetailedProfileActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:44:9-46:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:45:13-68
+activity#com.example.mipo.MenuActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:47:9-49:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:48:13-57
+activity#com.example.mipo.FavoritesPage
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:50:9-52:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:51:13-58
+activity#com.example.mipo.LoginActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:54:9-56:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:55:13-58
+activity#com.example.mipo.CommunicationsActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:57:9-59:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:58:13-67
+activity#com.example.mipo.ChatActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:60:9-62:15
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:61:13-57
+activity#com.example.mipo.MainPageActivity
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:63:9-70:20
+	android:label
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:65:13-45
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:64:13-61
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:57:13-60:29
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:66:13-69:29
 action#android.intent.action.MAIN
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:58:17-68
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:67:17-68
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:58:25-66
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:67:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:59:17-76
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:68:17-76
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:59:27-74
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:68:27-74
 activity#com.example.mipo.SmsSignUpActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:62:9-64:15
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:71:9-73:15
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:63:13-62
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:72:13-62
 activity#com.example.mipo.LoginFromFundigoActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:65:9-67:15
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:74:9-76:15
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:66:13-53
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:75:13-53
 activity#com.example.mipo.EditProfileActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:68:9-70:15
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:77:9-79:15
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:69:13-48
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:78:13-48
+activity#com.example.mipo.FromFundigo
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:80:9-86:20
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:81:13-56
+intent-filter#android.intent.action.MAIN
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:82:13-85:29
 activity#com.example.mipo.FilterActivity
-ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:71:9-73:15
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:87:9-89:15
 	android:name
-		ADDED from D:\Mipo-master\app\src\main\AndroidManifest.xml:72:13-59
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:88:13-59
+service#com.parse.PushService
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:90:9-57
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:90:18-54
+receiver#com.parse.ParsePushBroadcastReceiver
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:91:9-98:20
+	android:exported
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:92:13-37
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:91:19-70
+intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:93:13-97:29
+action#com.parse.push.intent.RECEIVE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:94:17-72
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:94:25-69
+action#com.parse.push.intent.DELETE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:95:17-71
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:95:25-68
+action#com.parse.push.intent.OPEN
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:96:17-69
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:96:25-66
+receiver#com.parse.GcmBroadcastReceiver
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:99:9-107:20
+	android:permission
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:100:13-73
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:99:19-64
+intent-filter#com.example.mipo+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:101:13-106:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:102:17-81
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:102:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:103:17-86
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:103:25-83
+category#com.example.mipo
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:105:17-61
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:105:27-58
+receiver#com.example.mipo.JSONCustomReceiver
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:108:9-118:20
+	android:exported
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:110:13-37
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:109:13-47
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:111:13-117:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:112:17-79
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:112:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:113:17-77
+	android:name
+		ADDED from C:\workspace\Mipo_Beta-mipo_moshe_16_3_16\app\src\main\AndroidManifest.xml:113:25-74

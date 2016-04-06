@@ -17,24 +17,36 @@
         android:layout_height="30dp"
         android:text="New Text"
         android:id="@+id/message_item_nameTV"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/message_itemIV"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="5dp"
         android:textColor="#575757"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:layout_alignTop="@+id/message_itemIV"
+        android:layout_toRightOf="@+id/message_itemIV"
+        android:layout_toEndOf="@+id/message_itemIV" />
 
     <TextView
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:text="8678678678678678678678678ujkhbkgjghkjyuky6786jiujky7iyuk678ik67k"
         android:id="@+id/message_item_bodyTV"
-        android:layout_below="@+id/message_item_nameTV"
-        android:layout_toEndOf="@+id/message_itemIV"
         android:textSize="16sp"
-        android:layout_marginLeft="15dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="5dp"
-        android:textColor="#a6a6a6"/>
+        android:textColor="#a6a6a6"
+        android:layout_below="@+id/message_item_nameTV"
+        android:layout_toRightOf="@+id/message_itemIV"
+        android:layout_toEndOf="@+id/message_itemIV" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/sumUnreadTV"
+        android:layout_alignTop="@+id/message_item_bodyTV"
+        android:layout_toEndOf="@+id/message_item_bodyTV"
+        android:layout_toRightOf="@+id/message_item_bodyTV"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
 </RelativeLayout>

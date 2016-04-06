@@ -22,11 +22,12 @@
         android:text="Bar Refaeli"
         android:id="@+id/detailed_name_age"
         android:textSize="23sp"
-        android:layout_alignTop="@+id/detailed_image"
-        android:layout_toEndOf="@+id/detailed_image"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/detailed_image"
+        android:layout_toEndOf="@+id/detailed_image" />
 
     <TextView
         android:layout_width="match_parent"
@@ -36,8 +37,9 @@
         android:textSize="16sp"
         android:textColor="#000000"
         android:layout_above="@+id/detailed_body_nation"
-        android:layout_toEndOf="@+id/detailed_image"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:layout_toRightOf="@+id/detailed_image"
+        android:layout_toEndOf="@+id/detailed_image" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="28dp"
@@ -45,9 +47,10 @@
         android:id="@+id/detailed_body_nation"
         android:textSize="16sp"
         android:layout_above="@+id/detailed_relatioStatus_seeking"
-        android:layout_alignStart="@+id/detailed_height_wheight"
         android:textColor="#000000"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:layout_toRightOf="@+id/detailed_image"
+        android:layout_toEndOf="@+id/detailed_image" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="28dp"
@@ -55,9 +58,10 @@
         android:id="@+id/detailed_relatioStatus_seeking"
         android:textSize="16sp"
         android:layout_above="@+id/lin_layout"
-        android:layout_alignStart="@+id/detailed_height_wheight"
         android:textColor="#000000"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:layout_toRightOf="@+id/detailed_image"
+        android:layout_toEndOf="@+id/detailed_image" />
 
     <TextView
         android:layout_width="match_parent"
@@ -67,9 +71,11 @@
         android:textSize="16dp"
         android:textColor="#000000"
         android:layout_above="@+id/detailed_height_wheight"
-        android:layout_alignStart="@+id/detailed_height_wheight"
-        android:layout_alignParentEnd="true"
-        android:paddingStart="5dp"/>
+
+        android:paddingStart="5dp"
+        android:layout_below="@+id/detailed_name_age"
+        android:layout_toRightOf="@+id/detailed_image"
+        android:layout_toEndOf="@+id/detailed_image" />
 
     <LinearLayout
         android:orientation="vertical"

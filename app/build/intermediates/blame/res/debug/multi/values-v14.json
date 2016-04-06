@@ -222,5 +222,229 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\res\\merged\\debug\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 181
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 346
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 186,
+                    "endLine": 12,
+                    "endColumn": 12,
+                    "endOffset": 457
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 462,
+                    "endColumn": 70,
+                    "endOffset": 528
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 694,
+                        "endColumn": 70,
+                        "endOffset": 760
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 533,
+                    "endColumn": 82,
+                    "endOffset": 611
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 765,
+                        "endColumn": 82,
+                        "endOffset": 843
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 616,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 1021
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 848,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1026,
+                    "endLine": 26,
+                    "endColumn": 12,
+                    "endOffset": 1443
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1258,
+                        "endLine": 24,
+                        "endColumn": 12,
+                        "endOffset": 1675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1448,
+                    "endColumn": 119,
+                    "endOffset": 1563
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1854,
+                        "endColumn": 119,
+                        "endOffset": 1969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1568,
+                    "endColumn": 62,
+                    "endOffset": 1626
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1974,
+                        "endColumn": 62,
+                        "endOffset": 2032
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1631,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 1780
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2037,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1785,
+                    "endColumn": 62,
+                    "endOffset": 1843
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2191,
+                        "endColumn": 62,
+                        "endOffset": 2249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1848,
+                    "endColumn": 131,
+                    "endOffset": 1975
+                },
+                "from": {
+                    "file": "C:\\workspace\\Mipo_Beta-mipo_moshe_16_3_16\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 2254,
+                        "endColumn": 131,
+                        "endOffset": 2381
+                    }
+                }
+            }
+        ]
     }
 ]

@@ -25,4 +25,15 @@ public class GlobalVariables {
 
     public static boolean isHeb = false;
     public static String userPhoneNumFromFundigo = null;
+
+    public static String pushAction = "";
+    public static String pushUserName = "";
+    public static String pushIndex = "";
+    public static String ChatWith = "";
+    public static int messagesCounter = 0;
+    public static boolean stopLoadingMessages = false;
+
+
+
+
 }

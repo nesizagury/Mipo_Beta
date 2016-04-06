@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/message"
         android:id="@+id/messageButton"
-        android:layout_alignTop="@+id/profileButton"
-        android:layout_toEndOf="@+id/profileButton" />
+        android:layout_below="@+id/trackNameTV"
+        android:layout_toRightOf="@+id/trackImage"
+        android:layout_toEndOf="@+id/trackImage" />
 </RelativeLayout>

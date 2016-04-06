@@ -1,6 +1,7 @@
 package com.example.mipo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -46,6 +47,7 @@ import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.Date;
 import java.util.List;
 
@@ -123,15 +125,22 @@ public class SmsSignUpActivity extends Activity {
 
         phoneET.setOnEditorActionListener (new TextView.OnEditorActionListener () {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if ((event != null &&
-                             (event.getKeyCode () == KeyEvent.KEYCODE_ENTER)) ||
+                if ((event != null && (event.getKeyCode () == KeyEvent.KEYCODE_ENTER)) ||
                             (actionId == EditorInfo.IME_ACTION_DONE)) {
                     area = s.getSelectedItem ().toString ();
-                    username = usernameTE.getText ().toString ();
-                    phone_number_to_verify = getNumber (phoneET.getText ().toString (), area);
+                    username = usernameTE.getText().toString ();
+                    phone_number_to_verify = getNumber(phoneET.getText().toString(), area);
                     phone_number_no_country_prefix = area + phoneET.getText ().toString ();
                     getUserPreviousDetails ();
-                    smsVerify (phone_number_to_verify);
+                    usernameTV.setVisibility(View.VISIBLE);
+                    usernameTE.setVisibility (View.VISIBLE);
+                    phoneET.setVisibility (View.INVISIBLE);
+                    phoneTV.setVisibility (View.INVISIBLE);
+                    expTV = (TextView) findViewById (R.id.explanationTV);
+                    expTV.setVisibility (View.INVISIBLE);
+                    s.setVisibility(View.INVISIBLE);
+
+                   // smsVerify(phone_number_to_verify);
                 }
                 return false;
             }
@@ -376,19 +385,18 @@ public class SmsSignUpActivity extends Activity {
     }
 
     void saveToFile(String phone_number) {
-        File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
         try {
-            FileOutputStream fos = new FileOutputStream (myExternalFile);
-            fos.write (phone_number.getBytes ());
-            fos.close ();
-            Log.e ("number", phone_number);
-        } catch (IOException e) {
-            e.printStackTrace ();
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("Mipo", Context.MODE_PRIVATE));
+            outputStreamWriter.write(phone_number);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {
+            Log.e("Login", "File write failed: " + e.toString());
         }
     }
 
     private void getUserPreviousDetails() {
-        ParseQuery<Profile> query = ParseQuery.getQuery ("Profile");
+        ParseQuery<Profile> query = ParseQuery.getQuery("Profile");
         query.whereEqualTo ("number", phone_number_no_country_prefix);
         query.findInBackground (new FindCallback<Profile> () {
             public void done(List<Profile> profiles, ParseException e) {

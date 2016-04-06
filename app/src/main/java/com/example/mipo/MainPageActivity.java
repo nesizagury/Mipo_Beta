@@ -2,6 +2,8 @@ package com.example.mipo;
 
 import android.Manifest.permission;
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +13,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -25,6 +28,7 @@ import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseQuery;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -44,12 +48,19 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
     TextView gpsAccuracy;
     ImageView gpsAccuracyIcon;
     int numOfAccuracyChanges = 0;
+    static boolean done = false;
+    TextView messageCnt;
+    boolean inMessages = false;
+    static boolean fromFundigo = false;
+    static String userFromFundigo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
-        this.requestWindowFeature (Window.FEATURE_NO_TITLE);
-        setContentView (R.layout.activity_main_page);
+        super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_main_page);
+         handler.postDelayed(roomRunnable, 0);
+        messageCnt = (TextView) findViewById(R.id.messageCntTV);
         if (getIntent ().getStringExtra ("fundigo") != null &&
                     getIntent ().getStringExtra ("fundigo").equals ("fun") && !MainActivity.didLogin) {
             GlobalVariables.userPhoneNumFromFundigo = getIntent ().getStringExtra ("index");
@@ -66,6 +77,8 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 getWindow ().getDecorView ().setLayoutDirection (View.LAYOUT_DIRECTION_LOCALE);
             }
+
+
             grid = (GridView) findViewById (R.id.gridView1);
             turnOnGPS = (TextView) findViewById (R.id.turnOnGps);
             gpsAccuracy = (TextView) findViewById (R.id.distanceAcuuraty);
@@ -110,11 +123,11 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             }
         }
     }
-
     public static void downloadProfilesData() {
+
         ParseQuery<Profile> query = new ParseQuery ("Profile");
-        query.whereExists ("lastSeen");
-        query.orderByDescending ("createdAt");
+        query.whereExists("lastSeen");
+        query.orderByDescending("createdAt");
         List<Profile> profilesList = null;
         try {
             profilesList = query.find ();
@@ -141,9 +154,7 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                                                                           profile.getLocation (),
                                                                           i,
                                                                           diffMinutes < 10,
-                                                                          profile.getBlocked ()
-
-                ));
+                                                                          profile.getBlocked ()));
                 if (GlobalVariables.userDataList.get (i).getUserPhoneNum ().equals ("GUEST") &&
                             (GlobalVariables.CUSTOMER_PHONE_NUM == null || GlobalVariables.CUSTOMER_PHONE_NUM.isEmpty ())) {
                     GlobalVariables.currentUser = GlobalVariables.userDataList.get (i);
@@ -153,16 +164,18 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                             GlobalVariables.userDataList.get (i).getUserPhoneNum ().equals (GlobalVariables.CUSTOMER_PHONE_NUM)) {
                     GlobalVariables.currentUser = GlobalVariables.userDataList.get (i);
                 }
-                SharedPreferences prefs = context.getSharedPreferences (
-                                                                               "com.example.mipo", Context.MODE_PRIVATE);
+
                 UserDetails userDetails = GlobalVariables.userDataList.get (i);
+                SharedPreferences prefs = context.getSharedPreferences("com.example.mipo", Context.MODE_PRIVATE);
                 boolean isFav = prefs.getBoolean (userDetails.getUserPhoneNum (),false);
                 if (isFav) {
                     userDetails.setFavorite (true);
                 } else {
                     userDetails.setFavorite (false);
                 }
+
             }
+
             if (GlobalVariables.currentUser.getBlocked () != null) {
                 List<String> blockedList = null;
                 blockedList = GlobalVariables.currentUser.getBlocked ();
@@ -189,6 +202,18 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
         } catch (ParseException e) {
             e.printStackTrace ();
         }
+        done = true;
+
+        if(!GlobalVariables.pushAction.equals(""))
+        {
+            startChat();
+        }
+        if(GlobalVariables.userPhoneNumFromFundigo != null)
+        {
+            StaticMethods.openUserPage(context,GlobalVariables.userPhoneNumFromFundigo);
+            GlobalVariables.userPhoneNumFromFundigo = null;
+        }
+
     }
 
     @Override
@@ -214,6 +239,7 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
 
     public void goToMessages(View view) {
         if (!StaticMethods.isGuestUser ()) {
+            inMessages = true;
             Intent intent = new Intent (this, CommunicationsActivity.class);
             startActivity (intent);
         } else {
@@ -228,12 +254,14 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
 
     public void goToFilter(View v) {
         Intent intent = new Intent (this, FilterActivity.class);
-        startActivity (intent);
+        startActivity(intent);
     }
 
     @Override
     protected void onResume() {
         super.onResume ();
+        inMessages = false;
+        GlobalVariables.stopLoadingMessages = false;
         if (getIntent ().getStringExtra ("fundigo") != null &&
                     getIntent ().getStringExtra ("fundigo").equals ("fun") &&
                     GlobalVariables.userDataList.size () > 0) {
@@ -263,18 +291,22 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             getIntent ().putExtra ("fundigo", "none");
             finish ();
         }
-        handler.postDelayed (runnable, 0);
-        StaticMethods.updateDeviceLocationGPS (context, mainPageActivity);
+        handler.postDelayed(runnable, 0);
+        handler.postDelayed(roomRunnable, 0);
+        StaticMethods.updateDeviceLocationGPS(context, mainPageActivity);
+
     }
 
     @Override
     protected void onPause() {
-        super.onPause ();
-        handler.removeCallbacks (runnable);
+        super.onPause();
+        if(!inMessages)
+            GlobalVariables.stopLoadingMessages = true;
+        handler.removeCallbacks(runnable);
         if (ActivityCompat.checkSelfPermission (this, permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission (this, permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         } else {
-            StaticMethods.locationManager.removeUpdates (StaticMethods.locationListener);
+            StaticMethods.locationManager.removeUpdates(StaticMethods.locationListener);
         }
     }
 
@@ -293,7 +325,7 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
                 user.setDist (distance);
             }
         }
-        Collections.sort (filteredUsersList, new Comparator<UserDetails> () {
+        Collections.sort(filteredUsersList, new Comparator<UserDetails>() {
             @Override
             public int compare(UserDetails a, UserDetails b) {
                 if (a.dist < b.dist) return -1;
@@ -369,25 +401,82 @@ public class MainPageActivity extends Activity implements AdapterView.OnItemClic
             }
             ParseQuery<Profile> query = new ParseQuery ("Profile");
             query.orderByDescending ("createdAt");
-            query.findInBackground (new FindCallback<Profile> () {
+            query.findInBackground(new FindCallback<Profile>() {
                 public void done(List<Profile> profilesList, ParseException e) {
                     if (e == null) {
-                        for (int i = 0; i < profilesList.size (); i++) {
-                            Profile profile = profilesList.get (i);
+                        for (int i = 0; i < profilesList.size(); i++) {
+                            Profile profile = profilesList.get(i);
                             for (UserDetails userDetails : GlobalVariables.userDataList) {
-                                if (userDetails.getUserPhoneNum ().equals (profile.getNumber ())) {
-                                    userDetails.setLastSeen (profile.getLastSeen ());
-                                    userDetails.setUserLocation (profile.getLocation ());
+                                if (userDetails.getUserPhoneNum().equals(profile.getNumber())) {
+                                    userDetails.setLastSeen(profile.getLastSeen());
+                                    userDetails.setUserLocation(profile.getLocation());
                                     break;
                                 }
                             }
                         }
                     } else {
-                        e.printStackTrace ();
+                        e.printStackTrace();
                     }
                 }
             });
-            handler.postDelayed (this, 10000);
+
+            handler.postDelayed (this, 5000);
         }
     };
+
+
+    private Runnable roomRunnable = new Runnable () {
+        @Override
+        public void run() {
+
+            if(!GlobalVariables.stopLoadingMessages)
+            StaticMethods.loadMessagesInBackground ();
+
+            if(GlobalVariables.messagesCounter > 0)
+                messageCnt.setText(GlobalVariables.messagesCounter + "");
+            else
+                messageCnt.setText("");
+
+            handler.postDelayed (this, 7000);
+        }
+    };
+
+    private boolean isAppIsInBackground() {
+       Context context = getApplicationContext();
+        boolean isInBackground = true;
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+            List<ActivityManager.RunningAppProcessInfo> runningProcesses = am.getRunningAppProcesses();
+            for (ActivityManager.RunningAppProcessInfo processInfo : runningProcesses) {
+                if (processInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+                    for (String activeProcess : processInfo.pkgList) {
+                        if (activeProcess.equals(context.getPackageName())) {
+                            isInBackground = false;
+                        }
+                    }
+                }
+            }
+        } else {
+            List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+            ComponentName componentInfo = taskInfo.get(0).topActivity;
+            if (componentInfo.getPackageName().equals(context.getPackageName())) {
+                isInBackground = false;
+            }
+        }
+
+        return isInBackground;
+    }
+
+    public static void startChat(){
+        Intent i = new Intent(context, ChatActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Bundle b = new Bundle();
+        i.putExtra("userId", GlobalVariables.pushAction);
+        i.putExtra("userName", GlobalVariables.pushUserName);
+        int index = Integer.parseInt(GlobalVariables.pushIndex);
+        b.putInt("index", index);
+        i.putExtras(b);
+        context.startActivity(i);
+    }
+
 }

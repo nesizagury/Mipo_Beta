@@ -2,6 +2,8 @@ package com.example.mipo;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,11 +27,11 @@ public class MessagesRoomAdapter extends ArrayAdapter<MessageRoomBean> {
     Context c;
 
     public MessagesRoomAdapter(Context c, List<MessageRoomBean> list) {
-        super (c, 0, list);
+        super(c, 0, list);
         this.list = list;
         this.c = c;
         if (imageLoader == null || (imageLoader != null && imageLoader.isInited ())) {
-            setImageLoader ();
+            setImageLoader();
         }
     }
 
@@ -43,14 +45,20 @@ public class MessagesRoomAdapter extends ArrayAdapter<MessageRoomBean> {
         final MessageRoomBean message_bean = (MessageRoomBean) getItem (i);
         final MessageItemHolder holder = (MessageItemHolder) view.getTag ();
 
+
+    if (!list.get(i).getIsNewMessages()) {
+        view.setBackgroundColor(Color.parseColor("#9ed8d8d8"));
+    }
+        else
+        view.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
+
         if (list.get (i).picUrl != null) {
-            imageLoader.displayImage (list.get (i).picUrl, holder.image);
+            imageLoader.displayImage(list.get(i).picUrl, holder.image);
         } else {
             holder.image.setImageResource (R.drawable.favorite);
         }
-        holder.body.setText (message_bean.getBody ());
-        holder.name.setText (message_bean.getName ());
-
+        holder.body.setText (message_bean.getBody());
+        holder.name.setText(message_bean.getName());
         holder.image.setTag (message_bean);
         holder.name.setTag (message_bean);
         holder.body.setTag (message_bean);

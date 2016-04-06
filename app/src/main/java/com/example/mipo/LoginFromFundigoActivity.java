@@ -1,6 +1,7 @@
 package com.example.mipo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -17,6 +18,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.Date;
 
 public class LoginFromFundigoActivity extends Activity {
@@ -43,11 +45,13 @@ public class LoginFromFundigoActivity extends Activity {
         Profile object = null;
         try {
             object = (Profile) query.getFirst ();
-            if (object.getAge () != null) {
-                File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
-                FileOutputStream fos = new FileOutputStream (myExternalFile);
-                fos.write (number.getBytes ());
-                fos.close ();
+            if (object.getAge () != null && object.getAge().toString().length() > 0
+                    ) {
+
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("Mipo", Context.MODE_PRIVATE));
+                    outputStreamWriter.write(number);
+                    outputStreamWriter.close();
+
                 GlobalVariables.CUSTOMER_PHONE_NUM = number;
                 login ();
             }
@@ -86,13 +90,12 @@ public class LoginFromFundigoActivity extends Activity {
             object = query.getFirst ();
             object.put ("age", ageET.getText ().toString ());
             object.put ("height", heightET.getText ().toString ());
-            object.put ("lastSeen", new Date ());
-            object.save ();
-            File myExternalFile = new File (Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOWNLOADS), "verify.txt");
-            FileOutputStream fos = new FileOutputStream (myExternalFile);
-            fos.write (phone_number.getBytes ());
-            fos.close ();
-            Log.e ("number", phone_number);
+            object.put("lastSeen", new Date());
+            object.save();
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("Mipo", Context.MODE_PRIVATE));
+            outputStreamWriter.write(phone_number);
+            outputStreamWriter.close();
+            Log.e(phone_number + "", "created");
         } catch (ParseException e) {
             e.printStackTrace ();
         } catch (FileNotFoundException e) {

@@ -7,13 +7,17 @@ public class MessageRoomBean {
     String id;
     String picUrl;
     int indexInList;
+    boolean isNewMessages;
+    int sumNewMessages;
 
-    public MessageRoomBean(String name, String body, String id, String picUrl, int indexInList) {
+
+    public MessageRoomBean(String name, String body, String id, String picUrl, int indexInList,boolean isNewMessages) {
         this.name = name;
         this.body = body;
         this.id = id;
         this.picUrl = picUrl;
         this.indexInList = indexInList;
+        this.isNewMessages = isNewMessages;
     }
 
     public int getIndexInList() {
@@ -54,5 +58,21 @@ public class MessageRoomBean {
 
     public void setPicUrl(String picUrl) {
         this.picUrl = picUrl;
+    }
+
+    public boolean getIsNewMessages() {
+        return isNewMessages;
+    }
+
+    public void setIsNewMessages(boolean isNewMessages) {
+        this.isNewMessages = isNewMessages;
+    }
+
+    public int getSumNewMessages() {
+        return sumNewMessages;
+    }
+
+    public void setSumNewMessages(int sumNewMessages) {
+        this.sumNewMessages = sumNewMessages;
     }
 }
