@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="50dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/tvBody"
+            android:layout_margin="4dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:id="@+id/vIV"
+            android:layout_gravity="center_vertical"
+            android:layout_alignTop="@+id/tvBody"
+            android:layout_toRightOf="@+id/tvBody"
+            android:layout_toEndOf="@+id/tvBody" />
+
+
+
+</RelativeLayout>
